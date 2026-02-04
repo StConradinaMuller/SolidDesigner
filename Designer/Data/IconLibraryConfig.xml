@@ -290,44 +290,44 @@
             <theme name="dark" svg="icons/curve/trim.svg"/>
         </icon>
         <icon id="datum.axis">
-            <theme name="light" svg="icons/datum/axis.svg"/>
-            <theme name="dark" svg="icons/datum/axis.svg"/>
+            <theme name="light" svg="icons/datum/axis.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_axis.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_axis.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_axis.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_axis.png"/>
+            <theme name="dark" svg="icons/datum/axis.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_axis.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_axis.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_axis.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_axis.png"/>
         </icon>
         <icon id="datum.cs">
-            <theme name="light" svg="icons/datum/cs.svg"/>
-            <theme name="dark" svg="icons/datum/cs.svg"/>
+            <theme name="light" svg="icons/datum/cs.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_cs.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_cs.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_cs.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_cs.png"/>
+            <theme name="dark" svg="icons/datum/cs.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_cs.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_cs.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_cs.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_cs.png"/>
         </icon>
         <icon id="datum.curve">
-            <theme name="light" svg="icons/datum/curve.svg"/>
-            <theme name="dark" svg="icons/datum/curve.svg"/>
+            <theme name="light" svg="icons/datum/curve.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_curve.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_curve.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_curve.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_curve.png"/>
+            <theme name="dark" svg="icons/datum/curve.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_curve.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_curve.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_curve.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_curve.png"/>
         </icon>
         <icon id="datum.default_cs">
-            <theme name="light" svg="icons/datum/default_cs.svg"/>
-            <theme name="dark" svg="icons/datum/default_cs.svg"/>
+            <theme name="light" svg="icons/datum/default_cs.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_defaultCoordinateSystem.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_defaultCoordinateSystem.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_defaultCoordinateSystem.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_defaultCoordinateSystem.png"/>
+            <theme name="dark" svg="icons/datum/default_cs.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_defaultCoordinateSystem.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_defaultCoordinateSystem.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_defaultCoordinateSystem.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_defaultCoordinateSystem.png"/>
         </icon>
         <icon id="datum.graph">
-            <theme name="light" svg="icons/datum/graph.svg"/>
-            <theme name="dark" svg="icons/datum/graph.svg"/>
+            <theme name="light" svg="icons/datum/graph.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_graph.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_graph.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_graph.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_graph.png"/>
+            <theme name="dark" svg="icons/datum/graph.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_graph.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_graph.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_graph.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_graph.png"/>
         </icon>
         <icon id="datum.offset_planes">
-            <theme name="light" svg="icons/datum/offset_planes.svg"/>
-            <theme name="dark" svg="icons/datum/offset_planes.svg"/>
+            <theme name="light" svg="icons/datum/offset_planes.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_offsetPlanes.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_offsetPlanes.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_offsetPlanes.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_offsetPlanes.png"/>
+            <theme name="dark" svg="icons/datum/offset_planes.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_offsetPlanes.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_offsetPlanes.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_offsetPlanes.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_offsetPlanes.png"/>
         </icon>
         <icon id="datum.plane">
-            <theme name="light" svg="icons/datum/plane.svg"/>
-            <theme name="dark" svg="icons/datum/plane.svg"/>
+            <theme name="light" svg="icons/datum/plane.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_plane.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_plane.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_plane.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_plane.png"/>
+            <theme name="dark" svg="icons/datum/plane.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_plane.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_plane.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_plane.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_plane.png"/>
         </icon>
         <icon id="datum.point">
-            <theme name="light" svg="icons/datum/point.svg"/>
-            <theme name="dark" svg="icons/datum/point.svg"/>
+            <theme name="light" svg="icons/datum/point.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_point.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_point.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_point.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_point.png"/>
+            <theme name="dark" svg="icons/datum/point.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_point.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_point.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_point.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_point.png"/>
         </icon>
         <icon id="datum.reference">
-            <theme name="light" svg="icons/datum/reference.svg"/>
-            <theme name="dark" svg="icons/datum/reference.svg"/>
+            <theme name="light" svg="icons/datum/reference.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_reference.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_reference.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_reference.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_reference.png"/>
+            <theme name="dark" svg="icons/datum/reference.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_reference.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_reference.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_reference.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_reference.png"/>
         </icon>
         <icon id="datum.ribbon">
-            <theme name="light" svg="icons/datum/ribbon.svg"/>
-            <theme name="dark" svg="icons/datum/ribbon.svg"/>
+            <theme name="light" svg="icons/datum/ribbon.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/datum_ribbon.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/datum_ribbon.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/datum_ribbon.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/datum_ribbon.png"/>
+            <theme name="dark" svg="icons/datum/ribbon.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_ribbon.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_ribbon.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_ribbon.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_ribbon.png"/>
         </icon>
         <icon id="display.hidden_line">
             <theme name="light" svg="icons/display/hidden_line.svg"/>
@@ -358,8 +358,8 @@
             <theme name="dark" svg="icons/display/wireframe.svg"/>
         </icon>
         <icon id="edit.copy">
-            <theme name="light" svg="icons/edit/copy.svg"/>
-            <theme name="dark" svg="icons/edit/copy.svg"/>
+            <theme name="light" svg="icons/edit/copy.svg" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/edit_copy.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/edit_copy.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/edit_copy.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/edit_copy.png"/>
+            <theme name="dark" svg="icons/edit/copy.svg" png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/edit_copy.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/edit_copy.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/edit_copy.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/edit_copy.png"/>
         </icon>
         <icon id="edit.cut">
             <theme name="light" svg="icons/edit/cut.svg"/>
@@ -370,8 +370,8 @@
             <theme name="dark" svg="icons/edit/delete.svg"/>
         </icon>
         <icon id="edit.paste">
-            <theme name="light" svg="icons/edit/paste.svg"/>
-            <theme name="dark" svg="icons/edit/paste.svg"/>
+            <theme name="light" svg="icons/edit/paste.svg" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/edit_paste.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/edit_paste.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/edit_paste.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/edit_paste.png"/>
+            <theme name="dark" svg="icons/edit/paste.svg" png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/edit_paste.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/edit_paste.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/edit_paste.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/edit_paste.png"/>
         </icon>
         <icon id="edit.redo">
             <theme name="light" svg="icons/edit/redo.svg"/>
@@ -450,256 +450,256 @@
             <theme name="dark" svg="icons/measure/section.svg"/>
         </icon>
         <icon id="model.auto_round">
-            <theme name="light" svg="icons/model/auto_round.svg"/>
-            <theme name="dark" svg="icons/model/auto_round.svg"/>
+            <theme name="light" svg="icons/model/auto_round.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_round_auto.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_round_auto.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_round_auto.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_round_auto.png"/>
+            <theme name="dark" svg="icons/model/auto_round.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_round_auto.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_round_auto.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_round_auto.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_round_auto.png"/>
         </icon>
         <icon id="model.blend">
-            <theme name="light" svg="icons/model/blend.svg"/>
-            <theme name="dark" svg="icons/model/blend.svg"/>
+            <theme name="light" svg="icons/model/blend.svg" png16=":/Ribbon/part/model/grp_model_shapes/light/png/16/model_blend.png" png32=":/Ribbon/part/model/grp_model_shapes/light/png/32/model_blend.png" png48=":/Ribbon/part/model/grp_model_shapes/light/png/48/model_blend.png" png64=":/Ribbon/part/model/grp_model_shapes/light/png/64/model_blend.png"/>
+            <theme name="dark" svg="icons/model/blend.svg" png16=":/Ribbon/part/model/grp_model_shapes/dark/png/16/model_blend.png" png32=":/Ribbon/part/model/grp_model_shapes/dark/png/32/model_blend.png" png48=":/Ribbon/part/model/grp_model_shapes/dark/png/48/model_blend.png" png64=":/Ribbon/part/model/grp_model_shapes/dark/png/64/model_blend.png"/>
         </icon>
         <icon id="model.chamfer">
-            <theme name="light" svg="icons/model/chamfer.svg"/>
-            <theme name="dark" svg="icons/model/chamfer.svg"/>
+            <theme name="light" svg="icons/model/chamfer.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_chamfer.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_chamfer.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_chamfer.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_chamfer.png"/>
+            <theme name="dark" svg="icons/model/chamfer.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_chamfer.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_chamfer.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_chamfer.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_chamfer.png"/>
         </icon>
         <icon id="model.collapse">
-            <theme name="light" svg="icons/model/collapse.svg"/>
-            <theme name="dark" svg="icons/model/collapse.svg"/>
+            <theme name="light" svg="icons/model/collapse.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_project_collapse.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_project_collapse.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_project_collapse.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_project_collapse.png"/>
+            <theme name="dark" svg="icons/model/collapse.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_project_collapse.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_project_collapse.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_project_collapse.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_project_collapse.png"/>
         </icon>
         <icon id="model.copy_from">
-            <theme name="light" svg="icons/model/copy_from.svg"/>
-            <theme name="dark" svg="icons/model/copy_from.svg"/>
+            <theme name="light" svg="icons/model/copy_from.svg" png16=":/Ribbon/part/model/grp_model_getData/light/png/16/model_getData_copyFrom.png" png32=":/Ribbon/part/model/grp_model_getData/light/png/32/model_getData_copyFrom.png" png48=":/Ribbon/part/model/grp_model_getData/light/png/48/model_getData_copyFrom.png" png64=":/Ribbon/part/model/grp_model_getData/light/png/64/model_getData_copyFrom.png"/>
+            <theme name="dark" svg="icons/model/copy_from.svg" png16=":/Ribbon/part/model/grp_model_getData/dark/png/16/model_getData_copyFrom.png" png32=":/Ribbon/part/model/grp_model_getData/dark/png/32/model_getData_copyFrom.png" png48=":/Ribbon/part/model/grp_model_getData/dark/png/48/model_getData_copyFrom.png" png64=":/Ribbon/part/model/grp_model_getData/dark/png/64/model_getData_copyFrom.png"/>
         </icon>
         <icon id="model.copy_geometry">
-            <theme name="light" svg="icons/model/copy_geometry.svg"/>
-            <theme name="dark" svg="icons/model/copy_geometry.svg"/>
+            <theme name="light" svg="icons/model/copy_geometry.svg" png16=":/Ribbon/part/model/grp_model_getData/light/png/16/model_getData_copyGeometry.png" png32=":/Ribbon/part/model/grp_model_getData/light/png/32/model_getData_copyGeometry.png" png48=":/Ribbon/part/model/grp_model_getData/light/png/48/model_getData_copyGeometry.png" png64=":/Ribbon/part/model/grp_model_getData/light/png/64/model_getData_copyGeometry.png"/>
+            <theme name="dark" svg="icons/model/copy_geometry.svg" png16=":/Ribbon/part/model/grp_model_getData/dark/png/16/model_getData_copyGeometry.png" png32=":/Ribbon/part/model/grp_model_getData/dark/png/32/model_getData_copyGeometry.png" png48=":/Ribbon/part/model/grp_model_getData/dark/png/48/model_getData_copyGeometry.png" png64=":/Ribbon/part/model/grp_model_getData/dark/png/64/model_getData_copyGeometry.png"/>
         </icon>
         <icon id="model.corner_chamfer">
-            <theme name="light" svg="icons/model/corner_chamfer.svg"/>
-            <theme name="dark" svg="icons/model/corner_chamfer.svg"/>
+            <theme name="light" svg="icons/model/corner_chamfer.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_chamfer_corner.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_chamfer_corner.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_chamfer_corner.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_chamfer_corner.png"/>
+            <theme name="dark" svg="icons/model/corner_chamfer.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_chamfer_corner.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_chamfer_corner.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_chamfer_corner.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_chamfer_corner.png"/>
         </icon>
         <icon id="model.cosmetic_groove">
-            <theme name="light" svg="icons/model/cosmetic_groove.svg"/>
-            <theme name="dark" svg="icons/model/cosmetic_groove.svg"/>
+            <theme name="light" svg="icons/model/cosmetic_groove.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_cosmetic_groove.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_cosmetic_groove.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_cosmetic_groove.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_cosmetic_groove.png"/>
+            <theme name="dark" svg="icons/model/cosmetic_groove.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_cosmetic_groove.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_cosmetic_groove.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_cosmetic_groove.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_cosmetic_groove.png"/>
         </icon>
         <icon id="model.cosmetic_sketch">
-            <theme name="light" svg="icons/model/cosmetic_sketch.svg"/>
-            <theme name="dark" svg="icons/model/cosmetic_sketch.svg"/>
+            <theme name="light" svg="icons/model/cosmetic_sketch.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_cosmetic_sketch.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_cosmetic_sketch.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_cosmetic_sketch.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_cosmetic_sketch.png"/>
+            <theme name="dark" svg="icons/model/cosmetic_sketch.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_cosmetic_sketch.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_cosmetic_sketch.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_cosmetic_sketch.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_cosmetic_sketch.png"/>
         </icon>
         <icon id="model.cosmetic_thread">
-            <theme name="light" svg="icons/model/cosmetic_thread.svg"/>
-            <theme name="dark" svg="icons/model/cosmetic_thread.svg"/>
+            <theme name="light" svg="icons/model/cosmetic_thread.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_cosmetic_thread.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_cosmetic_thread.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_cosmetic_thread.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_cosmetic_thread.png"/>
+            <theme name="dark" svg="icons/model/cosmetic_thread.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_cosmetic_thread.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_cosmetic_thread.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_cosmetic_thread.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_cosmetic_thread.png"/>
         </icon>
         <icon id="model.delete">
-            <theme name="light" svg="icons/model/delete.svg"/>
-            <theme name="dark" svg="icons/model/delete.svg"/>
+            <theme name="light" svg="icons/model/delete.svg" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_delete.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_delete.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_delete.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_delete.png"/>
+            <theme name="dark" svg="icons/model/delete.svg" png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_delete.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_delete.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_delete.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_delete.png"/>
         </icon>
         <icon id="model.designated_area">
-            <theme name="light" svg="icons/model/designated_area.svg"/>
-            <theme name="dark" svg="icons/model/designated_area.svg"/>
+            <theme name="light" svg="icons/model/designated_area.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_area_designated.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_area_designated.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_area_designated.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_area_designated.png"/>
+            <theme name="dark" svg="icons/model/designated_area.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_area_designated.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_area_designated.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_area_designated.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_area_designated.png"/>
         </icon>
         <icon id="model.draft">
-            <theme name="light" svg="icons/model/draft.svg"/>
-            <theme name="dark" svg="icons/model/draft.svg"/>
+            <theme name="light" svg="icons/model/draft.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_draft.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_draft.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_draft.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_draft.png"/>
+            <theme name="dark" svg="icons/model/draft.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_draft.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_draft.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_draft.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_draft.png"/>
         </icon>
         <icon id="model.ecad_area">
-            <theme name="light" svg="icons/model/ecad_area.svg"/>
-            <theme name="dark" svg="icons/model/ecad_area.svg"/>
+            <theme name="light" svg="icons/model/ecad_area.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_area_ecad.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_area_ecad.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_area_ecad.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_area_ecad.png"/>
+            <theme name="dark" svg="icons/model/ecad_area.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_area_ecad.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_area_ecad.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_area_ecad.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_area_ecad.png"/>
         </icon>
         <icon id="model.edge_chamfer">
-            <theme name="light" svg="icons/model/edge_chamfer.svg"/>
-            <theme name="dark" svg="icons/model/edge_chamfer.svg"/>
+            <theme name="light" svg="icons/model/edge_chamfer.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_chamfer_edge.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_chamfer_edge.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_chamfer_edge.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_chamfer_edge.png"/>
+            <theme name="dark" svg="icons/model/edge_chamfer.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_chamfer_edge.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_chamfer_edge.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_chamfer_edge.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_chamfer_edge.png"/>
         </icon>
         <icon id="model.extend">
-            <theme name="light" svg="icons/model/extend.svg"/>
-            <theme name="dark" svg="icons/model/extend.svg"/>
+            <theme name="light" svg="icons/model/extend.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_extend.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_extend.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_extend.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_extend.png"/>
+            <theme name="dark" svg="icons/model/extend.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_extend.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_extend.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_extend.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_extend.png"/>
         </icon>
         <icon id="model.extrude">
-            <theme name="light" svg="icons/model/extrude.svg"/>
-            <theme name="dark" svg="icons/model/extrude.svg"/>
+            <theme name="light" svg="icons/model/extrude.svg" png16=":/Ribbon/part/model/grp_model_shapes/light/png/16/model_extrude.png" png32=":/Ribbon/part/model/grp_model_shapes/light/png/32/model_extrude.png" png48=":/Ribbon/part/model/grp_model_shapes/light/png/48/model_extrude.png" png64=":/Ribbon/part/model/grp_model_shapes/light/png/64/model_extrude.png"/>
+            <theme name="dark" svg="icons/model/extrude.svg" png16=":/Ribbon/part/model/grp_model_shapes/dark/png/16/model_extrude.png" png32=":/Ribbon/part/model/grp_model_shapes/dark/png/32/model_extrude.png" png48=":/Ribbon/part/model/grp_model_shapes/dark/png/48/model_extrude.png" png64=":/Ribbon/part/model/grp_model_shapes/dark/png/64/model_extrude.png"/>
         </icon>
         <icon id="model.feature_delete">
             <theme name="light" svg="icons/model/feature_delete.svg"/>
             <theme name="dark" svg="icons/model/feature_delete.svg"/>
         </icon>
         <icon id="model.feature_suppress">
-            <theme name="light" svg="icons/model/feature_suppress.svg"/>
-            <theme name="dark" svg="icons/model/feature_suppress.svg"/>
+            <theme name="light" svg="icons/model/feature_suppress.svg" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_feature_suppress.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_feature_suppress.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_feature_suppress.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_feature_suppress.png"/>
+            <theme name="dark" svg="icons/model/feature_suppress.svg" png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_feature_suppress.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_feature_suppress.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_feature_suppress.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_feature_suppress.png"/>
         </icon>
         <icon id="model.feature_unsuppress">
             <theme name="light" svg="icons/model/feature_unsuppress.svg"/>
             <theme name="dark" svg="icons/model/feature_unsuppress.svg"/>
         </icon>
         <icon id="model.flip_normal">
-            <theme name="light" svg="icons/model/flip_normal.svg"/>
-            <theme name="dark" svg="icons/model/flip_normal.svg"/>
+            <theme name="light" svg="icons/model/flip_normal.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_project_flipNormal.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_project_flipNormal.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_project_flipNormal.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_project_flipNormal.png"/>
+            <theme name="dark" svg="icons/model/flip_normal.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_project_flipNormal.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_project_flipNormal.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_project_flipNormal.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_project_flipNormal.png"/>
         </icon>
         <icon id="model.geometry_pattern">
-            <theme name="light" svg="icons/model/geometry_pattern.svg"/>
-            <theme name="dark" svg="icons/model/geometry_pattern.svg"/>
+            <theme name="light" svg="icons/model/geometry_pattern.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_pattern_geometry.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_pattern_geometry.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_pattern_geometry.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_pattern_geometry.png"/>
+            <theme name="dark" svg="icons/model/geometry_pattern.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_pattern_geometry.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_pattern_geometry.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_pattern_geometry.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_pattern_geometry.png"/>
         </icon>
         <icon id="model.helical_sweep">
-            <theme name="light" svg="icons/model/helical_sweep.svg"/>
-            <theme name="dark" svg="icons/model/helical_sweep.svg"/>
+            <theme name="light" svg="icons/model/helical_sweep.svg" png16=":/Ribbon/part/model/grp_model_shapes/light/png/16/model_sweep_helical.png" png32=":/Ribbon/part/model/grp_model_shapes/light/png/32/model_sweep_helical.png" png48=":/Ribbon/part/model/grp_model_shapes/light/png/48/model_sweep_helical.png" png64=":/Ribbon/part/model/grp_model_shapes/light/png/64/model_sweep_helical.png"/>
+            <theme name="dark" svg="icons/model/helical_sweep.svg" png16=":/Ribbon/part/model/grp_model_shapes/dark/png/16/model_sweep_helical.png" png32=":/Ribbon/part/model/grp_model_shapes/dark/png/32/model_sweep_helical.png" png48=":/Ribbon/part/model/grp_model_shapes/dark/png/48/model_sweep_helical.png" png64=":/Ribbon/part/model/grp_model_shapes/dark/png/64/model_sweep_helical.png"/>
         </icon>
         <icon id="model.hole">
-            <theme name="light" svg="icons/model/hole.svg"/>
-            <theme name="dark" svg="icons/model/hole.svg"/>
+            <theme name="light" svg="icons/model/hole.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_hole.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_hole.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_hole.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_hole.png"/>
+            <theme name="dark" svg="icons/model/hole.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_hole.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_hole.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_hole.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_hole.png"/>
         </icon>
         <icon id="model.import">
-            <theme name="light" svg="icons/model/import.svg"/>
-            <theme name="dark" svg="icons/model/import.svg"/>
+            <theme name="light" svg="icons/model/import.svg" png16=":/Ribbon/part/model/grp_model_getData/light/png/16/model_getData_import.png" png32=":/Ribbon/part/model/grp_model_getData/light/png/32/model_getData_import.png" png48=":/Ribbon/part/model/grp_model_getData/light/png/48/model_getData_import.png" png64=":/Ribbon/part/model/grp_model_getData/light/png/64/model_getData_import.png"/>
+            <theme name="dark" svg="icons/model/import.svg" png16=":/Ribbon/part/model/grp_model_getData/dark/png/16/model_getData_import.png" png32=":/Ribbon/part/model/grp_model_getData/dark/png/32/model_getData_import.png" png48=":/Ribbon/part/model/grp_model_getData/dark/png/48/model_getData_import.png" png64=":/Ribbon/part/model/grp_model_getData/dark/png/64/model_getData_import.png"/>
         </icon>
         <icon id="model.independent_geometry">
-            <theme name="light" svg="icons/model/independent_geometry.svg"/>
-            <theme name="dark" svg="icons/model/independent_geometry.svg"/>
+            <theme name="light" svg="icons/model/independent_geometry.svg" png16=":/Ribbon/part/model/grp_model_getData/light/png/16/model_getData_independentGeometry.png" png32=":/Ribbon/part/model/grp_model_getData/light/png/32/model_getData_independentGeometry.png" png48=":/Ribbon/part/model/grp_model_getData/light/png/48/model_getData_independentGeometry.png" png64=":/Ribbon/part/model/grp_model_getData/light/png/64/model_getData_independentGeometry.png"/>
+            <theme name="dark" svg="icons/model/independent_geometry.svg" png16=":/Ribbon/part/model/grp_model_getData/dark/png/16/model_getData_independentGeometry.png" png32=":/Ribbon/part/model/grp_model_getData/dark/png/32/model_getData_independentGeometry.png" png48=":/Ribbon/part/model/grp_model_getData/dark/png/48/model_getData_independentGeometry.png" png64=":/Ribbon/part/model/grp_model_getData/dark/png/64/model_getData_independentGeometry.png"/>
         </icon>
         <icon id="model.intersect">
-            <theme name="light" svg="icons/model/intersect.svg"/>
-            <theme name="dark" svg="icons/model/intersect.svg"/>
+            <theme name="light" svg="icons/model/intersect.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_intersect.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_intersect.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_intersect.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_intersect.png"/>
+            <theme name="dark" svg="icons/model/intersect.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_intersect.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_intersect.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_intersect.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_intersect.png"/>
         </icon>
         <icon id="model.lattice">
-            <theme name="light" svg="icons/model/lattice.svg"/>
-            <theme name="dark" svg="icons/model/lattice.svg"/>
+            <theme name="light" svg="icons/model/lattice.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_lattice.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_lattice.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_lattice.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_lattice.png"/>
+            <theme name="dark" svg="icons/model/lattice.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_lattice.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_lattice.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_lattice.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_lattice.png"/>
         </icon>
         <icon id="model.layout_feature">
-            <theme name="light" svg="icons/model/layout_feature.svg"/>
-            <theme name="dark" svg="icons/model/layout_feature.svg"/>
+            <theme name="light" svg="icons/model/layout_feature.svg" png16=":/Ribbon/part/model/grp_model_getData/light/png/16/model_getData_layoutFeature.png" png32=":/Ribbon/part/model/grp_model_getData/light/png/32/model_getData_layoutFeature.png" png48=":/Ribbon/part/model/grp_model_getData/light/png/48/model_getData_layoutFeature.png" png64=":/Ribbon/part/model/grp_model_getData/light/png/64/model_getData_layoutFeature.png"/>
+            <theme name="dark" svg="icons/model/layout_feature.svg" png16=":/Ribbon/part/model/grp_model_getData/dark/png/16/model_getData_layoutFeature.png" png32=":/Ribbon/part/model/grp_model_getData/dark/png/32/model_getData_layoutFeature.png" png48=":/Ribbon/part/model/grp_model_getData/dark/png/48/model_getData_layoutFeature.png" png64=":/Ribbon/part/model/grp_model_getData/dark/png/64/model_getData_layoutFeature.png"/>
         </icon>
         <icon id="model.merge">
-            <theme name="light" svg="icons/model/merge.svg"/>
-            <theme name="dark" svg="icons/model/merge.svg"/>
+            <theme name="light" svg="icons/model/merge.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_merge.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_merge.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_merge.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_merge.png"/>
+            <theme name="dark" svg="icons/model/merge.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_merge.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_merge.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_merge.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_merge.png"/>
         </icon>
         <icon id="model.merge_inheritance">
-            <theme name="light" svg="icons/model/merge_inheritance.svg"/>
-            <theme name="dark" svg="icons/model/merge_inheritance.svg"/>
+            <theme name="light" svg="icons/model/merge_inheritance.svg" png16=":/Ribbon/part/model/grp_model_getData/light/png/16/model_getData_mergeInheritance.png" png32=":/Ribbon/part/model/grp_model_getData/light/png/32/model_getData_mergeInheritance.png" png48=":/Ribbon/part/model/grp_model_getData/light/png/48/model_getData_mergeInheritance.png" png64=":/Ribbon/part/model/grp_model_getData/light/png/64/model_getData_mergeInheritance.png"/>
+            <theme name="dark" svg="icons/model/merge_inheritance.svg" png16=":/Ribbon/part/model/grp_model_getData/dark/png/16/model_getData_mergeInheritance.png" png32=":/Ribbon/part/model/grp_model_getData/dark/png/32/model_getData_mergeInheritance.png" png48=":/Ribbon/part/model/grp_model_getData/dark/png/48/model_getData_mergeInheritance.png" png64=":/Ribbon/part/model/grp_model_getData/dark/png/64/model_getData_mergeInheritance.png"/>
         </icon>
         <icon id="model.mirror">
-            <theme name="light" svg="icons/model/mirror.svg"/>
-            <theme name="dark" svg="icons/model/mirror.svg"/>
+            <theme name="light" svg="icons/model/mirror.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_mirror.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_mirror.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_mirror.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_mirror.png"/>
+            <theme name="dark" svg="icons/model/mirror.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_mirror.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_mirror.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_mirror.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_mirror.png"/>
         </icon>
         <icon id="model.offset">
-            <theme name="light" svg="icons/model/offset.svg"/>
-            <theme name="dark" svg="icons/model/offset.svg"/>
+            <theme name="light" svg="icons/model/offset.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_offset.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_offset.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_offset.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_offset.png"/>
+            <theme name="dark" svg="icons/model/offset.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_offset.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_offset.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_offset.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_offset.png"/>
         </icon>
         <icon id="model.pattern">
-            <theme name="light" svg="icons/model/pattern.svg"/>
-            <theme name="dark" svg="icons/model/pattern.svg"/>
+            <theme name="light" svg="icons/model/pattern.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_pattern.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_pattern.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_pattern.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_pattern.png"/>
+            <theme name="dark" svg="icons/model/pattern.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_pattern.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_pattern.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_pattern.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_pattern.png"/>
         </icon>
         <icon id="model.pattern_table">
-            <theme name="light" svg="icons/model/pattern_table.svg"/>
-            <theme name="dark" svg="icons/model/pattern_table.svg"/>
+            <theme name="light" svg="icons/model/pattern_table.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_pattern_table.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_pattern_table.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_pattern_table.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_pattern_table.png"/>
+            <theme name="dark" svg="icons/model/pattern_table.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_pattern_table.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_pattern_table.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_pattern_table.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_pattern_table.png"/>
         </icon>
         <icon id="model.profile_rib">
-            <theme name="light" svg="icons/model/profile_rib.svg"/>
-            <theme name="dark" svg="icons/model/profile_rib.svg"/>
+            <theme name="light" svg="icons/model/profile_rib.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_rib_profile.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_rib_profile.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_rib_profile.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_rib_profile.png"/>
+            <theme name="dark" svg="icons/model/profile_rib.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_rib_profile.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_rib_profile.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_rib_profile.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_rib_profile.png"/>
         </icon>
         <icon id="model.project">
-            <theme name="light" svg="icons/model/project.svg"/>
-            <theme name="dark" svg="icons/model/project.svg"/>
+            <theme name="light" svg="icons/model/project.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_project.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_project.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_project.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_project.png"/>
+            <theme name="dark" svg="icons/model/project.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_project.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_project.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_project.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_project.png"/>
         </icon>
         <icon id="model.project_remove">
-            <theme name="light" svg="icons/model/project_remove.svg"/>
-            <theme name="dark" svg="icons/model/project_remove.svg"/>
+            <theme name="light" svg="icons/model/project_remove.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_project_remove.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_project_remove.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_project_remove.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_project_remove.png"/>
+            <theme name="dark" svg="icons/model/project_remove.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_project_remove.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_project_remove.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_project_remove.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_project_remove.png"/>
         </icon>
         <icon id="model.regenerate">
-            <theme name="light" svg="icons/model/regenerate.svg"/>
-            <theme name="dark" svg="icons/model/regenerate.svg"/>
+            <theme name="light" svg="icons/model/regenerate.svg" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_regenerate.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_regenerate.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_regenerate.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_regenerate.png"/>
+            <theme name="dark" svg="icons/model/regenerate.svg" png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_regenerate.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_regenerate.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_regenerate.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_regenerate.png"/>
         </icon>
         <icon id="model.revolve">
-            <theme name="light" svg="icons/model/revolve.svg"/>
-            <theme name="dark" svg="icons/model/revolve.svg"/>
+            <theme name="light" svg="icons/model/revolve.svg" png16=":/Ribbon/part/model/grp_model_shapes/light/png/16/model_revolve.png" png32=":/Ribbon/part/model/grp_model_shapes/light/png/32/model_revolve.png" png48=":/Ribbon/part/model/grp_model_shapes/light/png/48/model_revolve.png" png64=":/Ribbon/part/model/grp_model_shapes/light/png/64/model_revolve.png"/>
+            <theme name="dark" svg="icons/model/revolve.svg" png16=":/Ribbon/part/model/grp_model_shapes/dark/png/16/model_revolve.png" png32=":/Ribbon/part/model/grp_model_shapes/dark/png/32/model_revolve.png" png48=":/Ribbon/part/model/grp_model_shapes/dark/png/48/model_revolve.png" png64=":/Ribbon/part/model/grp_model_shapes/dark/png/64/model_revolve.png"/>
         </icon>
         <icon id="model.rib">
-            <theme name="light" svg="icons/model/rib.svg"/>
-            <theme name="dark" svg="icons/model/rib.svg"/>
+            <theme name="light" svg="icons/model/rib.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_rib.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_rib.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_rib.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_rib.png"/>
+            <theme name="dark" svg="icons/model/rib.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_rib.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_rib.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_rib.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_rib.png"/>
         </icon>
         <icon id="model.rotational_blend">
-            <theme name="light" svg="icons/model/rotational_blend.svg"/>
-            <theme name="dark" svg="icons/model/rotational_blend.svg"/>
+            <theme name="light" svg="icons/model/rotational_blend.svg" png16=":/Ribbon/part/model/grp_model_shapes/light/png/16/model_blend_rotational.png" png32=":/Ribbon/part/model/grp_model_shapes/light/png/32/model_blend_rotational.png" png48=":/Ribbon/part/model/grp_model_shapes/light/png/48/model_blend_rotational.png" png64=":/Ribbon/part/model/grp_model_shapes/light/png/64/model_blend_rotational.png"/>
+            <theme name="dark" svg="icons/model/rotational_blend.svg" png16=":/Ribbon/part/model/grp_model_shapes/dark/png/16/model_blend_rotational.png" png32=":/Ribbon/part/model/grp_model_shapes/dark/png/32/model_blend_rotational.png" png48=":/Ribbon/part/model/grp_model_shapes/dark/png/48/model_blend_rotational.png" png64=":/Ribbon/part/model/grp_model_shapes/dark/png/64/model_blend_rotational.png"/>
         </icon>
         <icon id="model.round">
-            <theme name="light" svg="icons/model/round.svg"/>
-            <theme name="dark" svg="icons/model/round.svg"/>
+            <theme name="light" svg="icons/model/round.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_round.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_round.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_round.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_round.png"/>
+            <theme name="dark" svg="icons/model/round.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_round.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_round.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_round.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_round.png"/>
         </icon>
         <icon id="model.shell">
-            <theme name="light" svg="icons/model/shell.svg"/>
-            <theme name="dark" svg="icons/model/shell.svg"/>
+            <theme name="light" svg="icons/model/shell.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_shell.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_shell.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_shell.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_shell.png"/>
+            <theme name="dark" svg="icons/model/shell.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_shell.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_shell.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_shell.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_shell.png"/>
         </icon>
         <icon id="model.shrinkwrap">
-            <theme name="light" svg="icons/model/shrinkwrap.svg"/>
-            <theme name="dark" svg="icons/model/shrinkwrap.svg"/>
+            <theme name="light" svg="icons/model/shrinkwrap.svg" png16=":/Ribbon/part/model/grp_model_getData/light/png/16/model_getData_shrinkwrap.png" png32=":/Ribbon/part/model/grp_model_getData/light/png/32/model_getData_shrinkwrap.png" png48=":/Ribbon/part/model/grp_model_getData/light/png/48/model_getData_shrinkwrap.png" png64=":/Ribbon/part/model/grp_model_getData/light/png/64/model_getData_shrinkwrap.png"/>
+            <theme name="dark" svg="icons/model/shrinkwrap.svg" png16=":/Ribbon/part/model/grp_model_getData/dark/png/16/model_getData_shrinkwrap.png" png32=":/Ribbon/part/model/grp_model_getData/dark/png/32/model_getData_shrinkwrap.png" png48=":/Ribbon/part/model/grp_model_getData/dark/png/48/model_getData_shrinkwrap.png" png64=":/Ribbon/part/model/grp_model_getData/dark/png/64/model_getData_shrinkwrap.png"/>
         </icon>
         <icon id="model.solidify">
-            <theme name="light" svg="icons/model/solidify.svg"/>
-            <theme name="dark" svg="icons/model/solidify.svg"/>
+            <theme name="light" svg="icons/model/solidify.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_solidify.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_solidify.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_solidify.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_solidify.png"/>
+            <theme name="dark" svg="icons/model/solidify.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_solidify.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_solidify.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_solidify.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_solidify.png"/>
         </icon>
         <icon id="model.spiral_bend">
             <theme name="light" svg="icons/model/spiral_bend.svg"/>
             <theme name="dark" svg="icons/model/spiral_bend.svg"/>
         </icon>
         <icon id="model.split_surface">
-            <theme name="light" svg="icons/model/split_surface.svg"/>
-            <theme name="dark" svg="icons/model/split_surface.svg"/>
+            <theme name="light" svg="icons/model/split_surface.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_project_splitSurface.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_project_splitSurface.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_project_splitSurface.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_project_splitSurface.png"/>
+            <theme name="dark" svg="icons/model/split_surface.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_project_splitSurface.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_project_splitSurface.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_project_splitSurface.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_project_splitSurface.png"/>
         </icon>
         <icon id="model.sweep">
-            <theme name="light" svg="icons/model/sweep.svg"/>
-            <theme name="dark" svg="icons/model/sweep.svg"/>
+            <theme name="light" svg="icons/model/sweep.svg" png16=":/Ribbon/part/model/grp_model_shapes/light/png/16/model_sweep.png" png32=":/Ribbon/part/model/grp_model_shapes/light/png/32/model_sweep.png" png48=":/Ribbon/part/model/grp_model_shapes/light/png/48/model_sweep.png" png64=":/Ribbon/part/model/grp_model_shapes/light/png/64/model_sweep.png"/>
+            <theme name="dark" svg="icons/model/sweep.svg" png16=":/Ribbon/part/model/grp_model_shapes/dark/png/16/model_sweep.png" png32=":/Ribbon/part/model/grp_model_shapes/dark/png/32/model_sweep.png" png48=":/Ribbon/part/model/grp_model_shapes/dark/png/48/model_sweep.png" png64=":/Ribbon/part/model/grp_model_shapes/dark/png/64/model_sweep.png"/>
         </icon>
         <icon id="model.sweep_blend">
-            <theme name="light" svg="icons/model/sweep_blend.svg"/>
-            <theme name="dark" svg="icons/model/sweep_blend.svg"/>
+            <theme name="light" svg="icons/model/sweep_blend.svg" png16=":/Ribbon/part/model/grp_model_shapes/light/png/16/model_sweepBlend.png" png32=":/Ribbon/part/model/grp_model_shapes/light/png/32/model_sweepBlend.png" png48=":/Ribbon/part/model/grp_model_shapes/light/png/48/model_sweepBlend.png" png64=":/Ribbon/part/model/grp_model_shapes/light/png/64/model_sweepBlend.png"/>
+            <theme name="dark" svg="icons/model/sweep_blend.svg" png16=":/Ribbon/part/model/grp_model_shapes/dark/png/16/model_sweepBlend.png" png32=":/Ribbon/part/model/grp_model_shapes/dark/png/32/model_sweepBlend.png" png48=":/Ribbon/part/model/grp_model_shapes/dark/png/48/model_sweepBlend.png" png64=":/Ribbon/part/model/grp_model_shapes/dark/png/64/model_sweepBlend.png"/>
         </icon>
         <icon id="model.thicken">
-            <theme name="light" svg="icons/model/thicken.svg"/>
-            <theme name="dark" svg="icons/model/thicken.svg"/>
+            <theme name="light" svg="icons/model/thicken.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_thicken.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_thicken.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_thicken.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_thicken.png"/>
+            <theme name="dark" svg="icons/model/thicken.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_thicken.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_thicken.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_thicken.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_thicken.png"/>
         </icon>
         <icon id="model.toroidal_bend">
-            <theme name="light" svg="icons/model/toroidal_bend.svg"/>
-            <theme name="dark" svg="icons/model/toroidal_bend.svg"/>
+            <theme name="light" svg="icons/model/toroidal_bend.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_bend_toroidal.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_bend_toroidal.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_bend_toroidal.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_bend_toroidal.png"/>
+            <theme name="dark" svg="icons/model/toroidal_bend.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_bend_toroidal.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_bend_toroidal.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_bend_toroidal.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_bend_toroidal.png"/>
         </icon>
         <icon id="model.trajectory_rib">
-            <theme name="light" svg="icons/model/trajectory_rib.svg"/>
-            <theme name="dark" svg="icons/model/trajectory_rib.svg"/>
+            <theme name="light" svg="icons/model/trajectory_rib.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_rib_trajectory.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_rib_trajectory.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_rib_trajectory.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_rib_trajectory.png"/>
+            <theme name="dark" svg="icons/model/trajectory_rib.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_rib_trajectory.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_rib_trajectory.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_rib_trajectory.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_rib_trajectory.png"/>
         </icon>
         <icon id="model.trim">
-            <theme name="light" svg="icons/model/trim.svg"/>
-            <theme name="dark" svg="icons/model/trim.svg"/>
+            <theme name="light" svg="icons/model/trim.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_trim.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_trim.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_trim.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_trim.png"/>
+            <theme name="dark" svg="icons/model/trim.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_trim.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_trim.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_trim.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_trim.png"/>
         </icon>
         <icon id="model.user_defined_feature">
-            <theme name="light" svg="icons/model/user_defined_feature.svg"/>
-            <theme name="dark" svg="icons/model/user_defined_feature.svg"/>
+            <theme name="light" svg="icons/model/user_defined_feature.svg" png16=":/Ribbon/part/model/grp_model_getData/light/png/16/model_getData_userDefinedFeature.png" png32=":/Ribbon/part/model/grp_model_getData/light/png/32/model_getData_userDefinedFeature.png" png48=":/Ribbon/part/model/grp_model_getData/light/png/48/model_getData_userDefinedFeature.png" png64=":/Ribbon/part/model/grp_model_getData/light/png/64/model_getData_userDefinedFeature.png"/>
+            <theme name="dark" svg="icons/model/user_defined_feature.svg" png16=":/Ribbon/part/model/grp_model_getData/dark/png/16/model_getData_userDefinedFeature.png" png32=":/Ribbon/part/model/grp_model_getData/dark/png/32/model_getData_userDefinedFeature.png" png48=":/Ribbon/part/model/grp_model_getData/dark/png/48/model_getData_userDefinedFeature.png" png64=":/Ribbon/part/model/grp_model_getData/dark/png/64/model_getData_userDefinedFeature.png"/>
         </icon>
         <icon id="model.variable_pull_draft">
-            <theme name="light" svg="icons/model/variable_pull_draft.svg"/>
-            <theme name="dark" svg="icons/model/variable_pull_draft.svg"/>
+            <theme name="light" svg="icons/model/variable_pull_draft.svg" png16=":/Ribbon/part/model/grp_model_engineering/light/png/16/model_draft_variablePullDirection.png" png32=":/Ribbon/part/model/grp_model_engineering/light/png/32/model_draft_variablePullDirection.png" png48=":/Ribbon/part/model/grp_model_engineering/light/png/48/model_draft_variablePullDirection.png" png64=":/Ribbon/part/model/grp_model_engineering/light/png/64/model_draft_variablePullDirection.png"/>
+            <theme name="dark" svg="icons/model/variable_pull_draft.svg" png16=":/Ribbon/part/model/grp_model_engineering/dark/png/16/model_draft_variablePullDirection.png" png32=":/Ribbon/part/model/grp_model_engineering/dark/png/32/model_draft_variablePullDirection.png" png48=":/Ribbon/part/model/grp_model_engineering/dark/png/48/model_draft_variablePullDirection.png" png64=":/Ribbon/part/model/grp_model_engineering/dark/png/64/model_draft_variablePullDirection.png"/>
         </icon>
         <icon id="model.volume_helical_sweep">
-            <theme name="light" svg="icons/model/volume_helical_sweep.svg"/>
-            <theme name="dark" svg="icons/model/volume_helical_sweep.svg"/>
+            <theme name="light" svg="icons/model/volume_helical_sweep.svg" png16=":/Ribbon/part/model/grp_model_shapes/light/png/16/model_sweep_volumeHelical.png" png32=":/Ribbon/part/model/grp_model_shapes/light/png/32/model_sweep_volumeHelical.png" png48=":/Ribbon/part/model/grp_model_shapes/light/png/48/model_sweep_volumeHelical.png" png64=":/Ribbon/part/model/grp_model_shapes/light/png/64/model_sweep_volumeHelical.png"/>
+            <theme name="dark" svg="icons/model/volume_helical_sweep.svg" png16=":/Ribbon/part/model/grp_model_shapes/dark/png/16/model_sweep_volumeHelical.png" png32=":/Ribbon/part/model/grp_model_shapes/dark/png/32/model_sweep_volumeHelical.png" png48=":/Ribbon/part/model/grp_model_shapes/dark/png/48/model_sweep_volumeHelical.png" png64=":/Ribbon/part/model/grp_model_shapes/dark/png/64/model_sweep_volumeHelical.png"/>
         </icon>
         <icon id="model.wrap">
-            <theme name="light" svg="icons/model/wrap.svg"/>
-            <theme name="dark" svg="icons/model/wrap.svg"/>
+            <theme name="light" svg="icons/model/wrap.svg" png16=":/Ribbon/part/model/grp_model_editing/light/png/16/model_project_wrap.png" png32=":/Ribbon/part/model/grp_model_editing/light/png/32/model_project_wrap.png" png48=":/Ribbon/part/model/grp_model_editing/light/png/48/model_project_wrap.png" png64=":/Ribbon/part/model/grp_model_editing/light/png/64/model_project_wrap.png"/>
+            <theme name="dark" svg="icons/model/wrap.svg" png16=":/Ribbon/part/model/grp_model_editing/dark/png/16/model_project_wrap.png" png32=":/Ribbon/part/model/grp_model_editing/dark/png/32/model_project_wrap.png" png48=":/Ribbon/part/model/grp_model_editing/dark/png/48/model_project_wrap.png" png64=":/Ribbon/part/model/grp_model_editing/dark/png/64/model_project_wrap.png"/>
         </icon>
         <icon id="model_intent.component_interface">
-            <theme name="light" svg="icons/model_intent/component_interface.svg"/>
-            <theme name="dark" svg="icons/model_intent/component_interface.svg"/>
+            <theme name="light" svg="icons/model_intent/component_interface.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/light/png/16/modelIntent_componentInterface.png" png32=":/Ribbon/part/model/grp_model_modelIntent/light/png/32/modelIntent_componentInterface.png" png48=":/Ribbon/part/model/grp_model_modelIntent/light/png/48/modelIntent_componentInterface.png" png64=":/Ribbon/part/model/grp_model_modelIntent/light/png/64/modelIntent_componentInterface.png"/>
+            <theme name="dark" svg="icons/model_intent/component_interface.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_componentInterface.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_componentInterface.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_componentInterface.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_componentInterface.png"/>
         </icon>
         <icon id="model_intent.family_table">
-            <theme name="light" svg="icons/model_intent/family_table.svg"/>
-            <theme name="dark" svg="icons/model_intent/family_table.svg"/>
+            <theme name="light" svg="icons/model_intent/family_table.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/light/png/16/modelIntent_familyTable.png" png32=":/Ribbon/part/model/grp_model_modelIntent/light/png/32/modelIntent_familyTable.png" png48=":/Ribbon/part/model/grp_model_modelIntent/light/png/48/modelIntent_familyTable.png" png64=":/Ribbon/part/model/grp_model_modelIntent/light/png/64/modelIntent_familyTable.png"/>
+            <theme name="dark" svg="icons/model_intent/family_table.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_familyTable.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_familyTable.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_familyTable.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_familyTable.png"/>
         </icon>
         <icon id="model_intent.parameters">
-            <theme name="light" svg="icons/model_intent/parameters.svg"/>
-            <theme name="dark" svg="icons/model_intent/parameters.svg"/>
+            <theme name="light" svg="icons/model_intent/parameters.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/light/png/16/modelIntent_parameters.png" png32=":/Ribbon/part/model/grp_model_modelIntent/light/png/32/modelIntent_parameters.png" png48=":/Ribbon/part/model/grp_model_modelIntent/light/png/48/modelIntent_parameters.png" png64=":/Ribbon/part/model/grp_model_modelIntent/light/png/64/modelIntent_parameters.png"/>
+            <theme name="dark" svg="icons/model_intent/parameters.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_parameters.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_parameters.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_parameters.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_parameters.png"/>
         </icon>
         <icon id="model_intent.publish_geometry">
-            <theme name="light" svg="icons/model_intent/publish_geometry.svg"/>
-            <theme name="dark" svg="icons/model_intent/publish_geometry.svg"/>
+            <theme name="light" svg="icons/model_intent/publish_geometry.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/light/png/16/modelIntent_publishGeometry.png" png32=":/Ribbon/part/model/grp_model_modelIntent/light/png/32/modelIntent_publishGeometry.png" png48=":/Ribbon/part/model/grp_model_modelIntent/light/png/48/modelIntent_publishGeometry.png" png64=":/Ribbon/part/model/grp_model_modelIntent/light/png/64/modelIntent_publishGeometry.png"/>
+            <theme name="dark" svg="icons/model_intent/publish_geometry.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_publishGeometry.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_publishGeometry.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_publishGeometry.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_publishGeometry.png"/>
         </icon>
         <icon id="model_intent.switch_dimensions">
-            <theme name="light" svg="icons/model_intent/switch_dimensions.svg"/>
-            <theme name="dark" svg="icons/model_intent/switch_dimensions.svg"/>
+            <theme name="light" svg="icons/model_intent/switch_dimensions.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/light/png/16/modelIntent_switchDimensions.png" png32=":/Ribbon/part/model/grp_model_modelIntent/light/png/32/modelIntent_switchDimensions.png" png48=":/Ribbon/part/model/grp_model_modelIntent/light/png/48/modelIntent_switchDimensions.png" png64=":/Ribbon/part/model/grp_model_modelIntent/light/png/64/modelIntent_switchDimensions.png"/>
+            <theme name="dark" svg="icons/model_intent/switch_dimensions.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_switchDimensions.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_switchDimensions.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_switchDimensions.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_switchDimensions.png"/>
         </icon>
         <icon id="select.filter">
             <theme name="light" svg="icons/select/filter.svg"/>
@@ -974,8 +974,8 @@
             <theme name="dark" svg="icons/sketch/modify.svg"/>
         </icon>
         <icon id="sketch.new_sketch">
-            <theme name="light" svg="icons/sketch/new_sketch.svg"/>
-            <theme name="dark" svg="icons/sketch/new_sketch.svg"/>
+            <theme name="light" svg="icons/sketch/new_sketch.svg" png16=":/Ribbon/part/model/grp_model_datum/light/png/16/sketch_new.png" png32=":/Ribbon/part/model/grp_model_datum/light/png/32/sketch_new.png" png48=":/Ribbon/part/model/grp_model_datum/light/png/48/sketch_new.png" png64=":/Ribbon/part/model/grp_model_datum/light/png/64/sketch_new.png"/>
+            <theme name="dark" svg="icons/sketch/new_sketch.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/sketch_new.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/sketch_new.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/sketch_new.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/sketch_new.png"/>
         </icon>
         <icon id="sketch.offset">
             <theme name="light" svg="icons/sketch/offset.svg"/>
@@ -1054,44 +1054,44 @@
             <theme name="dark" svg="icons/sketch/view.svg"/>
         </icon>
         <icon id="surface.blend_tangent">
-            <theme name="light" svg="icons/surface/blend_tangent.svg"/>
-            <theme name="dark" svg="icons/surface/blend_tangent.svg"/>
+            <theme name="light" svg="icons/surface/blend_tangent.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_style_blendTangent.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_style_blendTangent.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_style_blendTangent.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_style_blendTangent.png"/>
+            <theme name="dark" svg="icons/surface/blend_tangent.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_style_blendTangent.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_style_blendTangent.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_style_blendTangent.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_style_blendTangent.png"/>
         </icon>
         <icon id="surface.boundary_blend">
-            <theme name="light" svg="icons/surface/boundary_blend.svg"/>
-            <theme name="dark" svg="icons/surface/boundary_blend.svg"/>
+            <theme name="light" svg="icons/surface/boundary_blend.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_boundaryBlend.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_boundaryBlend.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_boundaryBlend.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_boundaryBlend.png"/>
+            <theme name="dark" svg="icons/surface/boundary_blend.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_boundaryBlend.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_boundaryBlend.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_boundaryBlend.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_boundaryBlend.png"/>
         </icon>
         <icon id="surface.fill">
-            <theme name="light" svg="icons/surface/fill.svg"/>
-            <theme name="dark" svg="icons/surface/fill.svg"/>
+            <theme name="light" svg="icons/surface/fill.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_fill.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_fill.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_fill.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_fill.png"/>
+            <theme name="dark" svg="icons/surface/fill.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_fill.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_fill.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_fill.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_fill.png"/>
         </icon>
         <icon id="surface.flatten_quilt">
-            <theme name="light" svg="icons/surface/flatten_quilt.svg"/>
-            <theme name="dark" svg="icons/surface/flatten_quilt.svg"/>
+            <theme name="light" svg="icons/surface/flatten_quilt.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_style_flattenQuilt.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_style_flattenQuilt.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_style_flattenQuilt.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_style_flattenQuilt.png"/>
+            <theme name="dark" svg="icons/surface/flatten_quilt.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_style_flattenQuilt.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_style_flattenQuilt.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_style_flattenQuilt.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_style_flattenQuilt.png"/>
         </icon>
         <icon id="surface.flatten_quilt_deformation">
-            <theme name="light" svg="icons/surface/flatten_quilt_deformation.svg"/>
-            <theme name="dark" svg="icons/surface/flatten_quilt_deformation.svg"/>
+            <theme name="light" svg="icons/surface/flatten_quilt_deformation.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_style_flattenQuiltDeformation.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_style_flattenQuiltDeformation.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_style_flattenQuiltDeformation.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_style_flattenQuiltDeformation.png"/>
+            <theme name="dark" svg="icons/surface/flatten_quilt_deformation.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_style_flattenQuiltDeformation.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_style_flattenQuiltDeformation.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_style_flattenQuiltDeformation.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_style_flattenQuiltDeformation.png"/>
         </icon>
         <icon id="surface.foreign_surface">
-            <theme name="light" svg="icons/surface/foreign_surface.svg"/>
-            <theme name="dark" svg="icons/surface/foreign_surface.svg"/>
+            <theme name="light" svg="icons/surface/foreign_surface.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_style_foreignSurface.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_style_foreignSurface.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_style_foreignSurface.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_style_foreignSurface.png"/>
+            <theme name="dark" svg="icons/surface/foreign_surface.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_style_foreignSurface.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_style_foreignSurface.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_style_foreignSurface.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_style_foreignSurface.png"/>
         </icon>
         <icon id="surface.freestyle">
-            <theme name="light" svg="icons/surface/freestyle.svg"/>
-            <theme name="dark" svg="icons/surface/freestyle.svg"/>
+            <theme name="light" svg="icons/surface/freestyle.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_freestyle.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_freestyle.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_freestyle.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_freestyle.png"/>
+            <theme name="dark" svg="icons/surface/freestyle.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_freestyle.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_freestyle.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_freestyle.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_freestyle.png"/>
         </icon>
         <icon id="surface.restyle">
-            <theme name="light" svg="icons/surface/restyle.svg"/>
-            <theme name="dark" svg="icons/surface/restyle.svg"/>
+            <theme name="light" svg="icons/surface/restyle.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_style_restyle.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_style_restyle.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_style_restyle.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_style_restyle.png"/>
+            <theme name="dark" svg="icons/surface/restyle.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_style_restyle.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_style_restyle.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_style_restyle.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_style_restyle.png"/>
         </icon>
         <icon id="surface.style">
-            <theme name="light" svg="icons/surface/style.svg"/>
-            <theme name="dark" svg="icons/surface/style.svg"/>
+            <theme name="light" svg="icons/surface/style.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_style.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_style.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_style.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_style.png"/>
+            <theme name="dark" svg="icons/surface/style.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_style.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_style.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_style.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_style.png"/>
         </icon>
         <icon id="surface.vertex_round">
-            <theme name="light" svg="icons/surface/vertex_round.svg"/>
-            <theme name="dark" svg="icons/surface/vertex_round.svg"/>
+            <theme name="light" svg="icons/surface/vertex_round.svg" png16=":/Ribbon/part/model/grp_model_surfaces/light/png/16/surface_style_vertexRound.png" png32=":/Ribbon/part/model/grp_model_surfaces/light/png/32/surface_style_vertexRound.png" png48=":/Ribbon/part/model/grp_model_surfaces/light/png/48/surface_style_vertexRound.png" png64=":/Ribbon/part/model/grp_model_surfaces/light/png/64/surface_style_vertexRound.png"/>
+            <theme name="dark" svg="icons/surface/vertex_round.svg" png16=":/Ribbon/part/model/grp_model_surfaces/dark/png/16/surface_style_vertexRound.png" png32=":/Ribbon/part/model/grp_model_surfaces/dark/png/32/surface_style_vertexRound.png" png48=":/Ribbon/part/model/grp_model_surfaces/dark/png/48/surface_style_vertexRound.png" png64=":/Ribbon/part/model/grp_model_surfaces/dark/png/64/surface_style_vertexRound.png"/>
         </icon>
         <icon id="synchronous.delete_face">
             <theme name="light" svg="icons/synchronous/delete_face.svg"/>
@@ -1193,5 +1193,66 @@
             <theme name="light" svg="icons/window/tile_horizontal.svg"/>
             <theme name="dark" svg="icons/window/tile_horizontal.svg"/>
         </icon>
+
+        <!-- ========================================================= -->
+        <!-- Part Workbench (sd.part) / Model tab PNG icons   -->
+        <!-- Auto-added to satisfy FunctionAreaConfig groups  -->
+        <!-- ========================================================= -->
+
+        <icon id="model.regenerate_all">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_regenerateAll.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_regenerateAll.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_regenerateAll.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_regenerateAll.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_regenerateAll.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_regenerateAll.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_regenerateAll.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_regenerateAll.png"/>
+        </icon>
+
+        <icon id="model.feature_resume">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_feature_resume.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_feature_resume.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_feature_resume.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_feature_resume.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_feature_resume.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_feature_resume.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_feature_resume.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_feature_resume.png"/>
+        </icon>
+
+        <icon id="model.feature_edit_definition">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_feature_editDefinition.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_feature_editDefinition.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_feature_editDefinition.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_feature_editDefinition.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_feature_editDefinition.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_feature_editDefinition.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_feature_editDefinition.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_feature_editDefinition.png"/>
+        </icon>
+
+        <icon id="model.feature_edit_references">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_feature_editReferences.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_feature_editReferences.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_feature_editReferences.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_feature_editReferences.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_feature_editReferences.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_feature_editReferences.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_feature_editReferences.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_feature_editReferences.png"/>
+        </icon>
+
+        <icon id="model.feature_replace_references">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_feature_replaceReferences.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_feature_replaceReferences.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_feature_replaceReferences.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_feature_replaceReferences.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_feature_replaceReferences.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_feature_replaceReferences.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_feature_replaceReferences.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_feature_replaceReferences.png"/>
+        </icon>
+
+        <icon id="model.feature_replace">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_feature_replace.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_feature_replace.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_feature_replace.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_feature_replace.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_feature_replace.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_feature_replace.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_feature_replace.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_feature_replace.png"/>
+        </icon>
+
+        <icon id="model.feature_reorder">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_feature_reorder.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_feature_reorder.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_feature_reorder.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_feature_reorder.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_feature_reorder.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_feature_reorder.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_feature_reorder.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_feature_reorder.png"/>
+        </icon>
+
+        <icon id="model.feature_read_only">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/model_feature_readOnly.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/model_feature_readOnly.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/model_feature_readOnly.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/model_feature_readOnly.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_operations/dark/png/16/model_feature_readOnly.png" png32=":/Ribbon/part/model/grp_model_operations/dark/png/32/model_feature_readOnly.png" png48=":/Ribbon/part/model/grp_model_operations/dark/png/48/model_feature_readOnly.png" png64=":/Ribbon/part/model/grp_model_operations/dark/png/64/model_feature_readOnly.png"/>
+        </icon>
+
+        <icon id="model_intent.program">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_modelIntent/light/png/16/modelIntent_program.png" png32=":/Ribbon/part/model/grp_model_modelIntent/light/png/32/modelIntent_program.png" png48=":/Ribbon/part/model/grp_model_modelIntent/light/png/48/modelIntent_program.png" png64=":/Ribbon/part/model/grp_model_modelIntent/light/png/64/modelIntent_program.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_program.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_program.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_program.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_program.png"/>
+        </icon>
+
+        <icon id="model_intent.designate">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_modelIntent/light/png/16/modelIntent_designate.png" png32=":/Ribbon/part/model/grp_model_modelIntent/light/png/32/modelIntent_designate.png" png48=":/Ribbon/part/model/grp_model_modelIntent/light/png/48/modelIntent_designate.png" png64=":/Ribbon/part/model/grp_model_modelIntent/light/png/64/modelIntent_designate.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_designate.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_designate.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_designate.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_designate.png"/>
+        </icon>
+
+        <icon id="model_intent.declare">
+            <theme name="light" png16=":/Ribbon/part/model/grp_model_modelIntent/light/png/16/modelIntent_declare.png" png32=":/Ribbon/part/model/grp_model_modelIntent/light/png/32/modelIntent_declare.png" png48=":/Ribbon/part/model/grp_model_modelIntent/light/png/48/modelIntent_declare.png" png64=":/Ribbon/part/model/grp_model_modelIntent/light/png/64/modelIntent_declare.png"/>
+            <theme name="dark"  png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_declare.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_declare.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_declare.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_declare.png"/>
+        </icon>
+
     </icon-library>
 </IconLibraryConfig>

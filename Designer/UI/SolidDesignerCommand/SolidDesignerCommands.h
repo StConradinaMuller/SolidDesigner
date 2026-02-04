@@ -44,38 +44,6 @@ namespace sdr
         inline constexpr std::string_view ASM_REPLACECOMPONENT           = "asm.replaceComponent"; // Replace Component
         inline constexpr std::string_view ASM_UNEXPLODE                  = "asm.unexplode"; // Collapse
 
-        // === Category: curve ===
-        inline constexpr std::string_view CURVE_ARC                      = "curve.arc"; // Arc
-        inline constexpr std::string_view CURVE_ARC_3POINTTANGENTEND     = "curve.arc.3PointTangentEnd"; // 3-Point / Tangent End
-        inline constexpr std::string_view CURVE_ARC_3TANGENT             = "curve.arc.3Tangent"; // 3 Tangent
-        inline constexpr std::string_view CURVE_ARC_CENTERANDENDS        = "curve.arc.centerAndEnds"; // Center and Ends
-        inline constexpr std::string_view CURVE_ARC_CONCENTRIC           = "curve.arc.concentric"; // Concentric
-        inline constexpr std::string_view CURVE_ARC_CONIC                = "curve.arc.conic"; // Conic
-        inline constexpr std::string_view CURVE_CENTERLINE               = "curve.centerline"; // Centerline
-        inline constexpr std::string_view CURVE_CIRCLE                   = "curve.circle"; // Circle
-        inline constexpr std::string_view CURVE_CIRCLE_3POINT            = "curve.circle.3Point"; // 3 Point
-        inline constexpr std::string_view CURVE_CIRCLE_3TANGENT          = "curve.circle.3Tangent"; // 3 Tangent
-        inline constexpr std::string_view CURVE_CIRCLE_CENTERANDPOINT    = "curve.circle.centerAndPoint"; // Center and Point
-        inline constexpr std::string_view CURVE_CIRCLE_CONCENTRIC        = "curve.circle.concentric"; // Concentric
-        inline constexpr std::string_view CURVE_ELLIPSE                  = "curve.ellipse"; // Ellipse
-        inline constexpr std::string_view CURVE_ELLIPSE_AXISANDENDS      = "curve.ellipse.axisAndEnds"; // Axis and Ends Ellipse
-        inline constexpr std::string_view CURVE_ELLIPSE_CENTERANDAXIS    = "curve.ellipse.centerAndAxis"; // Center and Axis Ellipse
-        inline constexpr std::string_view CURVE_EXTEND                   = "curve.extend"; // Extend Curve
-        inline constexpr std::string_view CURVE_FILLET                   = "curve.fillet"; // Curve Fillet
-        inline constexpr std::string_view CURVE_FITSPLINE                = "curve.fitSpline"; // Fit Spline
-        inline constexpr std::string_view CURVE_JOIN                     = "curve.join"; // Join Curves
-        inline constexpr std::string_view CURVE_LINE                     = "curve.line"; // Line
-        inline constexpr std::string_view CURVE_OFFSET                   = "curve.offset"; // Offset Curve
-        inline constexpr std::string_view CURVE_POINT                    = "curve.point"; // Point
-        inline constexpr std::string_view CURVE_RECTANGLE                = "curve.rectangle"; // Rectangle
-        inline constexpr std::string_view CURVE_RECTANGLE_CENTER         = "curve.rectangle.center"; // Center Rectangle
-        inline constexpr std::string_view CURVE_RECTANGLE_CORNER         = "curve.rectangle.corner"; // Corner Rectangle
-        inline constexpr std::string_view CURVE_RECTANGLE_PARALLELOGRAM  = "curve.rectangle.parallelogram"; // Parallelogram
-        inline constexpr std::string_view CURVE_RECTANGLE_SLANTED        = "curve.rectangle.slanted"; // Slanted Rectangle
-        inline constexpr std::string_view CURVE_SPLINETHROUGH            = "curve.splineThrough"; // Spline Through Points
-        inline constexpr std::string_view CURVE_STUDIOSPLINE             = "curve.studioSpline"; // Studio Spline
-        inline constexpr std::string_view CURVE_TRIM                     = "curve.trim"; // Trim Curve
-
         // === Category: data ===
         inline constexpr std::string_view DATA_ERASENOTDISPLAYED         = "data.eraseNotDisplayed"; // Erase Not Displayed
         inline constexpr std::string_view DATA_OPENLASTSESSION           = "data.openLastSession"; // Open Last Session
@@ -86,10 +54,13 @@ namespace sdr
         inline constexpr std::string_view DATUM_CS                       = "datum.cs"; // Coordinate System
         inline constexpr std::string_view DATUM_CURVE                    = "datum.curve"; // Curve
         inline constexpr std::string_view DATUM_DEFAULTCOORDINATESYSTEM  = "datum.defaultCoordinateSystem"; // Default Coordinate System
+        inline constexpr std::string_view DATUM_GEOMETRY_CENTERLINE      = "datum.geometry.centerline"; // Centerline
+        inline constexpr std::string_view DATUM_GEOMETRY_CS              = "datum.geometry.cs"; // Coordinate System
+        inline constexpr std::string_view DATUM_GEOMETRY_POINT           = "datum.geometry.point"; // Datum Geometry Point
         inline constexpr std::string_view DATUM_GRAPH                    = "datum.graph"; // Graph
         inline constexpr std::string_view DATUM_OFFSETPLANES             = "datum.offsetPlanes"; // Offset Planes
         inline constexpr std::string_view DATUM_PLANE                    = "datum.plane"; // Plane
-        inline constexpr std::string_view DATUM_POINT                    = "datum.point"; // Point
+        inline constexpr std::string_view DATUM_POINT                    = "datum.point"; // Datum Point
         inline constexpr std::string_view DATUM_REFERENCE                = "datum.reference"; // Reference
         inline constexpr std::string_view DATUM_RIBBON                   = "datum.ribbon"; // Ribbon
 
@@ -157,8 +128,8 @@ namespace sdr
         inline constexpr std::string_view MODEL_FEATURE_REORDER          = "model.feature.reorder"; // Reorder
         inline constexpr std::string_view MODEL_FEATURE_REPLACE          = "model.feature.replace"; // Replace
         inline constexpr std::string_view MODEL_FEATURE_REPLACEREFERENCES = "model.feature.replaceReferences"; // Replace References
+        inline constexpr std::string_view MODEL_FEATURE_RESUME           = "model.feature.resume"; // Resume
         inline constexpr std::string_view MODEL_FEATURE_SUPPRESS         = "model.feature.suppress"; // Suppress
-        inline constexpr std::string_view MODEL_FEATURE_UNSUPPRESS       = "model.feature.unsuppress"; // Resume
 
         // === Category: file ===
         inline constexpr std::string_view FILE_CLOSE                     = "file.close"; // Close
@@ -255,25 +226,53 @@ namespace sdr
         inline constexpr std::string_view SHEET_UNBEND                   = "sheet.unbend"; // Unbend
 
         // === Category: sketch ===
+        inline constexpr std::string_view SKETCH_ARC                     = "sketch.arc"; // Arc
+        inline constexpr std::string_view SKETCH_ARC_3POINTTANGENTEND    = "sketch.arc.3PointTangentEnd"; // 3-Point / Tangent End
+        inline constexpr std::string_view SKETCH_ARC_3TANGENT            = "sketch.arc.3Tangent"; // 3 Tangent
+        inline constexpr std::string_view SKETCH_ARC_CENTERANDENDS       = "sketch.arc.centerAndEnds"; // Center and Ends
+        inline constexpr std::string_view SKETCH_ARC_CONCENTRIC          = "sketch.arc.concentric"; // Concentric
+        inline constexpr std::string_view SKETCH_ARC_CONIC               = "sketch.arc.conic"; // Conic
+        inline constexpr std::string_view SKETCH_CIRCLE                  = "sketch.circle"; // Circle
+        inline constexpr std::string_view SKETCH_CIRCLE_3POINT           = "sketch.circle.3Point"; // 3 Point
+        inline constexpr std::string_view SKETCH_CIRCLE_3TANGENT         = "sketch.circle.3Tangent"; // 3 Tangent
+        inline constexpr std::string_view SKETCH_CIRCLE_CENTERANDPOINT   = "sketch.circle.centerAndPoint"; // Center and Point
+        inline constexpr std::string_view SKETCH_CIRCLE_CONCENTRIC       = "sketch.circle.concentric"; // Concentric
+        inline constexpr std::string_view SKETCH_CONSTRCUTION_CS         = "sketch.constrcution.cs"; // Coordinate System
+        inline constexpr std::string_view SKETCH_CONSTRUCTION_CENTERLINE = "sketch.construction.centerline"; // Centerline
+        inline constexpr std::string_view SKETCH_CONSTRUCTION_POINT      = "sketch.construction.point"; // Construction Point
         inline constexpr std::string_view SKETCH_DISPLAY_CONSTRAINTS     = "sketch.display.constraints"; // Constraints Display
         inline constexpr std::string_view SKETCH_DISPLAY_DIMENSIONS      = "sketch.display.dimensions"; // Dimensions Display
         inline constexpr std::string_view SKETCH_DISPLAY_GRID            = "sketch.display.grid"; // Grid Display
         inline constexpr std::string_view SKETCH_DISPLAY_VERTICES        = "sketch.display.vertices"; // Vertices Display
         inline constexpr std::string_view SKETCH_EDIT                    = "sketch.edit"; // Edit Sketch
+        inline constexpr std::string_view SKETCH_ELLIPSE                 = "sketch.ellipse"; // Ellipse
+        inline constexpr std::string_view SKETCH_ELLIPSE_AXISANDENDS     = "sketch.ellipse.axisAndEnds"; // Axis and Ends Ellipse
+        inline constexpr std::string_view SKETCH_ELLIPSE_CENTERANDAXIS   = "sketch.ellipse.centerAndAxis"; // Center and Axis Ellipse
+        inline constexpr std::string_view SKETCH_EXTEND                  = "sketch.extend"; // Extend Curve
         inline constexpr std::string_view SKETCH_FILESYSTEM              = "sketch.fileSystem"; // File System
+        inline constexpr std::string_view SKETCH_FILLET                  = "sketch.fillet"; // Curve Fillet
+        inline constexpr std::string_view SKETCH_FITSPLINE               = "sketch.fitSpline"; // Fit Spline
         inline constexpr std::string_view SKETCH_GRIDSETTINGS            = "sketch.gridSettings"; // Grid Settings
         inline constexpr std::string_view SKETCH_INSPECT_ENTITY          = "sketch.inspect.entity"; // Entity
-        inline constexpr std::string_view SKETCH_INSPECT_FEATUREREQUIREMENTS = "sketch.inspect.featureRequirements"; // Feature Requirements
+        inline constexpr std::string_view SKETCH_INSPECT_FEATUREREQUIREMENTS = "sketch.inspect.featureRequirements"; // Feature Requires
         inline constexpr std::string_view SKETCH_INSPECT_HIGHLIGHTOPENENDS = "sketch.inspect.highlightOpenEnds"; // Highlight Open Ends
         inline constexpr std::string_view SKETCH_INSPECT_INTERSECTIONPOINT = "sketch.inspect.intersectionPoint"; // Intersection Point
         inline constexpr std::string_view SKETCH_INSPECT_OVERLAPPINGGEOMETRY = "sketch.inspect.overlappingGeometry"; // Overlapping Geometry
         inline constexpr std::string_view SKETCH_INSPECT_SHADECLOSEDLOOPS = "sketch.inspect.shadeClosedLoops"; // Shade Closed Loops
         inline constexpr std::string_view SKETCH_INSPECT_TANGENCYPOINT   = "sketch.inspect.tangencyPoint"; // Tangency Point
+        inline constexpr std::string_view SKETCH_JOIN                    = "sketch.join"; // Join Curves
+        inline constexpr std::string_view SKETCH_LINE                    = "sketch.line"; // Line
         inline constexpr std::string_view SKETCH_LINESTYLE_CLEAR         = "sketch.lineStyle.clear"; // Clear Line Style
         inline constexpr std::string_view SKETCH_LINESTYLE_SET           = "sketch.lineStyle.set"; // Set Line Style
         inline constexpr std::string_view SKETCH_MIRROR                  = "sketch.mirror"; // Mirror Sketch
         inline constexpr std::string_view SKETCH_NEW                     = "sketch.new"; // Sketch
+        inline constexpr std::string_view SKETCH_OFFSET                  = "sketch.offset"; // Offset Curve
         inline constexpr std::string_view SKETCH_PROPERTIES              = "sketch.properties"; // Properties
+        inline constexpr std::string_view SKETCH_RECTANGLE               = "sketch.rectangle"; // Rectangle
+        inline constexpr std::string_view SKETCH_RECTANGLE_CENTER        = "sketch.rectangle.center"; // Center Rectangle
+        inline constexpr std::string_view SKETCH_RECTANGLE_CORNER        = "sketch.rectangle.corner"; // Corner Rectangle
+        inline constexpr std::string_view SKETCH_RECTANGLE_PARALLELOGRAM = "sketch.rectangle.parallelogram"; // Parallelogram
+        inline constexpr std::string_view SKETCH_RECTANGLE_SLANTED       = "sketch.rectangle.slanted"; // Slanted Rectangle
         inline constexpr std::string_view SKETCH_REFERENCES              = "sketch.references"; // References
         inline constexpr std::string_view SKETCH_REUSE                   = "sketch.reuse"; // Reuse Sketch
         inline constexpr std::string_view SKETCH_SECTION_FLIPSECTIONORIENTATION = "sketch.section.flipSectionOrientation"; // Flip section orientation
@@ -282,7 +281,10 @@ namespace sdr
         inline constexpr std::string_view SKETCH_SECTION_SETHORIZONTALREFERENCE = "sketch.section.setHorizontalReference"; // Set horizontal reference
         inline constexpr std::string_view SKETCH_SECTION_SETVERTICALREFERENCE = "sketch.section.setVerticalReference"; // Set vertical reference
         inline constexpr std::string_view SKETCH_SETUP                   = "sketch.setup"; // Sketch Setup
+        inline constexpr std::string_view SKETCH_SPLINETHROUGH           = "sketch.splineThrough"; // Spline Through Points
+        inline constexpr std::string_view SKETCH_STUDIOSPLINE            = "sketch.studioSpline"; // Studio Spline
         inline constexpr std::string_view SKETCH_TEXT                    = "sketch.text"; // Text
+        inline constexpr std::string_view SKETCH_TRIM                    = "sketch.trim"; // Trim Curve
         inline constexpr std::string_view SKETCH_UNDERCONSTRAINEDMODE    = "sketch.underConstrainedMode"; // Under-Constrained Mode
         inline constexpr std::string_view SKETCH_VIEW                    = "sketch.view"; // Sketch View
 
