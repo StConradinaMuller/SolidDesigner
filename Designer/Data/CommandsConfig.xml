@@ -329,245 +329,253 @@
                  icon="icons/synchronous/delete_face.svg"
                  environments="workbench.part"/>
 
-        <!-- ===== Curves / sketch geometry ===== -->
-        <command id="curve.line"
+        <!-- ===== sketch geometry ===== -->
+        <command id="sketch.line"
                  label="Line"
                  tooltip="Create lines"
-                 category="curve"
-                 iconRef="curve.line"
-                 icon="icons/curve/line.svg"
+                 category="sketch"
+                 iconRef="sketch.line"
+                 icon="icons/sketch/line.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.centerline"
+        <command id="sketch.construction.centerline"
                  label="Centerline"
-                 tooltip="Create sketch centerlines"
-                 category="curve"
-                 iconRef="curve.centerline"
-                 icon="icons/curve/centerline.svg"
+                 tooltip="Create two-point sketch construction centerlines"
+                 category="sketch"
+                 iconRef="sketch.construction.centerline"
+                 icon="icons/sketch/sketch_construction_centerline.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.arc"
+        <command id="sketch.constrcution.cs"
+                 label="Coordinate System"
+                 tooltip="Create a constrcution coordinate system"
+                 category="sketch"
+                 iconRef="sketch.constrcution.cs"
+                 icon="icons/sketch/sketch_constrcution_cs.svg"
+                 environments="workbench.part,workbench.sketch"/>
+				 
+        <command id="sketch.arc"
                  label="Arc"
                  tooltip="Create arcs"
-                 category="curve"
-                 iconRef="curve.arc"
-                 icon="icons/curve/arc.svg"
+                 category="sketch"
+                 iconRef="sketch.arc"
+                 icon="icons/sketch/arc.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.arc.3PointTangentEnd"
+        <command id="sketch.arc.3PointTangentEnd"
                  label="3-Point / Tangent End"
                  tooltip="Create a 3-point arc with tangent end option"
-                 category="curve"
-                 iconRef="curve.arc_3pt_tangent_end"
-                 icon="icons/curve/arc_3pt_tangent_end.svg"
+                 category="sketch"
+                 iconRef="sketch.arc_3pt_tangent_end"
+                 icon="icons/sketch/arc_3pt_tangent_end.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.arc.centerAndEnds"
+        <command id="sketch.arc.centerAndEnds"
                  label="Center and Ends"
                  tooltip="Create an arc by center and two ends"
-                 category="curve"
-                 iconRef="curve.arc_center_ends"
-                 icon="icons/curve/arc_center_ends.svg"
+                 category="sketch"
+                 iconRef="sketch.arc_center_ends"
+                 icon="icons/sketch/arc_center_ends.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.arc.3Tangent"
+        <command id="sketch.arc.3Tangent"
                  label="3 Tangent"
                  tooltip="Create a 3-tangent arc"
-                 category="curve"
-                 iconRef="curve.arc_3tangent"
-                 icon="icons/curve/arc_3tangent.svg"
+                 category="sketch"
+                 iconRef="sketch.arc_3tangent"
+                 icon="icons/sketch/arc_3tangent.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.arc.concentric"
+        <command id="sketch.arc.concentric"
                  label="Concentric"
                  tooltip="Create a concentric arc"
-                 category="curve"
-                 iconRef="curve.arc_concentric"
-                 icon="icons/curve/arc_concentric.svg"
+                 category="sketch"
+                 iconRef="sketch.arc_concentric"
+                 icon="icons/sketch/arc_concentric.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.arc.conic"
+        <command id="sketch.arc.conic"
                  label="Conic"
                  tooltip="Create a conic arc"
-                 category="curve"
-                 iconRef="curve.arc_conic"
-                 icon="icons/curve/arc_conic.svg"
+                 category="sketch"
+                 iconRef="sketch.arc_conic"
+                 icon="icons/sketch/arc_conic.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.circle"
+        <command id="sketch.circle"
                  label="Circle"
                  tooltip="Create circles"
-                 category="curve"
-                 iconRef="curve.circle"
-                 icon="icons/curve/circle.svg"
+                 category="sketch"
+                 iconRef="sketch.circle"
+                 icon="icons/sketch/circle.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.circle.centerAndPoint"
+        <command id="sketch.circle.centerAndPoint"
                  label="Center and Point"
                  tooltip="Create a circle by center and point"
-                 category="curve"
-                 iconRef="curve.circle_center_point"
-                 icon="icons/curve/circle_center_point.svg"
+                 category="sketch"
+                 iconRef="sketch.circle_center_point"
+                 icon="icons/sketch/circle_center_point.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.circle.concentric"
+        <command id="sketch.circle.concentric"
                  label="Concentric"
                  tooltip="Create a concentric circle"
-                 category="curve"
-                 iconRef="curve.circle_concentric"
-                 icon="icons/curve/circle_concentric.svg"
+                 category="sketch"
+                 iconRef="sketch.circle_concentric"
+                 icon="icons/sketch/circle_concentric.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.circle.3Point"
+        <command id="sketch.circle.3Point"
                  label="3 Point"
                  tooltip="Create a circle by 3 points"
-                 category="curve"
-                 iconRef="curve.circle_3pt"
-                 icon="icons/curve/circle_3pt.svg"
+                 category="sketch"
+                 iconRef="sketch.circle_3pt"
+                 icon="icons/sketch/circle_3pt.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.circle.3Tangent"
+        <command id="sketch.circle.3Tangent"
                  label="3 Tangent"
                  tooltip="Create a circle tangent to three entities"
-                 category="curve"
-                 iconRef="curve.circle_3tangent"
-                 icon="icons/curve/circle_3tangent.svg"
+                 category="sketch"
+                 iconRef="sketch.circle_3tangent"
+                 icon="icons/sketch/circle_3tangent.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.rectangle"
+        <command id="sketch.rectangle"
                  label="Rectangle"
                  tooltip="Create rectangles"
-                 category="curve"
-                 iconRef="curve.rectangle"
-                 icon="icons/curve/rectangle.svg"
+                 category="sketch"
+                 iconRef="sketch.rectangle"
+                 icon="icons/sketch/rectangle.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.ellipse"
+        <command id="sketch.ellipse"
                  label="Ellipse"
                  tooltip="Create ellipses"
-                 category="curve"
-                 iconRef="curve.ellipse"
-                 icon="icons/curve/ellipse.svg"
+                 category="sketch"
+                 iconRef="sketch.ellipse"
+                 icon="icons/sketch/ellipse.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.ellipse.axisAndEnds"
+        <command id="sketch.ellipse.axisAndEnds"
                  label="Axis and Ends Ellipse"
                  tooltip="Create an ellipse by axis and ends"
-                 category="curve"
-                 iconRef="curve.ellipse_axis_ends"
-                 icon="icons/curve/ellipse_axis_ends.svg"
+                 category="sketch"
+                 iconRef="sketch.ellipse_axis_ends"
+                 icon="icons/sketch/ellipse_axis_ends.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.ellipse.centerAndAxis"
+        <command id="sketch.ellipse.centerAndAxis"
                  label="Center and Axis Ellipse"
                  tooltip="Create an ellipse by center and axis"
-                 category="curve"
-                 iconRef="curve.ellipse_center_axis"
-                 icon="icons/curve/ellipse_center_axis.svg"
+                 category="sketch"
+                 iconRef="sketch.ellipse_center_axis"
+                 icon="icons/sketch/ellipse_center_axis.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.rectangle.corner"
+        <command id="sketch.rectangle.corner"
                  label="Corner Rectangle"
                  tooltip="Create a corner rectangle"
-                 category="curve"
-                 iconRef="curve.rect_corner"
-                 icon="icons/curve/rect_corner.svg"
+                 category="sketch"
+                 iconRef="sketch.rect_corner"
+                 icon="icons/sketch/rect_corner.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.rectangle.slanted"
+        <command id="sketch.rectangle.slanted"
                  label="Slanted Rectangle"
                  tooltip="Create a slanted rectangle"
-                 category="curve"
-                 iconRef="curve.rect_slanted"
-                 icon="icons/curve/rect_slanted.svg"
+                 category="sketch"
+                 iconRef="sketch.rect_slanted"
+                 icon="icons/sketch/rect_slanted.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.rectangle.center"
+        <command id="sketch.rectangle.center"
                  label="Center Rectangle"
                  tooltip="Create a center rectangle"
-                 category="curve"
-                 iconRef="curve.rect_center"
-                 icon="icons/curve/rect_center.svg"
+                 category="sketch"
+                 iconRef="sketch.rect_center"
+                 icon="icons/sketch/rect_center.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.rectangle.parallelogram"
+        <command id="sketch.rectangle.parallelogram"
                  label="Parallelogram"
                  tooltip="Create a parallelogram"
-                 category="curve"
-                 iconRef="curve.parallelogram"
-                 icon="icons/curve/parallelogram.svg"
+                 category="sketch"
+                 iconRef="sketch.parallelogram"
+                 icon="icons/sketch/parallelogram.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.point"
-                 label="Point"
-                 tooltip="Create points"
-                 category="curve"
-                 iconRef="curve.point"
-                 icon="icons/curve/point.svg"
+        <command id="sketch.construction.point"
+                 label="Construction Point"
+                 tooltip="Create a construction point"
+                 category="sketch"
+                 iconRef="sketch.construction.point"
+                 icon="icons/sketch/construction_point.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.splineThrough"
+        <command id="sketch.splineThrough"
                  label="Spline Through Points"
                  tooltip="Create spline curves through points"
-                 category="curve"
-                 iconRef="curve.spline_through"
-                 icon="icons/curve/spline_through.svg"
+                 category="sketch"
+                 iconRef="sketch.spline_through"
+                 icon="icons/sketch/spline_through.svg"
                  environments="workbench.part,workbench.sketch,workbench.assembly"/>
 
-        <command id="curve.fitSpline"
+        <command id="sketch.fitSpline"
                  label="Fit Spline"
                  tooltip="Fit splines to existing geometry"
-                 category="curve"
-                 iconRef="curve.fit_spline"
-                 icon="icons/curve/fit_spline.svg"
+                 category="sketch"
+                 iconRef="sketch.fit_spline"
+                 icon="icons/sketch/fit_spline.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.studioSpline"
+        <command id="sketch.studioSpline"
                  label="Studio Spline"
                  tooltip="Advanced spline creation and editing"
-                 category="curve"
-                 iconRef="curve.studio_spline"
-                 icon="icons/curve/studio_spline.svg"
+                 category="sketch"
+                 iconRef="sketch.studio_spline"
+                 icon="icons/sketch/studio_spline.svg"
                  environments="workbench.part"/>
 
-        <command id="curve.trim"
+        <command id="sketch.trim"
                  label="Trim Curve"
                  tooltip="Trim curves"
-                 category="curve"
-                 iconRef="curve.trim"
-                 icon="icons/curve/trim.svg"
+                 category="sketch"
+                 iconRef="sketch.trim"
+                 icon="icons/sketch/trim.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.extend"
+        <command id="sketch.extend"
                  label="Extend Curve"
                  tooltip="Extend curves"
-                 category="curve"
-                 iconRef="curve.extend"
-                 icon="icons/curve/extend.svg"
+                 category="sketch"
+                 iconRef="sketch.extend"
+                 icon="icons/sketch/extend.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.join"
+        <command id="sketch.join"
                  label="Join Curves"
                  tooltip="Join curves into a single entity"
-                 category="curve"
-                 iconRef="curve.join"
-                 icon="icons/curve/join.svg"
+                 category="sketch"
+                 iconRef="sketch.join"
+                 icon="icons/sketch/join.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.fillet"
+        <command id="sketch.fillet"
                  label="Curve Fillet"
                  tooltip="Apply fillets between curves"
-                 category="curve"
-                 iconRef="curve.fillet"
-                 icon="icons/curve/fillet.svg"
+                 category="sketch"
+                 iconRef="sketch.fillet"
+                 icon="icons/sketch/fillet.svg"
                  environments="workbench.part,workbench.sketch"/>
 
-        <command id="curve.offset"
+        <command id="sketch.offset"
                  label="Offset Curve"
                  tooltip="Offset curves"
-                 category="curve"
-                 iconRef="curve.offset"
-                 icon="icons/curve/offset.svg"
+                 category="sketch"
+                 iconRef="sketch.offset"
+                 icon="icons/sketch/offset.svg"
                  environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constructionMode"
@@ -1119,7 +1127,7 @@
         <!-- ===== Model tab: Sketch ===== -->
 
         <command id="sketch.inspect.featureRequirements"
-                 label="Feature Requirements"
+                 label="Feature Requires"
                  tooltip="Show feature requirements"
                  category="sketch"
                  iconRef="sketch.feature_requirements"
@@ -1767,12 +1775,12 @@
                  icon="icons/model/feature_suppress.svg"
                  environments="workbench.part"/>
 
-        <command id="model.feature.unsuppress"
+        <command id="model.feature.resume"
                  label="Resume"
                  tooltip="Resume suppressed features"
                  category="feature"
-                 iconRef="model.feature_unsuppress"
-                 icon="icons/model/feature_unsuppress.svg"
+                 iconRef="model.feature_resume"
+                 icon="icons/model/feature_resume.svg"
                  environments="workbench.part"/>
 
         <command id="model.feature.delete"
@@ -1950,23 +1958,47 @@
                  icon="icons/datum/axis.svg"
                  environments="workbench.part,workbench.assembly"/>
 
+        <command id="datum.geometry.centerline"
+                 label="Centerline"
+                 tooltip="Create a datum geometry centerline"
+                 category="datum"
+                 iconRef="datum.geometry.centerline"
+                 icon="icons/datum/datum_geometry_centerline.svg"
+                 environments="workbench.part,workbench.sketch,workbench.assembly"/>
+
+        <command id="datum.geometry.point"
+                 label="Datum Geometry Point"
+                 tooltip="Create a datum geometry point"
+                 category="datum"
+                 iconRef="datum.geometry.point"
+                 icon="icons/datum/geometry_point.svg"
+                 environments="workbench.part,workbench.assembly,workbench.sketch"/>
+
         <command id="datum.point"
-                 label="Point"
+                 label="Datum Point"
                  tooltip="Create a datum point"
                  category="datum"
                  iconRef="datum.point"
-                 icon="icons/datum/point.svg"
+                 icon="icons/datum/datum_point.svg"
+                 environments="workbench.part,workbench.assembly,workbench.sketch"/>
+
+        <command id="datum.geometry.cs"
+                 label="Coordinate System"
+                 tooltip="Create a geometry coordinate system"
+                 category="datum"
+                 iconRef="datum.geometry.cs"
+                 icon="icons/datum/geometry_cs.svg"
                  environments="workbench.part,workbench.assembly,workbench.sketch"/>
 
         <command id="datum.cs"
                  label="Coordinate System"
-                 tooltip="Create a coordinate system"
+                 tooltip="Create a datum coordinate system"
                  category="datum"
                  iconRef="datum.cs"
-                 icon="icons/datum/cs.svg"
+                 icon="icons/datum/datum_cs.svg"
                  environments="workbench.part,workbench.assembly,workbench.sketch"/>
 
-<command id="datum.curve"
+        <command id="datum.curve"
                  label="Curve"
                  tooltip="Create a datum curve"
                  category="datum"
@@ -2035,7 +2067,7 @@
                  gesture="Ctrl+R"
                  environments="workbench.part,workbench.assembly"/>
 
-<command id="model.sweep"
+        <command id="model.sweep"
                  label="Sweep"
                  tooltip="Create a swept feature along a trajectory"
                  category="shapes"
@@ -2118,7 +2150,7 @@
                  icon="icons/model/chamfer.svg"
                  environments="workbench.part,workbench.assembly"/>
 
-<command id="model.round"
+        <command id="model.round"
                  label="Round"
                  tooltip="Apply rounds (fillets) to edges"
                  category="engineering"

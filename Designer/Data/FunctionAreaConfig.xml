@@ -43,23 +43,23 @@
             <tab id="tab_home" label="Home" order="10">
                 <!-- Data -->
                 <group id="grp_home_data" label="Data" order="10">
-                    <control type="large-button" commandRef="file.new"    row="0" column="0" />
-                    <control type="large-button" commandRef="file.open"   row="0" column="1" />
-                    <control type="large-button" commandRef="data.openLastSession" row="0" column="2"/>
-                    <control type="large-button" commandRef="data.selectWorkingDirectory" row="0" column="3"/>
-                    <control type="large-button" commandRef="data.eraseNotDisplayed" row="0" column="4"/>
+                    <control type="large-button" commandRef="file.new"    row="0" column="0"  rowSpan="3"/>
+                    <control type="large-button" commandRef="file.open"   row="0" column="1"  rowSpan="3"/>
+                    <control type="large-button" commandRef="data.openLastSession" row="0" column="2" rowSpan="3"/>
+                    <control type="large-button" commandRef="data.selectWorkingDirectory" row="0" column="3" rowSpan="3"/>
+                    <control type="large-button" commandRef="data.eraseNotDisplayed" row="0" column="4" rowSpan="3"/>
                 </group>
 
                 <!-- Settings -->
                 <group id="grp_home_setting" label="Settings" order="20">
-                    <control type="large-button" commandRef="settings.modelDisplay"      row="0" column="0"/>
-                    <control type="large-button" commandRef="settings.systemAppearance"  row="0" column="1"/>
+                    <control type="large-button" commandRef="settings.modelDisplay"      row="0" column="0" rowSpan="3"/>
+                    <control type="large-button" commandRef="settings.systemAppearance"  row="0" column="1" rowSpan="3"/>
                 </group>
                 
                 <!-- Utilities -->
                 <group id="grp_home_utilities" label="Utilities" order="30">
-                    <control type="large-button" commandRef="utilities.playTrailFile"   row="0" column="0"/>
-                    <control type="large-button" commandRef="utilities.auxApplication"  row="0" column="1"/>
+                    <control type="large-button" commandRef="utilities.playTrailFile"   row="0" column="0" rowSpan="3"/>
+                    <control type="large-button" commandRef="utilities.auxApplication"  row="0" column="1" rowSpan="3"/>
                 </group>
             </tab>
         </layout>
@@ -74,7 +74,7 @@
 
                 <!-- Operations -->
                 <group id="grp_model_operations" label="Operations" order="10">
-                    <SplitButton type="large-button" commandRef="model.regenerate" row="0" column="1" rowSpan="3">
+                    <SplitButton type="large-button" commandRef="model.regenerate" row="0" column="0" rowSpan="3">
                         <SubMenu type="command" commandRef="model.regenerate" />
                         <SubMenu type="command" commandRef="model.regenerateAll" />
                     </SplitButton >
@@ -103,9 +103,9 @@
 
                 <!-- Get Data -->
                 <group id="grp_model_getData" label="Get Data" order="20">
-                    <control type="large-button" commandRef="model.getData.userDefinedFeature"          row="0" column="0" rowSpan="3"/>
-                    <control type="small-button" commandRef="model.getData.copyGeometry" row="0" column="1"/>
-                    <control type="small-button" commandRef="model.getData.shrinkwrap"   row="1" column="1"/>
+                    <control type="small-button" commandRef="model.getData.userDefinedFeature" row="0" column="0"/>
+                    <control type="small-button" commandRef="model.getData.copyGeometry" row="1" column="0"/>
+                    <control type="small-button" commandRef="model.getData.shrinkwrap"   row="2" column="0"/>
 
                     <LauncherMenu>
                         <SubMenu type="command" commandRef="model.getData.mergeInheritance"/>
@@ -122,7 +122,7 @@
                     <control type="small-button" commandRef="datum.axis"  row="0" column="1"/>
                     <control type="small-button" commandRef="datum.point" row="1" column="1"/>
                     <control type="small-button" commandRef="datum.cs"    row="2" column="1"/>
-
+                    <control type="large-button" commandRef="sketch.new" row="0" column="2" rowSpan="3"/>
                     <LauncherMenu>
                         <SubMenu type="command" commandRef="datum.curve"/>
                         <SubMenu type="command" commandRef="datum.reference"/>
@@ -131,25 +131,18 @@
                         <SubMenu type="command" commandRef="datum.offsetPlanes"/>
                         <SubMenu type="command" commandRef="datum.defaultCoordinateSystem"/>
                     </LauncherMenu>
-                    <control type="large-button" commandRef="sketch.new" row="0" column="2" rowSpan="3"/>
                 </group>
 
                 <!-- Shapes -->
                 <group id="grp_model_shapes" label="Shapes" order="40">
                     <control type="large-button" commandRef="model.extrude" row="0" column="0" rowSpan="3"/>
                     <control type="small-button" commandRef="model.revolve" row="0" column="1"/>
-
                     <SplitButton type="small-button" commandRef="model.sweep" row="1" column="1">
                         <SubMenu type="command" commandRef="model.sweep" />
                         <SubMenu type="command" commandRef="model.sweep.helical" />
                         <SubMenu type="command" commandRef="model.sweep.volumeHelical" />
                     </SplitButton>
-
-                    <control type="small-button" commandRef="model.sweepBlend"          row="2" column="4"/>
-
-                    <control type="large-button" commandRef="model.blend"            row="0" column="5" rowSpan="3"/>
-                    <control type="small-button" commandRef="model.blend.rotational" row="0" column="6"/>
-
+                    <control type="small-button" commandRef="model.sweepBlend" row="2" column="1"/>
                     <LauncherMenu>
                         <SubMenu type="command" commandRef="model.blend" />
                         <SubMenu type="command" commandRef="model.blend.rotational" />
@@ -158,26 +151,22 @@
 
                 <!-- Engineering -->
                 <group id="grp_model_engineering" label="Engineering" order="50">
-                    <control type="large-button" commandRef="model.hole"  row="0" column="0" rowSpan="3"/>
-
+                    <control type="small-button" commandRef="model.hole"  row="0" column="0"/>
                     <!-- SplitButton的属性rowSpan="3"是否还需要？ -->
                     <SplitButton type="small-button" commandRef="model.round" row="1" column="0">
                         <SubMenu type="command" commandRef="model.round" />
                         <SubMenu type="command" commandRef="model.round.auto" />
                     </SplitButton >
-
                     <SplitButton type="small-button" commandRef="model.chamfer" row="2" column="0">
                         <SubMenu type="command" commandRef="model.chamfer.edge" />
                         <SubMenu type="command" commandRef="model.chamfer.corner" />
                     </SplitButton >
-
                     <SplitButton type="small-button" commandRef="model.draft" row="0" column="1">
                         <SubMenu type="command" commandRef="model.draft" />
                         <SubMenu type="command" commandRef="model.draft.variablePullDirection" />
                     </SplitButton >
-
-                    <control type="small-button" commandRef="model.shell" row="0" column="9" rowSpan="3"/>
-                    <SplitButton type="small-button" commandRef="model.rib" row="2" column="1" rowSpan="3">
+                    <control type="small-button" commandRef="model.shell" row="1" column="1"/>
+                    <SplitButton type="small-button" commandRef="model.rib" row="2" column="1">
                         <SubMenu type="command" commandRef="model.rib.trajectory" />
                         <SubMenu type="command" commandRef="model.rib.profile" />
                     </SplitButton >
@@ -208,9 +197,9 @@
                     <control type="small-button" commandRef="model.offset"    row="1" column="2"/>
                     <control type="small-button" commandRef="model.intersect" row="2" column="2"/>
 
-                    <control type="small-button" commandRef="model.project"   row="2" column="3"/>
+                    <control type="small-button" commandRef="model.project"   row="0" column="3"/>
                     <control type="small-button" commandRef="model.thicken"   row="1" column="3"/>
-                    <control type="small-button" commandRef="model.solidify"   row="1" column="3"/>
+                    <control type="small-button" commandRef="model.solidify"  row="2" column="3"/>
 
                     <LauncherMenu>
                         <SubMenu type="command" commandRef="model.project.wrap"/>
@@ -286,7 +275,10 @@
                 </group>
 
                 <group id="grp_part_sketch_operations" label="Operations" order="30">
-                    <SplitButton type="large-button" commandRef="sketch.select" row="0" column="0" rowSpan="3">
+                    <control type="small-button" commandRef="edit.cut" row="0" column="0" />
+                    <control type="small-button" commandRef="edit.copy" row="1" column="0" />
+                    <control type="small-button" commandRef="edit.paste" row="2" column="0" />
+                    <SplitButton type="large-button" commandRef="sketch.select" row="0" column="1" rowSpan="3">
                         <SubMenu type="command" commandRef="sketch.select" />
                         <SubMenu type="command" commandRef="sketch.ops.delete" />
                         <SubMenu type="command" commandRef="sketch.ops.replace" />
@@ -297,55 +289,51 @@
                 </group>
 
                 <group id="grp_part_sketch_datum" label="Datum" order="40">
-                    <control type="large-button" commandRef="curve.centerline" row="0" column="0" rowSpan="3" />
-                    <control type="small-button" commandRef="datum.point" row="0" column="1" />
-                    <control type="small-button" commandRef="datum.cs" row="1" column="1" />
-                </group>
-
-                <group id="grp_part_sketch_construction_mode" label="Construction Mode" order="45">
-                    <control type="large-button" commandRef="sketch.constructionMode" row="0" column="0" rowSpan="3" />
+                    <control type="small-button" commandRef="datum.geometry.centerline" row="0" column="0"/>
+                    <control type="small-button" commandRef="datum.geometry.point" row="1" column="0" />
+                    <control type="small-button" commandRef="datum.geometry.cs" row="2" column="0" />
                 </group>
 
                 <group id="grp_part_sketch_sketching" label="Sketching" order="50">
-                    <SplitButton type="small-button" commandRef="curve.line" row="0" column="0">
-                        <SubMenu type="command" commandRef="curve.line" />
+                    <SplitButton type="small-button" commandRef="sketch.line" row="0" column="0">
+                        <SubMenu type="command" commandRef="sketch.line" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.rectangle" row="1" column="0">
-                        <SubMenu type="command" commandRef="curve.rectangle" />
-                        <SubMenu type="command" commandRef="curve.rectangle.corner" />
-                        <SubMenu type="command" commandRef="curve.rectangle.slanted" />
-                        <SubMenu type="command" commandRef="curve.rectangle.center" />
-                        <SubMenu type="command" commandRef="curve.rectangle.parallelogram" />
+                    <SplitButton type="small-button" commandRef="sketch.rectangle" row="1" column="0">
+                        <SubMenu type="command" commandRef="sketch.rectangle" />
+                        <SubMenu type="command" commandRef="sketch.rectangle.corner" />
+                        <SubMenu type="command" commandRef="sketch.rectangle.slanted" />
+                        <SubMenu type="command" commandRef="sketch.rectangle.center" />
+                        <SubMenu type="command" commandRef="sketch.rectangle.parallelogram" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.circle" row="2" column="0">
-                        <SubMenu type="command" commandRef="curve.circle" />
-                        <SubMenu type="command" commandRef="curve.circle.centerAndPoint" />
-                        <SubMenu type="command" commandRef="curve.circle.concentric" />
-                        <SubMenu type="command" commandRef="curve.circle.3Point" />
-                        <SubMenu type="command" commandRef="curve.circle.3Tangent" />
+                    <SplitButton type="small-button" commandRef="sketch.circle" row="2" column="0">
+                        <SubMenu type="command" commandRef="sketch.circle" />
+                        <SubMenu type="command" commandRef="sketch.circle.centerAndPoint" />
+                        <SubMenu type="command" commandRef="sketch.circle.concentric" />
+                        <SubMenu type="command" commandRef="sketch.circle.3Point" />
+                        <SubMenu type="command" commandRef="sketch.circle.3Tangent" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.arc" row="0" column="1">
-                        <SubMenu type="command" commandRef="curve.arc" />
-                        <SubMenu type="command" commandRef="curve.arc.3PointTangentEnd" />
-                        <SubMenu type="command" commandRef="curve.arc.centerAndEnds" />
-                        <SubMenu type="command" commandRef="curve.arc.3Tangent" />
-                        <SubMenu type="command" commandRef="curve.arc.concentric" />
-                        <SubMenu type="command" commandRef="curve.arc.conic" />
+                    <SplitButton type="small-button" commandRef="sketch.arc" row="0" column="1">
+                        <SubMenu type="command" commandRef="sketch.arc" />
+                        <SubMenu type="command" commandRef="sketch.arc.3PointTangentEnd" />
+                        <SubMenu type="command" commandRef="sketch.arc.centerAndEnds" />
+                        <SubMenu type="command" commandRef="sketch.arc.3Tangent" />
+                        <SubMenu type="command" commandRef="sketch.arc.concentric" />
+                        <SubMenu type="command" commandRef="sketch.arc.conic" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.ellipse" row="1" column="1">
-                        <SubMenu type="command" commandRef="curve.ellipse" />
-                        <SubMenu type="command" commandRef="curve.ellipse.axisAndEnds" />
-                        <SubMenu type="command" commandRef="curve.ellipse.centerAndAxis" />
+                    <SplitButton type="small-button" commandRef="sketch.ellipse" row="1" column="1">
+                        <SubMenu type="command" commandRef="sketch.ellipse" />
+                        <SubMenu type="command" commandRef="sketch.ellipse.axisAndEnds" />
+                        <SubMenu type="command" commandRef="sketch.ellipse.centerAndAxis" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.splineThrough" row="2" column="1">
-                        <SubMenu type="command" commandRef="curve.splineThrough" />
-                        <SubMenu type="command" commandRef="curve.fitSpline" />
-                        <SubMenu type="command" commandRef="curve.studioSpline" />
+                    <SplitButton type="small-button" commandRef="sketch.splineThrough" row="2" column="1">
+                        <SubMenu type="command" commandRef="sketch.splineThrough" />
+                        <SubMenu type="command" commandRef="sketch.fitSpline" />
+                        <SubMenu type="command" commandRef="sketch.studioSpline" />
                     </SplitButton>
 
                     <SplitButton type="small-button" commandRef="sketch.modify.fillet" row="0" column="2">
@@ -367,20 +355,26 @@
                     <control type="small-button" commandRef="sketch.thicken" row="1" column="3" />
                     <control type="small-button" commandRef="sketch.project" row="2" column="3" />
 
-                    <control type="large-button" commandRef="sketch.palette" row="0" column="4" rowSpan="3" />
+                    <control type="small-button" commandRef="sketch.construction.centerline" row="0" column="4"/>
+                    <control type="small-button" commandRef="sketch.construction.point" row="1" column="4" />
+                    <control type="small-button" commandRef="sketch.constrcution.cs" row="2" column="4" />
+
+                    <LauncherMenu>
+                        <SubMenu type="command" commandRef="sketch.constructionMode" />
+                        <SubMenu type="command" commandRef="sketch.palette" />
+                    </LauncherMenu>
                 </group>
 
                 <group id="grp_part_sketch_editing" label="Editing" order="60">
                     <control type="small-button" commandRef="sketch.modify.modify" row="0" column="0" />
-                    <control type="small-button" commandRef="sketch.modify.deleteSegment" row="1" column="0" />
-                    <control type="small-button" commandRef="sketch.modify.mirror" row="2" column="0" />
-
-                    <control type="small-button" commandRef="sketch.modify.divide" row="0" column="1" />
+                    <control type="small-button" commandRef="sketch.modify.mirror" row="1" column="0" />
+                    <control type="small-button" commandRef="sketch.modify.divide" row="2" column="0" />
+                    <control type="small-button" commandRef="sketch.modify.deleteSegment" row="0" column="1" />
                     <control type="small-button" commandRef="sketch.modify.corner" row="1" column="1" />
                     <control type="small-button" commandRef="sketch.modify.rotateResize" row="2" column="1" />
                 </group>
 
-                <group id="grp_part_sketch_constraint" label="Constrain" order="70">
+                <group id="grp_part_sketch_constraint" label="Constraint" order="70">
                     <control type="small-button" commandRef="sketch.constraint.vertical" row="0" column="0" />
                     <control type="small-button" commandRef="sketch.constraint.horizontal" row="1" column="0" />
                     <control type="small-button" commandRef="sketch.constraint.perpendicular" row="2" column="0" />
@@ -395,10 +389,7 @@
                 </group>
 
                 <group id="grp_part_sketch_dimension" label="Dimension" order="80">
-                    <SplitButton type="large-button" commandRef="sketch.dim.dimension" row="0" column="0" rowSpan="3">
-                        <SubMenu type="command" commandRef="sketch.dim.dimension" />
-                    </SplitButton>
-
+                    <control type="large-button" commandRef="sketch.dim.dimension" row="0" column="0" rowSpan="3"/>
                     <control type="small-button" commandRef="sketch.dim.reference" row="0" column="1" />
                     <control type="small-button" commandRef="sketch.dim.baseline" row="1" column="1" />
                     <control type="small-button" commandRef="sketch.dim.perimeter" row="2" column="1" />
@@ -575,7 +566,10 @@
                 </group>
 
                 <group id="grp_sketch_operations" label="Operations" order="30">
-                    <SplitButton type="large-button" commandRef="sketch.select" row="0" column="0" rowSpan="3">
+                    <control type="small-button" commandRef="edit.cut" row="0" column="0" />
+                    <control type="small-button" commandRef="edit.copy" row="1" column="0" />
+                    <control type="small-button" commandRef="edit.paste" row="2" column="0" />
+                    <SplitButton type="large-button" commandRef="sketch.select" row="0" column="1" rowSpan="3">
                         <SubMenu type="command" commandRef="sketch.select" />
                         <SubMenu type="command" commandRef="sketch.ops.delete" />
                         <SubMenu type="command" commandRef="sketch.ops.replace" />
@@ -586,9 +580,9 @@
                 </group>
 
                 <group id="grp_sketch_datum" label="Datum" order="40">
-                    <control type="large-button" commandRef="curve.centerline" row="0" column="0" rowSpan="3" />
-                    <control type="small-button" commandRef="datum.point" row="0" column="1" />
-                    <control type="small-button" commandRef="datum.cs" row="1" column="1" />
+                    <control type="small-button" commandRef="datum.geometry.centerline" row="0" column="0" />
+                    <control type="small-button" commandRef="datum.geometry.point" row="1" column="0" />
+                    <control type="small-button" commandRef="datum.geometry.cs" row="2" column="0" />
                 </group>
 
                 <group id="grp_sketch_construction_mode" label="Construction Mode" order="45">
@@ -596,45 +590,45 @@
                 </group>
 
                 <group id="grp_sketch_sketching" label="Sketching" order="50">
-                    <SplitButton type="small-button" commandRef="curve.line" row="0" column="0">
-                        <SubMenu type="command" commandRef="curve.line" />
+                    <SplitButton type="small-button" commandRef="sketch.line" row="0" column="0">
+                        <SubMenu type="command" commandRef="sketch.line" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.rectangle" row="1" column="0">
-                        <SubMenu type="command" commandRef="curve.rectangle" />
-                        <SubMenu type="command" commandRef="curve.rectangle.corner" />
-                        <SubMenu type="command" commandRef="curve.rectangle.slanted" />
-                        <SubMenu type="command" commandRef="curve.rectangle.center" />
-                        <SubMenu type="command" commandRef="curve.rectangle.parallelogram" />
+                    <SplitButton type="small-button" commandRef="sketch.rectangle" row="1" column="0">
+                        <SubMenu type="command" commandRef="sketch.rectangle" />
+                        <SubMenu type="command" commandRef="sketch.rectangle.corner" />
+                        <SubMenu type="command" commandRef="sketch.rectangle.slanted" />
+                        <SubMenu type="command" commandRef="sketch.rectangle.center" />
+                        <SubMenu type="command" commandRef="sketch.rectangle.parallelogram" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.circle" row="2" column="0">
-                        <SubMenu type="command" commandRef="curve.circle" />
-                        <SubMenu type="command" commandRef="curve.circle.centerAndPoint" />
-                        <SubMenu type="command" commandRef="curve.circle.concentric" />
-                        <SubMenu type="command" commandRef="curve.circle.3Point" />
-                        <SubMenu type="command" commandRef="curve.circle.3Tangent" />
+                    <SplitButton type="small-button" commandRef="sketch.circle" row="2" column="0">
+                        <SubMenu type="command" commandRef="sketch.circle" />
+                        <SubMenu type="command" commandRef="sketch.circle.centerAndPoint" />
+                        <SubMenu type="command" commandRef="sketch.circle.concentric" />
+                        <SubMenu type="command" commandRef="sketch.circle.3Point" />
+                        <SubMenu type="command" commandRef="sketch.circle.3Tangent" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.arc" row="0" column="1">
-                        <SubMenu type="command" commandRef="curve.arc" />
-                        <SubMenu type="command" commandRef="curve.arc.3PointTangentEnd" />
-                        <SubMenu type="command" commandRef="curve.arc.centerAndEnds" />
-                        <SubMenu type="command" commandRef="curve.arc.3Tangent" />
-                        <SubMenu type="command" commandRef="curve.arc.concentric" />
-                        <SubMenu type="command" commandRef="curve.arc.conic" />
+                    <SplitButton type="small-button" commandRef="sketch.arc" row="0" column="1">
+                        <SubMenu type="command" commandRef="sketch.arc" />
+                        <SubMenu type="command" commandRef="sketch.arc.3PointTangentEnd" />
+                        <SubMenu type="command" commandRef="sketch.arc.centerAndEnds" />
+                        <SubMenu type="command" commandRef="sketch.arc.3Tangent" />
+                        <SubMenu type="command" commandRef="sketch.arc.concentric" />
+                        <SubMenu type="command" commandRef="sketch.arc.conic" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.ellipse" row="1" column="1">
-                        <SubMenu type="command" commandRef="curve.ellipse" />
-                        <SubMenu type="command" commandRef="curve.ellipse.axisAndEnds" />
-                        <SubMenu type="command" commandRef="curve.ellipse.centerAndAxis" />
+                    <SplitButton type="small-button" commandRef="sketch.ellipse" row="1" column="1">
+                        <SubMenu type="command" commandRef="sketch.ellipse" />
+                        <SubMenu type="command" commandRef="sketch.ellipse.axisAndEnds" />
+                        <SubMenu type="command" commandRef="sketch.ellipse.centerAndAxis" />
                     </SplitButton>
 
-                    <SplitButton type="small-button" commandRef="curve.splineThrough" row="2" column="1">
-                        <SubMenu type="command" commandRef="curve.splineThrough" />
-                        <SubMenu type="command" commandRef="curve.fitSpline" />
-                        <SubMenu type="command" commandRef="curve.studioSpline" />
+                    <SplitButton type="small-button" commandRef="sketch.splineThrough" row="2" column="1">
+                        <SubMenu type="command" commandRef="sketch.splineThrough" />
+                        <SubMenu type="command" commandRef="sketch.fitSpline" />
+                        <SubMenu type="command" commandRef="sketch.studioSpline" />
                     </SplitButton>
 
                     <SplitButton type="small-button" commandRef="sketch.modify.fillet" row="0" column="2">
@@ -655,8 +649,12 @@
                     <control type="small-button" commandRef="sketch.modify.offset" row="0" column="3" />
                     <control type="small-button" commandRef="sketch.thicken" row="1" column="3" />
                     <control type="small-button" commandRef="sketch.project" row="2" column="3" />
-
-                    <control type="large-button" commandRef="sketch.palette" row="0" column="4" rowSpan="3" />
+					
+                    <control type="small-button" commandRef="sketch.construction.centerline" row="0" column="4"/>
+                    <control type="small-button" commandRef="sketch.construction.point" row="1" column="4" />
+                    <control type="small-button" commandRef="sketch.constrcution.cs" row="2" column="4" />
+					
+                    <control type="large-button" commandRef="sketch.palette" row="0" column="5" rowSpan="3" />
                 </group>
 
                 <group id="grp_sketch_editing" label="Editing" order="60">
@@ -876,10 +874,10 @@
             <!-- Tab: Sketch in sheet metal -->
             <tab id="tab_sheet_sketch" label="Sketch" order="20">
                 <group id="grp_sheet_sketch_geometry" label="Geometry" order="10">
-                    <control type="large-button" commandRef="curve.line"          row="0" column="0" rowSpan="3"/>
-                    <control type="large-button" commandRef="curve.circle"        row="0" column="1" rowSpan="3"/>
-                    <control type="small-button" commandRef="curve.rectangle"     row="0" column="2"/>
-                    <control type="small-button" commandRef="curve.splineThrough" row="1" column="2"/>
+                    <control type="large-button" commandRef="sketch.line"          row="0" column="0" rowSpan="3"/>
+                    <control type="large-button" commandRef="sketch.circle"        row="0" column="1" rowSpan="3"/>
+                    <control type="small-button" commandRef="sketch.rectangle"     row="0" column="2"/>
+                    <control type="small-button" commandRef="sketch.splineThrough" row="1" column="2"/>
                 </group>
                 <group id="grp_sheet_sketch_modify" label="Modify" order="20">
                     <control type="small-button" commandRef="sketch.modify.trim"   row="0" column="0"/>
@@ -1112,11 +1110,11 @@
 
             <!-- Sketch menu (sketch & sheet environments) -->
             <menuDef id="menu_sketch" label="Sketch">
-                <item type="command" commandRef="curve.line"/>
-                <item type="command" commandRef="curve.circle"/>
-                <item type="command" commandRef="curve.arc"/>
-                <item type="command" commandRef="curve.rectangle"/>
-                <item type="command" commandRef="curve.splineThrough"/>
+                <item type="command" commandRef="sketch.line"/>
+                <item type="command" commandRef="sketch.circle"/>
+                <item type="command" commandRef="sketch.arc"/>
+                <item type="command" commandRef="sketch.rectangle"/>
+                <item type="command" commandRef="sketch.splineThrough"/>
                 <item type="separator"/>
                 <item type="command" commandRef="sketch.modify.trim"/>
                 <item type="command" commandRef="sketch.modify.extend"/>
@@ -1255,10 +1253,10 @@
 
             <!-- Sketch toolbar (for sketch / sheet) -->
             <toolBar id="tb_sketch" label="Sketch" area="Top" order="30">
-                <item type="command" commandRef="curve.line"/>
-                <item type="command" commandRef="curve.circle"/>
-                <item type="command" commandRef="curve.rectangle"/>
-                <item type="command" commandRef="curve.splineThrough"/>
+                <item type="command" commandRef="sketch.line"/>
+                <item type="command" commandRef="sketch.circle"/>
+                <item type="command" commandRef="sketch.rectangle"/>
+                <item type="command" commandRef="sketch.splineThrough"/>
                 <item type="separator"/>
                 <item type="command" commandRef="sketch.dim.general"/>
             </toolBar>
