@@ -945,27 +945,35 @@
     <file>sketch/dimension/dark/png/16/sketch_dim_baseline.png</file>
     <file>sketch/dimension/dark/png/16/sketch_dim_perimeter.png</file>
     <file>sketch/dimension/dark/png/16/sketch_dim_reference.png</file>
+    <file>sketch/dimension/dark/png/16/sketch_dim_smart.png</file>
     <file>sketch/dimension/dark/png/32/sketch_dim_baseline.png</file>
     <file>sketch/dimension/dark/png/32/sketch_dim_perimeter.png</file>
     <file>sketch/dimension/dark/png/32/sketch_dim_reference.png</file>
+    <file>sketch/dimension/dark/png/32/sketch_dim_smart.png</file>
     <file>sketch/dimension/dark/png/48/sketch_dim_baseline.png</file>
     <file>sketch/dimension/dark/png/48/sketch_dim_perimeter.png</file>
     <file>sketch/dimension/dark/png/48/sketch_dim_reference.png</file>
+    <file>sketch/dimension/dark/png/48/sketch_dim_smart.png</file>
     <file>sketch/dimension/dark/png/64/sketch_dim_baseline.png</file>
     <file>sketch/dimension/dark/png/64/sketch_dim_perimeter.png</file>
     <file>sketch/dimension/dark/png/64/sketch_dim_reference.png</file>
+    <file>sketch/dimension/dark/png/64/sketch_dim_smart.png</file>
     <file>sketch/dimension/light/png/16/sketch_dim_baseline.png</file>
     <file>sketch/dimension/light/png/16/sketch_dim_perimeter.png</file>
     <file>sketch/dimension/light/png/16/sketch_dim_reference.png</file>
+    <file>sketch/dimension/light/png/16/sketch_dim_smart.png</file>
     <file>sketch/dimension/light/png/32/sketch_dim_baseline.png</file>
     <file>sketch/dimension/light/png/32/sketch_dim_perimeter.png</file>
     <file>sketch/dimension/light/png/32/sketch_dim_reference.png</file>
+    <file>sketch/dimension/light/png/32/sketch_dim_smart.png</file>
     <file>sketch/dimension/light/png/48/sketch_dim_baseline.png</file>
     <file>sketch/dimension/light/png/48/sketch_dim_perimeter.png</file>
     <file>sketch/dimension/light/png/48/sketch_dim_reference.png</file>
+    <file>sketch/dimension/light/png/48/sketch_dim_smart.png</file>
     <file>sketch/dimension/light/png/64/sketch_dim_baseline.png</file>
     <file>sketch/dimension/light/png/64/sketch_dim_perimeter.png</file>
     <file>sketch/dimension/light/png/64/sketch_dim_reference.png</file>
+    <file>sketch/dimension/light/png/64/sketch_dim_smart.png</file>
     <file>sketch/editing/dark/png/16/sketch_modify_corner.png</file>
     <file>sketch/editing/dark/png/16/sketch_modify_deleteSegment.png</file>
     <file>sketch/editing/dark/png/16/sketch_modify_divide.png</file>
@@ -1083,27 +1091,83 @@
     <file>sketch/operations/dark/png/16/edit_copy.png</file>
     <file>sketch/operations/dark/png/16/edit_cut.png</file>
     <file>sketch/operations/dark/png/16/edit_paste.png</file>
+    <file>sketch/operations/dark/png/16/select_select.png</file>
+    <file>sketch/operations/dark/png/16/sketch_construction.png</file>
+    <file>sketch/operations/dark/png/16/sketch_convert_to.png</file>
+    <file>sketch/operations/dark/png/16/sketch_delete.png</file>
+    <file>sketch/operations/dark/png/16/sketch_replace.png</file>
+    <file>sketch/operations/dark/png/16/sketch_toggle_lock.png</file>
+	
     <file>sketch/operations/dark/png/32/edit_copy.png</file>
     <file>sketch/operations/dark/png/32/edit_cut.png</file>
     <file>sketch/operations/dark/png/32/edit_paste.png</file>
+    <file>sketch/operations/dark/png/32/select_select.png</file>
+    <file>sketch/operations/dark/png/32/sketch_construction.png</file>
+    <file>sketch/operations/dark/png/32/sketch_convert_to.png</file>
+    <file>sketch/operations/dark/png/32/sketch_delete.png</file>
+    <file>sketch/operations/dark/png/32/sketch_replace.png</file>
+    <file>sketch/operations/dark/png/32/sketch_toggle_lock.png</file>
+	
     <file>sketch/operations/dark/png/48/edit_copy.png</file>
     <file>sketch/operations/dark/png/48/edit_cut.png</file>
     <file>sketch/operations/dark/png/48/edit_paste.png</file>
+    <file>sketch/operations/dark/png/48/select_select.png</file>
+    <file>sketch/operations/dark/png/48/sketch_construction.png</file>
+    <file>sketch/operations/dark/png/48/sketch_convert_to.png</file>
+    <file>sketch/operations/dark/png/48/sketch_delete.png</file>
+    <file>sketch/operations/dark/png/48/sketch_replace.png</file>
+    <file>sketch/operations/dark/png/48/sketch_toggle_lock.png</file>
+	
     <file>sketch/operations/dark/png/64/edit_copy.png</file>
     <file>sketch/operations/dark/png/64/edit_cut.png</file>
     <file>sketch/operations/dark/png/64/edit_paste.png</file>
+    <file>sketch/operations/dark/png/64/select_select.png</file>
+    <file>sketch/operations/dark/png/64/sketch_construction.png</file>
+    <file>sketch/operations/dark/png/64/sketch_convert_to.png</file>
+    <file>sketch/operations/dark/png/64/sketch_delete.png</file>
+    <file>sketch/operations/dark/png/64/sketch_replace.png</file>
+    <file>sketch/operations/dark/png/64/sketch_toggle_lock.png</file>
+	
     <file>sketch/operations/light/png/16/edit_copy.png</file>
     <file>sketch/operations/light/png/16/edit_cut.png</file>
     <file>sketch/operations/light/png/16/edit_paste.png</file>
+    <file>sketch/operations/light/png/16/select_select.png</file>
+    <file>sketch/operations/light/png/16/sketch_construction.png</file>
+    <file>sketch/operations/light/png/16/sketch_convert_to.png</file>
+    <file>sketch/operations/light/png/16/sketch_delete.png</file>
+    <file>sketch/operations/light/png/16/sketch_replace.png</file>
+    <file>sketch/operations/light/png/16/sketch_toggle_lock.png</file>
+	
     <file>sketch/operations/light/png/32/edit_copy.png</file>
     <file>sketch/operations/light/png/32/edit_cut.png</file>
     <file>sketch/operations/light/png/32/edit_paste.png</file>
+    <file>sketch/operations/light/png/32/select_select.png</file>
+    <file>sketch/operations/light/png/32/sketch_construction.png</file>
+    <file>sketch/operations/light/png/32/sketch_convert_to.png</file>
+    <file>sketch/operations/light/png/32/sketch_delete.png</file>
+    <file>sketch/operations/light/png/32/sketch_replace.png</file>
+    <file>sketch/operations/light/png/32/sketch_toggle_lock.png</file>
+	
     <file>sketch/operations/light/png/48/edit_copy.png</file>
     <file>sketch/operations/light/png/48/edit_cut.png</file>
     <file>sketch/operations/light/png/48/edit_paste.png</file>
+    <file>sketch/operations/light/png/48/select_select.png</file>
+    <file>sketch/operations/light/png/48/sketch_construction.png</file>
+    <file>sketch/operations/light/png/48/sketch_convert_to.png</file>
+    <file>sketch/operations/light/png/48/sketch_delete.png</file>
+    <file>sketch/operations/light/png/48/sketch_replace.png</file>
+    <file>sketch/operations/light/png/48/sketch_toggle_lock.png</file>
+	
     <file>sketch/operations/light/png/64/edit_copy.png</file>
     <file>sketch/operations/light/png/64/edit_cut.png</file>
     <file>sketch/operations/light/png/64/edit_paste.png</file>
+    <file>sketch/operations/light/png/64/select_select.png</file>
+    <file>sketch/operations/light/png/64/sketch_construction.png</file>
+    <file>sketch/operations/light/png/64/sketch_convert_to.png</file>
+    <file>sketch/operations/light/png/64/sketch_delete.png</file>
+    <file>sketch/operations/light/png/64/sketch_replace.png</file>
+    <file>sketch/operations/light/png/64/sketch_toggle_lock.png</file>
+	
     <file>sketch/setup/dark/png/16/sketch_references.png</file>
     <file>sketch/setup/dark/png/16/sketch_setup.png</file>
     <file>sketch/setup/dark/png/16/sketch_view.png</file>
