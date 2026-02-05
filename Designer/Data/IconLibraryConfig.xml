@@ -782,12 +782,12 @@
             <theme name="dark" svg="icons/sheet/unbend.svg"/>
         </icon>
         <icon id="sketch.chamfer">
-            <theme name="light" svg="icons/sketch/chamfer.svg"/>
-            <theme name="dark" svg="icons/sketch/chamfer.svg"/>
+            <theme name="light" svg="icons/sketch/chamfer.svg" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_chamfer.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_chamfer.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_chamfer.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_chamfer.png"/>
+            <theme name="dark" svg="icons/sketch/chamfer.svg" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_chamfer.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_chamfer.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_chamfer.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_chamfer.png"/>
         </icon>
         <icon id="sketch.chamfer_trim">
-            <theme name="light" svg="icons/sketch/chamfer_trim.svg"/>
-            <theme name="dark" svg="icons/sketch/chamfer_trim.svg"/>
+            <theme name="light" svg="icons/sketch/chamfer_trim.svg" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_chamfer_trim.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_chamfer_trim.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_chamfer_trim.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_chamfer_trim.png"/>
+            <theme name="dark" svg="icons/sketch/chamfer_trim.svg" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_chamfer_trim.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_chamfer_trim.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_chamfer_trim.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_chamfer_trim.png"/>
         </icon>
                 <icon id="sketch.constr_coincident">
             <theme name="light" png16=":/Ribbon/sketch/constraint/light/png/16/sketch_constraint_coincident.png" png32=":/Ribbon/sketch/constraint/light/png/32/sketch_constraint_coincident.png" png48=":/Ribbon/sketch/constraint/light/png/48/sketch_constraint_coincident.png" png64=":/Ribbon/sketch/constraint/light/png/64/sketch_constraint_coincident.png"/>
@@ -917,25 +917,140 @@
             <theme name="light" png16=":/Ribbon/sketch/inspect/light/png/16/sketch_inspect_featureRequirements.png" png32=":/Ribbon/sketch/inspect/light/png/32/sketch_inspect_featureRequirements.png" png48=":/Ribbon/sketch/inspect/light/png/48/sketch_inspect_featureRequirements.png" png64=":/Ribbon/sketch/inspect/light/png/64/sketch_inspect_featureRequirements.png"/>
             <theme name="dark"  png16=":/Ribbon/sketch/inspect/dark/png/16/sketch_inspect_featureRequirements.png" png32=":/Ribbon/sketch/inspect/dark/png/32/sketch_inspect_featureRequirements.png" png48=":/Ribbon/sketch/inspect/dark/png/48/sketch_inspect_featureRequirements.png" png64=":/Ribbon/sketch/inspect/dark/png/64/sketch_inspect_featureRequirements.png"/>
         </icon>
+
+        <icon id="sketch.arc">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_arc.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_arc.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_arc.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_arc.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_arc.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_arc.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_arc.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_arc.png"/>
+        </icon>
+
+        <icon id="sketch.arc_3pt_tangent_end">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_arc_3pt_tangent_end.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_arc_3pt_tangent_end.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_arc_3pt_tangent_end.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_arc_3pt_tangent_end.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_arc_3pt_tangent_end.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_arc_3pt_tangent_end.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_arc_3pt_tangent_end.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_arc_3pt_tangent_end.png"/>
+        </icon>
+
+        <icon id="sketch.arc_3tangent">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_arc_3tangent.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_arc_3tangent.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_arc_3tangent.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_arc_3tangent.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_arc_3tangent.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_arc_3tangent.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_arc_3tangent.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_arc_3tangent.png"/>
+        </icon>
+
+        <icon id="sketch.arc_center_ends">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_arc_center_ends.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_arc_center_ends.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_arc_center_ends.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_arc_center_ends.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_arc_center_ends.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_arc_center_ends.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_arc_center_ends.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_arc_center_ends.png"/>
+        </icon>
+
+        <icon id="sketch.arc_concentric">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_arc_concentric.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_arc_concentric.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_arc_concentric.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_arc_concentric.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_arc_concentric.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_arc_concentric.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_arc_concentric.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_arc_concentric.png"/>
+        </icon>
+
+        <icon id="sketch.arc_conic">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_arc_conic.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_arc_conic.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_arc_conic.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_arc_conic.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_arc_conic.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_arc_conic.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_arc_conic.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_arc_conic.png"/>
+        </icon>
+
+        <icon id="sketch.circle">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_circle.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_circle.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_circle.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_circle.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_circle.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_circle.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_circle.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_circle.png"/>
+        </icon>
+
+        <icon id="sketch.circle_3pt">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_circle_3pt.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_circle_3pt.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_circle_3pt.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_circle_3pt.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_circle_3pt.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_circle_3pt.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_circle_3pt.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_circle_3pt.png"/>
+        </icon>
+
+        <icon id="sketch.circle_3tangent">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_circle_3tangent.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_circle_3tangent.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_circle_3tangent.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_circle_3tangent.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_circle_3tangent.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_circle_3tangent.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_circle_3tangent.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_circle_3tangent.png"/>
+        </icon>
+
+        <icon id="sketch.circle_center_point">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_circle_center_point.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_circle_center_point.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_circle_center_point.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_circle_center_point.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_circle_center_point.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_circle_center_point.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_circle_center_point.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_circle_center_point.png"/>
+        </icon>
+
+        <icon id="sketch.circle_concentric">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_circle_concentric.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_circle_concentric.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_circle_concentric.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_circle_concentric.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_circle_concentric.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_circle_concentric.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_circle_concentric.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_circle_concentric.png"/>
+        </icon>
+
+        <icon id="sketch.ellipse">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_ellipse.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_ellipse.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_ellipse.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_ellipse.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_ellipse.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_ellipse.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_ellipse.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_ellipse.png"/>
+        </icon>
+
+        <icon id="sketch.ellipse_axis_ends">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_ellipse_axis_ends.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_ellipse_axis_ends.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_ellipse_axis_ends.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_ellipse_axis_ends.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_ellipse_axis_ends.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_ellipse_axis_ends.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_ellipse_axis_ends.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_ellipse_axis_ends.png"/>
+        </icon>
+
+        <icon id="sketch.ellipse_center_axis">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_ellipse_center_axis.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_ellipse_center_axis.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_ellipse_center_axis.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_ellipse_center_axis.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_ellipse_center_axis.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_ellipse_center_axis.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_ellipse_center_axis.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_ellipse_center_axis.png"/>
+        </icon>
+
+        <icon id="sketch.fit_spline">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_fit_spline.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_fit_spline.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_fit_spline.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_fit_spline.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_fit_spline.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_fit_spline.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_fit_spline.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_fit_spline.png"/>
+        </icon>
+
+        <icon id="sketch.line">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_line.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_line.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_line.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_line.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_line.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_line.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_line.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_line.png"/>
+        </icon>
+
+        <icon id="sketch.parallelogram">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_parallelogram.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_parallelogram.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_parallelogram.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_parallelogram.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_parallelogram.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_parallelogram.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_parallelogram.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_parallelogram.png"/>
+        </icon>
+
+        <icon id="sketch.rect_center">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_rect_center.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_rect_center.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_rect_center.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_rect_center.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_rect_center.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_rect_center.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_rect_center.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_rect_center.png"/>
+        </icon>
+
+        <icon id="sketch.rect_corner">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_rect_corner.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_rect_corner.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_rect_corner.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_rect_corner.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_rect_corner.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_rect_corner.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_rect_corner.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_rect_corner.png"/>
+        </icon>
+
+        <icon id="sketch.rect_slanted">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_rect_slanted.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_rect_slanted.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_rect_slanted.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_rect_slanted.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_rect_slanted.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_rect_slanted.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_rect_slanted.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_rect_slanted.png"/>
+        </icon>
+
+        <icon id="sketch.rectangle">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_rectangle.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_rectangle.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_rectangle.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_rectangle.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_rectangle.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_rectangle.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_rectangle.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_rectangle.png"/>
+        </icon>
+
+        <icon id="sketch.spline_through">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_spline_through.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_spline_through.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_spline_through.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_spline_through.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_spline_through.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_spline_through.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_spline_through.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_spline_through.png"/>
+        </icon>
+
+        <icon id="sketch.studio_spline">
+            <theme name="light" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_studio_spline.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_studio_spline.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_studio_spline.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_studio_spline.png"/>
+            <theme name="dark" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_studio_spline.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_studio_spline.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_studio_spline.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_studio_spline.png"/>
+        </icon>
         <icon id="sketch.fillet">
-            <theme name="light" svg="icons/sketch/fillet.svg"/>
-            <theme name="dark" svg="icons/sketch/fillet.svg"/>
+            <theme name="light" svg="icons/sketch/fillet.svg" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_fillet.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_fillet.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_fillet.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_fillet.png"/>
+            <theme name="dark" svg="icons/sketch/fillet.svg" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_fillet.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_fillet.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_fillet.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_fillet.png"/>
         </icon>
         <icon id="sketch.fillet_circular">
-            <theme name="light" svg="icons/sketch/fillet_circular.svg"/>
-            <theme name="dark" svg="icons/sketch/fillet_circular.svg"/>
+            <theme name="light" svg="icons/sketch/fillet_circular.svg" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_fillet_circular.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_fillet_circular.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_fillet_circular.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_fillet_circular.png"/>
+            <theme name="dark" svg="icons/sketch/fillet_circular.svg" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_fillet_circular.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_fillet_circular.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_fillet_circular.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_fillet_circular.png"/>
         </icon>
         <icon id="sketch.fillet_circular_trim">
-            <theme name="light" svg="icons/sketch/fillet_circular_trim.svg"/>
-            <theme name="dark" svg="icons/sketch/fillet_circular_trim.svg"/>
+            <theme name="light" svg="icons/sketch/fillet_circular_trim.svg" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_fillet_circular_trim.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_fillet_circular_trim.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_fillet_circular_trim.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_fillet_circular_trim.png"/>
+            <theme name="dark" svg="icons/sketch/fillet_circular_trim.svg" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_fillet_circular_trim.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_fillet_circular_trim.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_fillet_circular_trim.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_fillet_circular_trim.png"/>
         </icon>
         <icon id="sketch.fillet_elliptical">
-            <theme name="light" svg="icons/sketch/fillet_elliptical.svg"/>
-            <theme name="dark" svg="icons/sketch/fillet_elliptical.svg"/>
+            <theme name="light" svg="icons/sketch/fillet_elliptical.svg" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_fillet_elliptical.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_fillet_elliptical.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_fillet_elliptical.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_fillet_elliptical.png"/>
+            <theme name="dark" svg="icons/sketch/fillet_elliptical.svg" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_fillet_elliptical.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_fillet_elliptical.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_fillet_elliptical.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_fillet_elliptical.png"/>
         </icon>
         <icon id="sketch.fillet_elliptical_trim">
-            <theme name="light" svg="icons/sketch/fillet_elliptical_trim.svg"/>
-            <theme name="dark" svg="icons/sketch/fillet_elliptical_trim.svg"/>
+            <theme name="light" svg="icons/sketch/fillet_elliptical_trim.svg" png16=":/Ribbon/sketch/sketching/light/png/16/sketch_fillet_elliptical_trim.png" png32=":/Ribbon/sketch/sketching/light/png/32/sketch_fillet_elliptical_trim.png" png48=":/Ribbon/sketch/sketching/light/png/48/sketch_fillet_elliptical_trim.png" png64=":/Ribbon/sketch/sketching/light/png/64/sketch_fillet_elliptical_trim.png"/>
+            <theme name="dark" svg="icons/sketch/fillet_elliptical_trim.svg" png16=":/Ribbon/sketch/sketching/dark/png/16/sketch_fillet_elliptical_trim.png" png32=":/Ribbon/sketch/sketching/dark/png/32/sketch_fillet_elliptical_trim.png" png48=":/Ribbon/sketch/sketching/dark/png/48/sketch_fillet_elliptical_trim.png" png64=":/Ribbon/sketch/sketching/dark/png/64/sketch_fillet_elliptical_trim.png"/>
         </icon>
         <icon id="sketch.flip_plane">
             <theme name="light" svg="icons/sketch/flip_plane.svg" png16=":/Ribbon/sketch/setup/light/png/16/sketch_section_flipSketchingPlane.png" png32=":/Ribbon/sketch/setup/light/png/32/sketch_section_flipSketchingPlane.png" png48=":/Ribbon/sketch/setup/light/png/48/sketch_section_flipSketchingPlane.png" png64=":/Ribbon/sketch/setup/light/png/64/sketch_section_flipSketchingPlane.png"/>
