@@ -6,3 +6,6 @@
 	url = https://github.com/ToshihideMaskawa/ToolChain.git
 	path = ToolChain
 	branch = main
+[submodule "AliceThirdParty"]
+	path = AliceThirdParty
+	url = git@github.com:Ludwigstrasse/AliceThirdParty.git
