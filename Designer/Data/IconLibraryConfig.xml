@@ -1414,5 +1414,36 @@
             <theme name="light" png16=":/Ribbon/sketch/inspect/light/png/16/sketch_inspect_shadeClosedLoops.png" png32=":/Ribbon/sketch/inspect/light/png/32/sketch_inspect_shadeClosedLoops.png" png48=":/Ribbon/sketch/inspect/light/png/48/sketch_inspect_shadeClosedLoops.png" png64=":/Ribbon/sketch/inspect/light/png/64/sketch_inspect_shadeClosedLoops.png"/>
             <theme name="dark"  png16=":/Ribbon/sketch/inspect/dark/png/16/sketch_inspect_shadeClosedLoops.png" png32=":/Ribbon/sketch/inspect/dark/png/32/sketch_inspect_shadeClosedLoops.png" png48=":/Ribbon/sketch/inspect/dark/png/48/sketch_inspect_shadeClosedLoops.png" png64=":/Ribbon/sketch/inspect/dark/png/64/sketch_inspect_shadeClosedLoops.png"/>
         </icon>
+		
+		
+        <!-- ============================================================= -->
+        <!-- Navigation / Left Nav Bar                                      -->
+        <!-- ============================================================= -->
+        <icon id="nav.modelTree">
+            <theme name="light"
+                   png16=":/Navigator/nav/light/png/16/nav_modelTree.png"
+                   png32=":/Navigator/nav/light/png/32/nav_modelTree.png"
+                   png48=":/Navigator/nav/light/png/48/nav_modelTree.png"
+                   png64=":/Navigator/nav/light/png/64/nav_modelTree.png"/>
+            <theme name="dark"
+                   png16=":/Navigator/nav/dark/png/16/nav_modelTree.png"
+                   png32=":/Navigator/nav/dark/png/32/nav_modelTree.png"
+                   png48=":/Navigator/nav/dark/png/48/nav_modelTree.png"
+                   png64=":/Navigator/nav/dark/png/64/nav_modelTree.png"/>
+        </icon>
+
+        <icon id="nav.reuseLibrary">
+            <theme name="light"
+                   png16=":/Navigator/nav/light/png/16/nav_reuseLibrary.png"
+                   png32=":/Navigator/nav/light/png/32/nav_reuseLibrary.png"
+                   png48=":/Navigator/nav/light/png/48/nav_reuseLibrary.png"
+                   png64=":/Navigator/nav/light/png/64/nav_reuseLibrary.png"/>
+            <theme name="dark"
+                   png16=":/Navigator/nav/dark/png/16/nav_reuseLibrary.png"
+                   png32=":/Navigator/nav/dark/png/32/nav_reuseLibrary.png"
+                   png48=":/Navigator/nav/dark/png/48/nav_reuseLibrary.png"
+                   png64=":/Navigator/nav/dark/png/64/nav_reuseLibrary.png"/>
+        </icon>
+
 </icon-library>
 </IconLibraryConfig>

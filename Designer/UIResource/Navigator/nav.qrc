@@ -1,0 +1,25 @@
+<RCC>
+<qresource prefix="/Navigator">
+    <!-- Nav bar icons -->
+    <file>nav/light/png/16/nav_modelTree.png</file>
+    <file>nav/light/png/32/nav_modelTree.png</file>
+    <file>nav/light/png/48/nav_modelTree.png</file>
+    <file>nav/light/png/64/nav_modelTree.png</file>
+
+    <file>nav/dark/png/16/nav_modelTree.png</file>
+    <file>nav/dark/png/32/nav_modelTree.png</file>
+    <file>nav/dark/png/48/nav_modelTree.png</file>
+    <file>nav/dark/png/64/nav_modelTree.png</file>
+
+    <file>nav/light/png/16/nav_reuseLibrary.png</file>
+    <file>nav/light/png/32/nav_reuseLibrary.png</file>
+    <file>nav/light/png/48/nav_reuseLibrary.png</file>
+    <file>nav/light/png/64/nav_reuseLibrary.png</file>
+
+    <file>nav/dark/png/16/nav_reuseLibrary.png</file>
+    <file>nav/dark/png/32/nav_reuseLibrary.png</file>
+    <file>nav/dark/png/48/nav_reuseLibrary.png</file>
+    <file>nav/dark/png/64/nav_reuseLibrary.png</file>
+
+</qresource>
+</RCC>
