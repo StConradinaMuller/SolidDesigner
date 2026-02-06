@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Splash>
   <Image src=":/images/SolidDesigner_splash_camel_912x513.png" scale="fit" smooth="true"/>
+
   <Variants>
-    <Variant minDpr="1.75" maxDpr="2.5">
-      <Image src=":/images/Alice_Splash_912x513@2x.png" devicePixelRatio="2.0"/>
+    <!-- High-DPI: use true 2x image and set DPR=2 so logical size stays 912x513 -->
+    <Variant minDpr="1.75">
+      <Image src=":/images/SolidDesigner_splash_camel_912x513@2x.png" devicePixelRatio="2.0"/>
     </Variant>
   </Variants>
-  <Progress visible="true" rect="60,468,792,8" fgColor="#FF9E00" bgColor="#40000000" radius="4" indeterminate="true"/>
-  <Message textColor="#E0FFFFFF" x="60" y="440" align="left|vcenter" wrapWidth="780">
+
+  <!-- Default: no animated progress bar when startup is fast. Enable it only when you have real long tasks. -->
+  <Progress visible="false" rect="64,472,480,8" fgColor="#FF9E00" bgColor="#40000000" radius="4" indeterminate="false"/>
+
+  <!-- Status text (optional): bottom-left safe area, won’t collide with the bottom-right pill. -->
+  <Message textColor="#E0FFFFFF" x="64" y="446" align="left|vcenter" wrapWidth="500">
     <Font family="Microsoft YaHei" size="13" weight="600"/>
   </Message>
-  <Timings fadeInMs="250" fadeOutMs="180" minimumShowMs="800"/>
+
+  <Timings fadeInMs="250" fadeOutMs="180" minimumShowMs="300"/>
 </Splash>
 
