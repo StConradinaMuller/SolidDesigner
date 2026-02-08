@@ -1,0 +1,4 @@
+# ThirdParty SDK output (do NOT commit)
+Externals/3rdParty/sdk/**
+Externals/3rdParty/runtime/**
+Externals/3rdParty/install/**
