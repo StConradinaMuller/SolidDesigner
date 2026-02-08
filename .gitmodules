@@ -9,3 +9,4 @@
 [submodule "AliceThirdParty"]
 	path = AliceThirdParty
 	url = git@github.com:Ludwigstrasse/AliceThirdParty.git
+	branch = main
