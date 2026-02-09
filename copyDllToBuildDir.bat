@@ -59,8 +59,19 @@ xcopy C:\Qt\Qt5.15.14\5.15.14\msvc2019_64\bin\Qt5Widgets.dll %CURRENT_NEW_DIR%\x
 xcopy C:\Qt\Qt5.15.14\5.15.14\msvc2019_64\bin\Qt5Network.dll %CURRENT_NEW_DIR%\x64\Debug /s /e /c /y /h /r
 
 ::拷贝source/resource目录下所有的资源到bin目录
-xcopy .\Designer\Data\*.*  %CURRENT_NEW_DIR%\x64\Release\Data   /s /h 
-xcopy .\Designer\Data\*.*  %CURRENT_NEW_DIR%\x64\Debug\Data   /s /h 
+xcopy .\Designer\Data\*.*  %CURRENT_NEW_DIR%\x64\Release\Data   /E /I /H /Y
+xcopy .\Designer\Data\*.*  %CURRENT_NEW_DIR%\x64\Debug\Data   /E /I /H /Y
 
+::拷贝Externals/3rdParty/runtime(sdk)
+:: /I：避免提示 “Does ... specify a file name or directory name on the target…”
+:: /E：拷贝子目录（包含空目录）
+:: /Y：覆盖不提示
+:: /S：拷贝子目录（不含空目录）
+:: /H：包含隐藏/系统文件
+xcopy .\Externals\3rdParty\runtime\*.*  %CURRENT_NEW_DIR%\x64\Release\runtime   /E /I /H /Y
+xcopy .\Externals\3rdParty\runtime\*.*  %CURRENT_NEW_DIR%\x64\Debug\runtime   /E /I /H /Y
+
+xcopy .\Externals\3rdParty\sdk\*.*  %CURRENT_NEW_DIR%\x64\Release\sdk   /E /I /H /Y
+xcopy .\Externals\3rdParty\sdk\*.*  %CURRENT_NEW_DIR%\x64\Debug\sdk   /E /I /H /Y
 pause
 exit
