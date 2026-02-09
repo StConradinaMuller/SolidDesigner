@@ -1,4 +1,4 @@
 # ThirdParty SDK output (do NOT commit)
-Externals/3rdParty/sdk/**
-Externals/3rdParty/runtime/**
+Externals/3rdParty/sdk/msvc2022-x64-md/Debug/occt/data/*.*
+Externals/3rdParty/sdk/msvc2022-x64-md/Debug/occt/win64/vc14/bind/*.pdb
 Externals/3rdParty/install/**
