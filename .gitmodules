@@ -10,3 +10,7 @@
 	path = AliceThirdParty
 	url = git@github.com:Ludwigstrasse/AliceThirdParty.git
 	branch = main
+[submodule "Externals/3rdParty/sdk"]
+	path = Externals/3rdParty/sdk
+	url = git@github.com:Ludwigstrasse/AliceSdk.git
+	branch = main
