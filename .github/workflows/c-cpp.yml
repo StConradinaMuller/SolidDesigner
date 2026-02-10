@@ -37,7 +37,23 @@ jobs:
           qtdeclarative5-dev \
           qtquickcontrols2-5-dev\
           python3 \
-          uuid-dev
+          uuid-dev \
+          build-essential ninja-build rsync pkg-config curl \
+          libgl1-mesa-dev libglu1-mesa-dev xorg-dev
+
+
+    - name: Build OCCT SDK (Linux)
+      run: |
+        set -e
+        chmod +x AliceThirdParty/scripts/*.sh
+
+        # If OCCT SDK is not present in the repo snapshot, build it in CI and export into Externals/3rdParty.
+        if [ ! -f "Externals/3rdParty/sdk/linux-x64/Release/occt/lib/cmake/opencascade/OpenCASCADEConfig.cmake" ] &&            [ ! -f "Externals/3rdParty/sdk/linux-x64/Release/occt/cmake/OpenCASCADEConfig.cmake" ]; then
+          AliceThirdParty/scripts/build-occt.sh Release x64-linux
+          AliceThirdParty/scripts/export-occt-sdk.sh Release "$GITHUB_WORKSPACE"
+        else
+          echo "OCCT SDK already exists in Externals/3rdParty/sdk/linux-x64/Release/occt"
+        fi
 
 
        
