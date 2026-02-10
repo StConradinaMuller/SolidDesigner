@@ -45,12 +45,19 @@ jobs:
     - name: Build OCCT SDK (Linux)
       run: |
         set -e
-        chmod +x AliceThirdParty/scripts/*.sh
+
+        # 防止 Windows 提交的 CRLF 让 Ubuntu 解释器看到 "sh\r" / "bash\r"
+        # （当前 CI 报错就是这个原因：/usr/bin/env: 'sh\r': No such file or directory）
+        if [ -d "AliceThirdParty/scripts" ]; then
+          find AliceThirdParty/scripts -maxdepth 1 -name "*.sh" -print0 | xargs -0 sed -i 's/\r$//'
+          chmod +x AliceThirdParty/scripts/*.sh
+        fi
 
         # If OCCT SDK is not present in the repo snapshot, build it in CI and export into Externals/3rdParty.
-        if [ ! -f "Externals/3rdParty/sdk/linux-x64/Release/occt/lib/cmake/opencascade/OpenCASCADEConfig.cmake" ] &&            [ ! -f "Externals/3rdParty/sdk/linux-x64/Release/occt/cmake/OpenCASCADEConfig.cmake" ]; then
-          AliceThirdParty/scripts/build-occt.sh Release x64-linux
-          AliceThirdParty/scripts/export-occt-sdk.sh Release "$GITHUB_WORKSPACE"
+        if [ ! -f "Externals/3rdParty/sdk/linux-x64/Release/occt/lib/cmake/opencascade/OpenCASCADEConfig.cmake" ] && \
+           [ ! -f "Externals/3rdParty/sdk/linux-x64/Release/occt/cmake/OpenCASCADEConfig.cmake" ]; then
+          bash AliceThirdParty/scripts/build-occt.sh Release x64-linux
+          bash AliceThirdParty/scripts/export-occt-sdk.sh Release "$GITHUB_WORKSPACE"
         else
           echo "OCCT SDK already exists in Externals/3rdParty/sdk/linux-x64/Release/occt"
         fi
