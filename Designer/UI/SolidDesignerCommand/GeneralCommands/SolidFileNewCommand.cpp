@@ -107,9 +107,5 @@ std::unique_ptr<alice::IOperation> SolidFileNewCommand::Execute(const alice::Com
         else
             pWbMgr->ActiveStartupWorkbench(pDoc);
     }
-
-    // TODO: each document opens exactly one default 3D view.
-    // MdiViewManagerQt::OpenPrimaryView replaces the pane content, so this call is idempotent.
-    pMainWindow->OpenView("view.model3d", pDoc, oRequest.name.toStdWString());
 	return nullptr;
 }
