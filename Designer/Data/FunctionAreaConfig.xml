@@ -609,10 +609,6 @@
                     <control type="small-button" commandRef="datum.geometry.cs" row="2" column="0" />
                 </group>
 
-                <group id="grp_sketch_construction_mode" label="Construction Mode" order="45">
-                    <control type="large-button" commandRef="sketch.constructionMode" row="0" column="0" rowSpan="3" />
-                </group>
-
                 <group id="grp_sketch_sketching" label="Sketching" order="50">
                     <SplitButton type="small-button" commandRef="sketch.line" row="0" column="0">
                         <SubMenu type="command" commandRef="sketch.line" />
@@ -673,12 +669,15 @@
                     <control type="small-button" commandRef="sketch.modify.offset" row="0" column="3" />
                     <control type="small-button" commandRef="sketch.thicken" row="1" column="3" />
                     <control type="small-button" commandRef="sketch.project" row="2" column="3" />
-					
+
                     <control type="small-button" commandRef="sketch.construction.centerline" row="0" column="4"/>
                     <control type="small-button" commandRef="sketch.construction.point" row="1" column="4" />
                     <control type="small-button" commandRef="sketch.constrcution.cs" row="2" column="4" />
-					
-                    <control type="large-button" commandRef="sketch.palette" row="0" column="5" rowSpan="3" />
+
+                    <LauncherMenu>
+                        <SubMenu type="command" commandRef="sketch.constructionMode" />
+                        <SubMenu type="command" commandRef="sketch.palette" />
+                    </LauncherMenu>
                 </group>
 
                 <group id="grp_sketch_editing" label="Editing" order="60">
