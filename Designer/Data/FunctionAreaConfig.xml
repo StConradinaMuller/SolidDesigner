@@ -20,6 +20,11 @@
                 workbench="workbench.assembly"
                 defaultTab="tab_asm_home"/>
 
+        <ribbon id="sd.drawing"
+                label="SD - Drawing"
+                workbench="workbench.drawing"
+                defaultTab="tab_drawing_home"/>
+
         <ribbon id="sd.home"
                 label="SD - Home"
                 workbench="workbench.home"
@@ -528,6 +533,25 @@
                 </group>
             </tab>
 
+        </layout>
+
+
+        <!-- ===================== Drawing environment ===================== -->
+        <layout ribbon="sd.drawing">
+
+            <tab id="tab_drawing_home" label="Drawing" order="10">
+                <group id="grp_drawing_data" label="Data" order="10">
+                    <control type="large-button" commandRef="file.new"    row="0" column="0" rowSpan="3"/>
+                    <control type="large-button" commandRef="file.open"   row="0" column="1" rowSpan="3"/>
+                </group>
+
+                <group id="grp_drawing_view" label="View" order="20">
+                    <control type="small-button" commandRef="view.front"     row="0" column="0"/>
+                    <control type="small-button" commandRef="view.right"     row="1" column="0"/>
+                    <control type="small-button" commandRef="view.top"       row="2" column="0"/>
+                    <control type="small-button" commandRef="view.trimetric" row="0" column="1"/>
+                </group>
+            </tab>
         </layout>
         <!-- ===================== Sketch environment ===================== -->
         <layout ribbon="sd.sketch">

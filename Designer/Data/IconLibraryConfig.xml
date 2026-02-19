@@ -129,46 +129,48 @@
             <theme name="light" svg="icons/app/sketch.svg"/>
             <theme name="dark" svg="icons/app/sketch.svg"/>
         </icon>
+
         <icon id="asm.add_component">
-            <theme name="light" svg="icons/asm/add_component.svg"/>
-            <theme name="dark" svg="icons/asm/add_component.svg"/>
+            <theme name="light" svg="icons/asm/add_component.svg" png16=":/Ribbon/assembly/grp_asm_components/light/png/16/asm_add_component.png" png32=":/Ribbon/assembly/grp_asm_components/light/png/32/asm_add_component.png" png48=":/Ribbon/assembly/grp_asm_components/light/png/48/asm_add_component.png" png64=":/Ribbon/assembly/grp_asm_components/light/png/64/asm_add_component.png"/>
+            <theme name="dark" svg="icons/asm/add_component.svg" png16=":/Ribbon/assembly/grp_asm_components/dark/png/16/asm_add_component.png" png32=":/Ribbon/assembly/grp_asm_components/dark/png/32/asm_add_component.png" png48=":/Ribbon/assembly/grp_asm_components/dark/png/48/asm_add_component.png" png64=":/Ribbon/assembly/grp_asm_components/dark/png/64/asm_add_component.png"/>
         </icon>
         <icon id="asm.align">
-            <theme name="light" svg="icons/asm/align.svg"/>
-            <theme name="dark" svg="icons/asm/align.svg"/>
+            <theme name="light" svg="icons/asm/align.svg" png16=":/Ribbon/assembly/grp_asm_constraints/light/png/16/asm_align.png" png32=":/Ribbon/assembly/grp_asm_constraints/light/png/32/asm_align.png" png48=":/Ribbon/assembly/grp_asm_constraints/light/png/48/asm_align.png" png64=":/Ribbon/assembly/grp_asm_constraints/light/png/64/asm_align.png"/>
+            <theme name="dark" svg="icons/asm/align.svg" png16=":/Ribbon/assembly/grp_asm_constraints/dark/png/16/asm_align.png" png32=":/Ribbon/assembly/grp_asm_constraints/dark/png/32/asm_align.png" png48=":/Ribbon/assembly/grp_asm_constraints/dark/png/48/asm_align.png" png64=":/Ribbon/assembly/grp_asm_constraints/dark/png/64/asm_align.png"/>
         </icon>
         <icon id="asm.arrange">
-            <theme name="light" svg="icons/asm/arrange.svg"/>
-            <theme name="dark" svg="icons/asm/arrange.svg"/>
+            <theme name="light" svg="icons/asm/arrange.svg" png16=":/Ribbon/assembly/grp_asm_components/light/png/16/asm_arrange.png" png32=":/Ribbon/assembly/grp_asm_components/light/png/32/asm_arrange.png" png48=":/Ribbon/assembly/grp_asm_components/light/png/48/asm_arrange.png" png64=":/Ribbon/assembly/grp_asm_components/light/png/64/asm_arrange.png"/>
+            <theme name="dark" svg="icons/asm/arrange.svg" png16=":/Ribbon/assembly/grp_asm_components/dark/png/16/asm_arrange.png" png32=":/Ribbon/assembly/grp_asm_components/dark/png/32/asm_arrange.png" png48=":/Ribbon/assembly/grp_asm_components/dark/png/48/asm_arrange.png" png64=":/Ribbon/assembly/grp_asm_components/dark/png/64/asm_arrange.png"/>
         </icon>
         <icon id="asm.constraint">
-            <theme name="light" svg="icons/asm/constraint.svg"/>
-            <theme name="dark" svg="icons/asm/constraint.svg"/>
+            <theme name="light" svg="icons/asm/constraint.svg" png16=":/Ribbon/assembly/grp_asm_constraints/light/png/16/asm_constraint.png" png32=":/Ribbon/assembly/grp_asm_constraints/light/png/32/asm_constraint.png" png48=":/Ribbon/assembly/grp_asm_constraints/light/png/48/asm_constraint.png" png64=":/Ribbon/assembly/grp_asm_constraints/light/png/64/asm_constraint.png"/>
+            <theme name="dark" svg="icons/asm/constraint.svg" png16=":/Ribbon/assembly/grp_asm_constraints/dark/png/16/asm_constraint.png" png32=":/Ribbon/assembly/grp_asm_constraints/dark/png/32/asm_constraint.png" png48=":/Ribbon/assembly/grp_asm_constraints/dark/png/48/asm_constraint.png" png64=":/Ribbon/assembly/grp_asm_constraints/dark/png/64/asm_constraint.png"/>
         </icon>
         <icon id="asm.distance">
-            <theme name="light" svg="icons/asm/distance.svg"/>
-            <theme name="dark" svg="icons/asm/distance.svg"/>
+            <theme name="light" svg="icons/asm/distance.svg" png16=":/Ribbon/assembly/grp_asm_constraints/light/png/16/asm_distance.png" png32=":/Ribbon/assembly/grp_asm_constraints/light/png/32/asm_distance.png" png48=":/Ribbon/assembly/grp_asm_constraints/light/png/48/asm_distance.png" png64=":/Ribbon/assembly/grp_asm_constraints/light/png/64/asm_distance.png"/>
+            <theme name="dark" svg="icons/asm/distance.svg" png16=":/Ribbon/assembly/grp_asm_constraints/dark/png/16/asm_distance.png" png32=":/Ribbon/assembly/grp_asm_constraints/dark/png/32/asm_distance.png" png48=":/Ribbon/assembly/grp_asm_constraints/dark/png/48/asm_distance.png" png64=":/Ribbon/assembly/grp_asm_constraints/dark/png/64/asm_distance.png"/>
         </icon>
         <icon id="asm.explode">
-            <theme name="light" svg="icons/asm/explode.svg"/>
-            <theme name="dark" svg="icons/asm/explode.svg"/>
+            <theme name="light" svg="icons/asm/explode.svg" png16=":/Ribbon/assembly/grp_asm_explode/light/png/16/asm_explode.png" png32=":/Ribbon/assembly/grp_asm_explode/light/png/32/asm_explode.png" png48=":/Ribbon/assembly/grp_asm_explode/light/png/48/asm_explode.png" png64=":/Ribbon/assembly/grp_asm_explode/light/png/64/asm_explode.png"/>
+            <theme name="dark" svg="icons/asm/explode.svg" png16=":/Ribbon/assembly/grp_asm_explode/dark/png/16/asm_explode.png" png32=":/Ribbon/assembly/grp_asm_explode/dark/png/32/asm_explode.png" png48=":/Ribbon/assembly/grp_asm_explode/dark/png/48/asm_explode.png" png64=":/Ribbon/assembly/grp_asm_explode/dark/png/64/asm_explode.png"/>
         </icon>
         <icon id="asm.mate">
-            <theme name="light" svg="icons/asm/mate.svg"/>
-            <theme name="dark" svg="icons/asm/mate.svg"/>
+            <theme name="light" svg="icons/asm/mate.svg" png16=":/Ribbon/assembly/grp_asm_constraints/light/png/16/asm_mate.png" png32=":/Ribbon/assembly/grp_asm_constraints/light/png/32/asm_mate.png" png48=":/Ribbon/assembly/grp_asm_constraints/light/png/48/asm_mate.png" png64=":/Ribbon/assembly/grp_asm_constraints/light/png/64/asm_mate.png"/>
+            <theme name="dark" svg="icons/asm/mate.svg" png16=":/Ribbon/assembly/grp_asm_constraints/dark/png/16/asm_mate.png" png32=":/Ribbon/assembly/grp_asm_constraints/dark/png/32/asm_mate.png" png48=":/Ribbon/assembly/grp_asm_constraints/dark/png/48/asm_mate.png" png64=":/Ribbon/assembly/grp_asm_constraints/dark/png/64/asm_mate.png"/>
         </icon>
         <icon id="asm.new_component">
-            <theme name="light" svg="icons/asm/new_component.svg"/>
-            <theme name="dark" svg="icons/asm/new_component.svg"/>
+            <theme name="light" svg="icons/asm/new_component.svg" png16=":/Ribbon/assembly/grp_asm_components/light/png/16/asm_new_component.png" png32=":/Ribbon/assembly/grp_asm_components/light/png/32/asm_new_component.png" png48=":/Ribbon/assembly/grp_asm_components/light/png/48/asm_new_component.png" png64=":/Ribbon/assembly/grp_asm_components/light/png/64/asm_new_component.png"/>
+            <theme name="dark" svg="icons/asm/new_component.svg" png16=":/Ribbon/assembly/grp_asm_components/dark/png/16/asm_new_component.png" png32=":/Ribbon/assembly/grp_asm_components/dark/png/32/asm_new_component.png" png48=":/Ribbon/assembly/grp_asm_components/dark/png/48/asm_new_component.png" png64=":/Ribbon/assembly/grp_asm_components/dark/png/64/asm_new_component.png"/>
         </icon>
         <icon id="asm.replace_component">
-            <theme name="light" svg="icons/asm/replace_component.svg"/>
-            <theme name="dark" svg="icons/asm/replace_component.svg"/>
+            <theme name="light" svg="icons/asm/replace_component.svg" png16=":/Ribbon/assembly/grp_asm_components/light/png/16/asm_replace_component.png" png32=":/Ribbon/assembly/grp_asm_components/light/png/32/asm_replace_component.png" png48=":/Ribbon/assembly/grp_asm_components/light/png/48/asm_replace_component.png" png64=":/Ribbon/assembly/grp_asm_components/light/png/64/asm_replace_component.png"/>
+            <theme name="dark" svg="icons/asm/replace_component.svg" png16=":/Ribbon/assembly/grp_asm_components/dark/png/16/asm_replace_component.png" png32=":/Ribbon/assembly/grp_asm_components/dark/png/32/asm_replace_component.png" png48=":/Ribbon/assembly/grp_asm_components/dark/png/48/asm_replace_component.png" png64=":/Ribbon/assembly/grp_asm_components/dark/png/64/asm_replace_component.png"/>
         </icon>
         <icon id="asm.unexplode">
-            <theme name="light" svg="icons/asm/unexplode.svg"/>
-            <theme name="dark" svg="icons/asm/unexplode.svg"/>
+            <theme name="light" svg="icons/asm/unexplode.svg" png16=":/Ribbon/assembly/grp_asm_explode/light/png/16/asm_unexplode.png" png32=":/Ribbon/assembly/grp_asm_explode/light/png/32/asm_unexplode.png" png48=":/Ribbon/assembly/grp_asm_explode/light/png/48/asm_unexplode.png" png64=":/Ribbon/assembly/grp_asm_explode/light/png/64/asm_unexplode.png"/>
+            <theme name="dark" svg="icons/asm/unexplode.svg" png16=":/Ribbon/assembly/grp_asm_explode/dark/png/16/asm_unexplode.png" png32=":/Ribbon/assembly/grp_asm_explode/dark/png/32/asm_unexplode.png" png48=":/Ribbon/assembly/grp_asm_explode/dark/png/48/asm_unexplode.png" png64=":/Ribbon/assembly/grp_asm_explode/dark/png/64/asm_unexplode.png"/>
         </icon>
+        
         <icon id="curve.arc">
             <theme name="light" svg="icons/curve/arc.svg"/>
             <theme name="dark" svg="icons/curve/arc.svg"/>
@@ -1414,8 +1416,8 @@
             <theme name="light" png16=":/Ribbon/sketch/inspect/light/png/16/sketch_inspect_shadeClosedLoops.png" png32=":/Ribbon/sketch/inspect/light/png/32/sketch_inspect_shadeClosedLoops.png" png48=":/Ribbon/sketch/inspect/light/png/48/sketch_inspect_shadeClosedLoops.png" png64=":/Ribbon/sketch/inspect/light/png/64/sketch_inspect_shadeClosedLoops.png"/>
             <theme name="dark"  png16=":/Ribbon/sketch/inspect/dark/png/16/sketch_inspect_shadeClosedLoops.png" png32=":/Ribbon/sketch/inspect/dark/png/32/sketch_inspect_shadeClosedLoops.png" png48=":/Ribbon/sketch/inspect/dark/png/48/sketch_inspect_shadeClosedLoops.png" png64=":/Ribbon/sketch/inspect/dark/png/64/sketch_inspect_shadeClosedLoops.png"/>
         </icon>
-		
-		
+        
+        
         <!-- ============================================================= -->
         <!-- Navigation / Left Nav Bar                                      -->
         <!-- ============================================================= -->

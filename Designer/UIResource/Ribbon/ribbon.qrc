@@ -1612,7 +1612,85 @@
     <file>sketch/sketching/dark/png/48/sketch_studio_spline.png</file>
     <file>sketch/sketching/dark/png/64/sketch_studio_spline.png</file>
 	
-	
-	
+    <file>assembly/grp_asm_components/light/png/16/asm_add_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/16/asm_add_component.png</file>
+    <file>assembly/grp_asm_components/light/png/32/asm_add_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/32/asm_add_component.png</file>
+    <file>assembly/grp_asm_components/light/png/48/asm_add_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/48/asm_add_component.png</file>
+    <file>assembly/grp_asm_components/light/png/64/asm_add_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/64/asm_add_component.png</file>
+    <file>assembly/grp_asm_components/light/png/16/asm_new_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/16/asm_new_component.png</file>
+    <file>assembly/grp_asm_components/light/png/32/asm_new_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/32/asm_new_component.png</file>
+    <file>assembly/grp_asm_components/light/png/48/asm_new_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/48/asm_new_component.png</file>
+    <file>assembly/grp_asm_components/light/png/64/asm_new_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/64/asm_new_component.png</file>
+    <file>assembly/grp_asm_components/light/png/16/asm_replace_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/16/asm_replace_component.png</file>
+    <file>assembly/grp_asm_components/light/png/32/asm_replace_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/32/asm_replace_component.png</file>
+    <file>assembly/grp_asm_components/light/png/48/asm_replace_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/48/asm_replace_component.png</file>
+    <file>assembly/grp_asm_components/light/png/64/asm_replace_component.png</file>
+    <file>assembly/grp_asm_components/dark/png/64/asm_replace_component.png</file>
+    <file>assembly/grp_asm_components/light/png/16/asm_arrange.png</file>
+    <file>assembly/grp_asm_components/dark/png/16/asm_arrange.png</file>
+    <file>assembly/grp_asm_components/light/png/32/asm_arrange.png</file>
+    <file>assembly/grp_asm_components/dark/png/32/asm_arrange.png</file>
+    <file>assembly/grp_asm_components/light/png/48/asm_arrange.png</file>
+    <file>assembly/grp_asm_components/dark/png/48/asm_arrange.png</file>
+    <file>assembly/grp_asm_components/light/png/64/asm_arrange.png</file>
+    <file>assembly/grp_asm_components/dark/png/64/asm_arrange.png</file>
+    <file>assembly/grp_asm_constraints/light/png/16/asm_align.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/16/asm_align.png</file>
+    <file>assembly/grp_asm_constraints/light/png/32/asm_align.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/32/asm_align.png</file>
+    <file>assembly/grp_asm_constraints/light/png/48/asm_align.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/48/asm_align.png</file>
+    <file>assembly/grp_asm_constraints/light/png/64/asm_align.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/64/asm_align.png</file>
+    <file>assembly/grp_asm_constraints/light/png/16/asm_constraint.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/16/asm_constraint.png</file>
+    <file>assembly/grp_asm_constraints/light/png/32/asm_constraint.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/32/asm_constraint.png</file>
+    <file>assembly/grp_asm_constraints/light/png/48/asm_constraint.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/48/asm_constraint.png</file>
+    <file>assembly/grp_asm_constraints/light/png/64/asm_constraint.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/64/asm_constraint.png</file>
+    <file>assembly/grp_asm_constraints/light/png/16/asm_mate.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/16/asm_mate.png</file>
+    <file>assembly/grp_asm_constraints/light/png/32/asm_mate.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/32/asm_mate.png</file>
+    <file>assembly/grp_asm_constraints/light/png/48/asm_mate.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/48/asm_mate.png</file>
+    <file>assembly/grp_asm_constraints/light/png/64/asm_mate.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/64/asm_mate.png</file>
+    <file>assembly/grp_asm_constraints/light/png/16/asm_distance.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/16/asm_distance.png</file>
+    <file>assembly/grp_asm_constraints/light/png/32/asm_distance.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/32/asm_distance.png</file>
+    <file>assembly/grp_asm_constraints/light/png/48/asm_distance.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/48/asm_distance.png</file>
+    <file>assembly/grp_asm_constraints/light/png/64/asm_distance.png</file>
+    <file>assembly/grp_asm_constraints/dark/png/64/asm_distance.png</file>
+    <file>assembly/grp_asm_explode/light/png/16/asm_explode.png</file>
+    <file>assembly/grp_asm_explode/dark/png/16/asm_explode.png</file>
+    <file>assembly/grp_asm_explode/light/png/32/asm_explode.png</file>
+    <file>assembly/grp_asm_explode/dark/png/32/asm_explode.png</file>
+    <file>assembly/grp_asm_explode/light/png/48/asm_explode.png</file>
+    <file>assembly/grp_asm_explode/dark/png/48/asm_explode.png</file>
+    <file>assembly/grp_asm_explode/light/png/64/asm_explode.png</file>
+    <file>assembly/grp_asm_explode/dark/png/64/asm_explode.png</file>
+    <file>assembly/grp_asm_explode/light/png/16/asm_unexplode.png</file>
+    <file>assembly/grp_asm_explode/dark/png/16/asm_unexplode.png</file>
+    <file>assembly/grp_asm_explode/light/png/32/asm_unexplode.png</file>
+    <file>assembly/grp_asm_explode/dark/png/32/asm_unexplode.png</file>
+    <file>assembly/grp_asm_explode/light/png/48/asm_unexplode.png</file>
+    <file>assembly/grp_asm_explode/dark/png/48/asm_unexplode.png</file>
+    <file>assembly/grp_asm_explode/light/png/64/asm_unexplode.png</file>
+    <file>assembly/grp_asm_explode/dark/png/64/asm_unexplode.png</file>
 </qresource>
 </RCC>
