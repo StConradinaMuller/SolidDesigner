@@ -8,6 +8,11 @@
             <theme name="light" svg=":/TitleBar/brand/light/app.svg" png16=":/TitleBar/brand/light/png/16/app.png" png32=":/TitleBar/brand/light/png/32/app.png" png48=":/TitleBar/brand/light/png/48/app.png" png64=":/TitleBar/brand/light/png/64/app.png"/>
             <theme name="dark" svg=":/TitleBar/brand/dark/app.svg" png16=":/TitleBar/brand/dark/png/16/app.png" png32=":/TitleBar/brand/dark/png/32/app.png" png48=":/TitleBar/brand/dark/png/48/app.png" png64=":/TitleBar/brand/dark/png/64/app.png"/>
         </icon>
+        <icon id="app_wordmark">
+            <theme name="light" png100x28=":/TitleBar/brand/light/png/100x28/app_wordmark.png" png200x56=":/TitleBar/brand/light/png/200x56/app_wordmark.png"/>
+            <theme name="dark"  png100x28=":/TitleBar/brand/dark/png/100x28/app_wordmark.png"  png200x56=":/TitleBar/brand/dark/png/200x56/app_wordmark.png"/>
+        </icon>
+
         <icon id="file.new">
             <theme name="light" svg=":/TitleBar/quick/light/new.svg" png16=":/TitleBar/quick/light/png/16/new.png" png32=":/TitleBar/quick/light/png/32/new.png" png48=":/TitleBar/quick/light/png/48/new.png" png64=":/TitleBar/quick/light/png/64/new.png"/>
             <theme name="dark" svg=":/TitleBar/quick/dark/new.svg" png16=":/TitleBar/quick/dark/png/16/new.png" png32=":/TitleBar/quick/dark/png/32/new.png" png48=":/TitleBar/quick/dark/png/48/new.png" png64=":/TitleBar/quick/dark/png/64/new.png"/>

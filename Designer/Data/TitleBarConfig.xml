@@ -57,7 +57,9 @@
                          id="app"
                          commandRef="ui.appMenu"
                          order="5"
-                         iconRef="app"
+                         iconRef="app_wordmark"
+                         iconSize="100,28"
+                         fixedSize="110,30"
                          tooltip="SolidDesigner"/>
 
                 <!-- QAT: new/open/save/undo/redo/regenerate/windows/dropdown -->
@@ -153,7 +155,9 @@
                          id="app"
                          commandRef="ui.appMenu"
                          order="5"
-                         iconRef="app"
+                         iconRef="app_wordmark"
+                         iconSize="100,28"
+                         fixedSize="110,30"
                          tooltip="SolidDesigner"/>
 
                 <control type="command-button"
@@ -242,7 +246,9 @@
                          id="app"
                          commandRef="ui.appMenu"
                          order="5"
-                         icon=":/TitleBar/brand/app.svg"
+                         iconRef="app_wordmark"
+                         iconSize="100,28"
+                         fixedSize="110,30"
                          tooltip="SolidDesigner"/>
 
                 <control type="command-button"
@@ -323,7 +329,9 @@
                 <control type="brand-button"
                          id="app"
                          commandRef="ui.appMenu"
-                         iconRef="app"
+                         iconRef="app_wordmark"
+                         iconSize="100,28"
+                         fixedSize="110,30"
                          order="5"
                          tooltip="SolidDesigner"/>
 
@@ -405,7 +413,9 @@
                 <control type="brand-button"
                          id="app"
                          commandRef="ui.appMenu"
-                         iconRef="app"
+                         iconRef="app_wordmark"
+                         iconSize="100,28"
+                         fixedSize="110,30"
                          order="5"
                          tooltip="SolidDesigner"/>
 
@@ -485,7 +495,9 @@
                 <control type="brand-button"
                          id="app"
                          commandRef="ui.appMenu"
-                         iconRef="app"
+                         iconRef="app_wordmark"
+                         iconSize="100,28"
+                         fixedSize="110,30"
                          order="5"
                          tooltip="SolidDesigner"/>
 
@@ -567,7 +579,9 @@
                 <control type="brand-button"
                          id="app"
                          commandRef="ui.appMenu"
-                         iconRef="app"
+                         iconRef="app_wordmark"
+                         iconSize="100,28"
+                         fixedSize="110,30"
                          order="5"
                          tooltip="SolidDesigner"/>
 
