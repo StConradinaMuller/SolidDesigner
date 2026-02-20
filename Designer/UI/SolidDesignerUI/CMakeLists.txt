@@ -56,6 +56,7 @@ target_include_directories(SolidDesignerUI
     ${CMAKE_CURRENT_SOURCE_DIR}/Public
     ${PROJECT_SOURCE_DIR}/Alice/Core/Foundation/AliceBasicTool/Public
     ${PROJECT_SOURCE_DIR}/Alice/UI/QFrameWork/AliceUiBasicTools/Public
+    ${PROJECT_SOURCE_DIR}/Alice/UI/QFrameWork/AliceThemeSupport/Public
     ${PROJECT_SOURCE_DIR}/Alice/Data/Interface/AliceModelInterface/Public
 )
 
@@ -129,6 +130,7 @@ target_link_libraries(SolidDesignerUI PRIVATE
     Qt5::Qml
     AliceBasicTool
     AliceUiBasicTools
+    AliceThemeSupport
     AliceModelInterface
 )
 

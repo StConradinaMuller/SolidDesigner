@@ -95,7 +95,7 @@ std::unique_ptr<alice::IOperation> SolidFileNewCommand::Execute(const alice::Com
     if (!SolidNewFileDialog::GetNewFileRequest(pParent, oRequest))
         return nullptr;
 
-	IDocument* pDoc = pSession->CreateDocument(oRequest.kind, oRequest.name.toStdWString());
+	IDocument* pDoc = pSession->CreateDocument(oRequest.fileKind, oRequest.fileName.toStdWString());
 	DIAG_RETURN_NULL_IF_FALSE(pDoc, "Failed to create a new document", "hananiah", "2025.12.25");
 
     // Workbench switching: pick by document kind (ResolveWorkbenchByDocument).
