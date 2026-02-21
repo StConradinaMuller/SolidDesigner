@@ -393,20 +393,20 @@
             <theme name="dark" svg="icons/edit/undo.svg"/>
         </icon>
         <icon id="file.close">
-            <theme name="light" svg="icons/file/close.svg"/>
-            <theme name="dark" svg="icons/file/close.svg"/>
+            <theme name="light" svg=":/FileMenu/light/svg/file/close.svg" png16=":/FileMenu/light/png/16/file/close.png" png32=":/FileMenu/light/png/32/file/close.png" png48=":/FileMenu/light/png/48/file/close.png" png64=":/FileMenu/light/png/64/file/close.png"/>
+            <theme name="dark" svg=":/FileMenu/dark/svg/file/close.svg" png16=":/FileMenu/dark/png/16/file/close.png" png32=":/FileMenu/dark/png/32/file/close.png" png48=":/FileMenu/dark/png/48/file/close.png" png64=":/FileMenu/dark/png/64/file/close.png"/>
         </icon>
         <icon id="file.exit">
-            <theme name="light" svg="icons/file/exit.svg"/>
-            <theme name="dark" svg="icons/file/exit.svg"/>
+            <theme name="light" svg=":/FileMenu/light/svg/file/exit.svg" png16=":/FileMenu/light/png/16/file/exit.png" png32=":/FileMenu/light/png/32/file/exit.png" png48=":/FileMenu/light/png/48/file/exit.png" png64=":/FileMenu/light/png/64/file/exit.png"/>
+        <theme name="dark" svg=":/FileMenu/dark/svg/file/exit.svg" png16=":/FileMenu/dark/png/16/file/exit.png" png32=":/FileMenu/dark/png/32/file/exit.png" png48=":/FileMenu/dark/png/48/file/exit.png" png64=":/FileMenu/dark/png/64/file/exit.png"/>
         </icon>
         <icon id="file.save">
             <theme name="light" svg="icons/file/save.svg"/>
             <theme name="dark" svg="icons/file/save.svg"/>
         </icon>
         <icon id="file.save_as">
-            <theme name="light" svg="icons/file/save_as.svg"/>
-            <theme name="dark" svg="icons/file/save_as.svg"/>
+            <theme name="light" svg=":/FileMenu/light/svg/file/save_as.svg" png16=":/FileMenu/light/png/16/file/save_as.png" png32=":/FileMenu/light/png/32/file/save_as.png" png48=":/FileMenu/light/png/48/file/save_as.png" png64=":/FileMenu/light/png/64/file/save_as.png"/>
+            <theme name="dark" svg=":/FileMenu/dark/svg/file/save_as.svg" png16=":/FileMenu/dark/png/16/file/save_as.png" png32=":/FileMenu/dark/png/32/file/save_as.png" png48=":/FileMenu/dark/png/48/file/save_as.png" png64=":/FileMenu/dark/png/64/file/save_as.png"/>
         </icon>
         <icon id="gc.check_update">
             <theme name="light" svg="icons/gc/check_update.svg" png16=":/Ribbon/common/gc/light/png/16/gc_check_update.png" png32=":/Ribbon/common/gc/light/png/32/gc_check_update.png" png48=":/Ribbon/common/gc/light/png/48/gc_check_update.png" png64=":/Ribbon/common/gc/light/png/64/gc_check_update.png"/>
@@ -421,8 +421,8 @@
             <theme name="dark" svg="icons/gc/std_part_library.svg" png16=":/Ribbon/common/gc/dark/png/16/gc_std_part_library.png" png32=":/Ribbon/common/gc/dark/png/32/gc_std_part_library.png" png48=":/Ribbon/common/gc/dark/png/48/gc_std_part_library.png" png64=":/Ribbon/common/gc/dark/png/64/gc_std_part_library.png"/>
         </icon>
         <icon id="help.about">
-            <theme name="light" svg="icons/help/about.svg"/>
-            <theme name="dark" svg="icons/help/about.svg"/>
+            <theme name="light" svg=":/FileMenu/light/svg/help/about.svg" png16=":/FileMenu/light/png/16/help/about.png" png32=":/FileMenu/light/png/32/help/about.png" png48=":/FileMenu/light/png/48/help/about.png" png64=":/FileMenu/light/png/64/help/about.png"/>
+            <theme name="dark" svg=":/FileMenu/dark/svg/help/about.svg" png16=":/FileMenu/dark/png/16/help/about.png" png32=":/FileMenu/dark/png/32/help/about.png" png48=":/FileMenu/dark/png/48/help/about.png" png64=":/FileMenu/dark/png/64/help/about.png"/>
         </icon>
         <icon id="help.contents">
             <theme name="light" svg="icons/help/contents.svg"/>
@@ -1452,5 +1452,165 @@
                    png64=":/Navigator/nav/dark/png/64/nav_reuseLibrary.png"/>
         </icon>
 
-</icon-library>
+       <icon id="manage_file">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/manage_file.svg" png16=":/FileMenu/light/png/16/manage_file/manage_file.png" png32=":/FileMenu/light/png/32/manage_file/manage_file.png" png48=":/FileMenu/light/png/48/manage_file/manage_file.png" png64=":/FileMenu/light/png/64/manage_file/manage_file.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/manage_file.svg" png16=":/FileMenu/dark/png/16/manage_file/manage_file.png" png32=":/FileMenu/dark/png/32/manage_file/manage_file.png" png48=":/FileMenu/dark/png/48/manage_file/manage_file.png" png64=":/FileMenu/dark/png/64/manage_file/manage_file.png"/>
+       </icon>
+       <icon id="prepare">
+           <theme name="light" svg=":/FileMenu/light/svg/prepare/prepare.svg" png16=":/FileMenu/light/png/16/prepare/prepare.png" png32=":/FileMenu/light/png/32/prepare/prepare.png" png48=":/FileMenu/light/png/48/prepare/prepare.png" png64=":/FileMenu/light/png/64/prepare/prepare.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/prepare/prepare.svg" png16=":/FileMenu/dark/png/16/prepare/prepare.png" png32=":/FileMenu/dark/png/32/prepare/prepare.png" png48=":/FileMenu/dark/png/48/prepare/prepare.png" png64=":/FileMenu/dark/png/64/prepare/prepare.png"/>
+       </icon>
+       <icon id="send">
+           <theme name="light" svg=":/FileMenu/light/svg/send/send.svg" png16=":/FileMenu/light/png/16/send/send.png" png32=":/FileMenu/light/png/32/send/send.png" png48=":/FileMenu/light/png/48/send/send.png" png64=":/FileMenu/light/png/64/send/send.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/send/send.svg" png16=":/FileMenu/dark/png/16/send/send.png" png32=":/FileMenu/dark/png/32/send/send.png" png48=":/FileMenu/dark/png/48/send/send.png" png64=":/FileMenu/dark/png/64/send/send.png"/>
+       </icon>
+       <icon id="help">
+           <theme name="light" svg=":/FileMenu/light/svg/help/help.svg" png16=":/FileMenu/light/png/16/help/help.png" png32=":/FileMenu/light/png/32/help/help.png" png48=":/FileMenu/light/png/48/help/help.png" png64=":/FileMenu/light/png/64/help/help.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/help/help.svg" png16=":/FileMenu/dark/png/16/help/help.png" png32=":/FileMenu/dark/png/32/help/help.png" png48=":/FileMenu/dark/png/48/help/help.png" png64=":/FileMenu/dark/png/64/help/help.png"/>
+       </icon>
+       <icon id="data.manage_session">
+           <theme name="light" svg=":/FileMenu/light/svg/data/manage_session.svg" png16=":/FileMenu/light/png/16/data/manage_session.png" png32=":/FileMenu/light/png/32/data/manage_session.png" png48=":/FileMenu/light/png/48/data/manage_session.png" png64=":/FileMenu/light/png/64/data/manage_session.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/manage_session.svg" png16=":/FileMenu/dark/png/16/data/manage_session.png" png32=":/FileMenu/dark/png/32/data/manage_session.png" png48=":/FileMenu/dark/png/48/data/manage_session.png" png64=":/FileMenu/dark/png/64/data/manage_session.png"/>
+       </icon>
+       <icon id="settings.options">
+           <theme name="light" svg=":/FileMenu/light/svg/settings/options.svg" png16=":/FileMenu/light/png/16/settings/options.png" png32=":/FileMenu/light/png/32/settings/options.png" png48=":/FileMenu/light/png/48/settings/options.png" png64=":/FileMenu/light/png/64/settings/options.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/settings/options.svg" png16=":/FileMenu/dark/png/16/settings/options.png" png32=":/FileMenu/dark/png/32/settings/options.png" png48=":/FileMenu/dark/png/48/settings/options.png" png64=":/FileMenu/dark/png/64/settings/options.png"/>
+       </icon>
+       <icon id="save_as.save_copy">
+           <theme name="light" svg=":/FileMenu/light/svg/save_as/save_copy.svg" png16=":/FileMenu/light/png/16/save_as/save_copy.png" png32=":/FileMenu/light/png/32/save_as/save_copy.png" png48=":/FileMenu/light/png/48/save_as/save_copy.png" png64=":/FileMenu/light/png/64/save_as/save_copy.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/save_as/save_copy.svg" png16=":/FileMenu/dark/png/16/save_as/save_copy.png" png32=":/FileMenu/dark/png/32/save_as/save_copy.png" png48=":/FileMenu/dark/png/48/save_as/save_copy.png" png64=":/FileMenu/dark/png/64/save_as/save_copy.png"/>
+       </icon>
+       <icon id="save_as.save_backup">
+           <theme name="light" svg=":/FileMenu/light/svg/save_as/save_backup.svg" png16=":/FileMenu/light/png/16/save_as/save_backup.png" png32=":/FileMenu/light/png/32/save_as/save_backup.png" png48=":/FileMenu/light/png/48/save_as/save_backup.png" png64=":/FileMenu/light/png/64/save_as/save_backup.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/save_as/save_backup.svg" png16=":/FileMenu/dark/png/16/save_as/save_backup.png" png32=":/FileMenu/dark/png/32/save_as/save_backup.png" png48=":/FileMenu/dark/png/48/save_as/save_backup.png" png64=":/FileMenu/dark/png/64/save_as/save_backup.png"/>
+       </icon>
+       <icon id="save_as.mirror_part">
+           <theme name="light" svg=":/FileMenu/light/svg/save_as/mirror_part.svg" png16=":/FileMenu/light/png/16/save_as/mirror_part.png" png32=":/FileMenu/light/png/32/save_as/mirror_part.png" png48=":/FileMenu/light/png/48/save_as/mirror_part.png" png64=":/FileMenu/light/png/64/save_as/mirror_part.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/save_as/mirror_part.svg" png16=":/FileMenu/dark/png/16/save_as/mirror_part.png" png32=":/FileMenu/dark/png/32/save_as/mirror_part.png" png48=":/FileMenu/dark/png/48/save_as/mirror_part.png" png64=":/FileMenu/dark/png/64/save_as/mirror_part.png"/>
+       </icon>
+       <icon id="print.quick_print">
+           <theme name="light" svg=":/FileMenu/light/svg/print/quick_print.svg" png16=":/FileMenu/light/png/16/print/quick_print.png" png32=":/FileMenu/light/png/32/print/quick_print.png" png48=":/FileMenu/light/png/48/print/quick_print.png" png64=":/FileMenu/light/png/64/print/quick_print.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/print/quick_print.svg" png16=":/FileMenu/dark/png/16/print/quick_print.png" png32=":/FileMenu/dark/png/32/print/quick_print.png" png48=":/FileMenu/dark/png/48/print/quick_print.png" png64=":/FileMenu/dark/png/64/print/quick_print.png"/>
+       </icon>
+       <icon id="print.quick_drawing">
+           <theme name="light" svg=":/FileMenu/light/svg/print/quick_drawing.svg" png16=":/FileMenu/light/png/16/print/quick_drawing.png" png32=":/FileMenu/light/png/32/print/quick_drawing.png" png48=":/FileMenu/light/png/48/print/quick_drawing.png" png64=":/FileMenu/light/png/64/print/quick_drawing.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/print/quick_drawing.svg" png16=":/FileMenu/dark/png/16/print/quick_drawing.png" png32=":/FileMenu/dark/png/32/print/quick_drawing.png" png48=":/FileMenu/dark/png/48/print/quick_drawing.png" png64=":/FileMenu/dark/png/64/print/quick_drawing.png"/>
+       </icon>
+       <icon id="print.prep_3d">
+           <theme name="light" svg=":/FileMenu/light/svg/print/prep_3d.svg" png16=":/FileMenu/light/png/16/print/prep_3d.png" png32=":/FileMenu/light/png/32/print/prep_3d.png" png48=":/FileMenu/light/png/48/print/prep_3d.png" png64=":/FileMenu/light/png/64/print/prep_3d.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/print/prep_3d.svg" png16=":/FileMenu/dark/png/16/print/prep_3d.png" png32=":/FileMenu/dark/png/32/print/prep_3d.png" png48=":/FileMenu/dark/png/48/print/prep_3d.png" png64=":/FileMenu/dark/png/64/print/prep_3d.png"/>
+       </icon>
+       <icon id="print.order_3d">
+           <theme name="light" svg=":/FileMenu/light/svg/print/order_3d.svg" png16=":/FileMenu/light/png/16/print/order_3d.png" png32=":/FileMenu/light/png/32/print/order_3d.png" png48=":/FileMenu/light/png/48/print/order_3d.png" png64=":/FileMenu/light/png/64/print/order_3d.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/print/order_3d.svg" png16=":/FileMenu/dark/png/16/print/order_3d.png" png32=":/FileMenu/dark/png/32/print/order_3d.png" png48=":/FileMenu/dark/png/48/print/order_3d.png" png64=":/FileMenu/dark/png/64/print/order_3d.png"/>
+       </icon>
+       <icon id="manage_file.rename">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/rename.svg" png16=":/FileMenu/light/png/16/manage_file/rename.png" png32=":/FileMenu/light/png/32/manage_file/rename.png" png48=":/FileMenu/light/png/48/manage_file/rename.png" png64=":/FileMenu/light/png/64/manage_file/rename.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/rename.svg" png16=":/FileMenu/dark/png/16/manage_file/rename.png" png32=":/FileMenu/dark/png/32/manage_file/rename.png" png48=":/FileMenu/dark/png/48/manage_file/rename.png" png64=":/FileMenu/dark/png/64/manage_file/rename.png"/>
+       </icon>
+       <icon id="manage_file.delete_old_versions">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/delete_old_versions.svg" png16=":/FileMenu/light/png/16/manage_file/delete_old_versions.png" png32=":/FileMenu/light/png/32/manage_file/delete_old_versions.png" png48=":/FileMenu/light/png/48/manage_file/delete_old_versions.png" png64=":/FileMenu/light/png/64/manage_file/delete_old_versions.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/delete_old_versions.svg" png16=":/FileMenu/dark/png/16/manage_file/delete_old_versions.png" png32=":/FileMenu/dark/png/32/manage_file/delete_old_versions.png" png48=":/FileMenu/dark/png/48/manage_file/delete_old_versions.png" png64=":/FileMenu/dark/png/64/manage_file/delete_old_versions.png"/>
+       </icon>
+       <icon id="manage_file.delete_all_versions">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/delete_all_versions.svg" png16=":/FileMenu/light/png/16/manage_file/delete_all_versions.png" png32=":/FileMenu/light/png/32/manage_file/delete_all_versions.png" png48=":/FileMenu/light/png/48/manage_file/delete_all_versions.png" png64=":/FileMenu/light/png/64/manage_file/delete_all_versions.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/delete_all_versions.svg" png16=":/FileMenu/dark/png/16/manage_file/delete_all_versions.png" png32=":/FileMenu/dark/png/32/manage_file/delete_all_versions.png" png48=":/FileMenu/dark/png/48/manage_file/delete_all_versions.png" png64=":/FileMenu/dark/png/64/manage_file/delete_all_versions.png"/>
+       </icon>
+       <icon id="manage_file.declare">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/declare.svg" png16=":/FileMenu/light/png/16/manage_file/declare.png" png32=":/FileMenu/light/png/32/manage_file/declare.png" png48=":/FileMenu/light/png/48/manage_file/declare.png" png64=":/FileMenu/light/png/64/manage_file/declare.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/declare.svg" png16=":/FileMenu/dark/png/16/manage_file/declare.png" png32=":/FileMenu/dark/png/32/manage_file/declare.png" png48=":/FileMenu/dark/png/48/manage_file/declare.png" png64=":/FileMenu/dark/png/64/manage_file/declare.png"/>
+       </icon>
+       <icon id="manage_file.instance_accelerator">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/instance_accelerator.svg" png16=":/FileMenu/light/png/16/manage_file/instance_accelerator.png" png32=":/FileMenu/light/png/32/manage_file/instance_accelerator.png" png48=":/FileMenu/light/png/48/manage_file/instance_accelerator.png" png64=":/FileMenu/light/png/64/manage_file/instance_accelerator.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/instance_accelerator.svg" png16=":/FileMenu/dark/png/16/manage_file/instance_accelerator.png" png32=":/FileMenu/dark/png/32/manage_file/instance_accelerator.png" png48=":/FileMenu/dark/png/48/manage_file/instance_accelerator.png" png64=":/FileMenu/dark/png/64/manage_file/instance_accelerator.png"/>
+       </icon>
+       <icon id="prepare.prepare">
+           <theme name="light" svg=":/FileMenu/light/svg/prepare/prepare.svg" png16=":/FileMenu/light/png/16/prepare/prepare.png" png32=":/FileMenu/light/png/32/prepare/prepare.png" png48=":/FileMenu/light/png/48/prepare/prepare.png" png64=":/FileMenu/light/png/64/prepare/prepare.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/prepare/prepare.svg" png16=":/FileMenu/dark/png/16/prepare/prepare.png" png32=":/FileMenu/dark/png/32/prepare/prepare.png" png48=":/FileMenu/dark/png/48/prepare/prepare.png" png64=":/FileMenu/dark/png/64/prepare/prepare.png"/>
+       </icon>
+       <icon id="send.mail_attachment">
+           <theme name="light" svg=":/FileMenu/light/svg/send/mail_attachment.svg" png16=":/FileMenu/light/png/16/send/mail_attachment.png" png32=":/FileMenu/light/png/32/send/mail_attachment.png" png48=":/FileMenu/light/png/48/send/mail_attachment.png" png64=":/FileMenu/light/png/64/send/mail_attachment.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/send/mail_attachment.svg" png16=":/FileMenu/dark/png/16/send/mail_attachment.png" png32=":/FileMenu/dark/png/32/send/mail_attachment.png" png48=":/FileMenu/dark/png/48/send/mail_attachment.png" png64=":/FileMenu/dark/png/64/send/mail_attachment.png"/>
+       </icon>
+       <icon id="send.mail_link">
+           <theme name="light" svg=":/FileMenu/light/svg/send/mail_link.svg" png16=":/FileMenu/light/png/16/send/mail_link.png" png32=":/FileMenu/light/png/32/send/mail_link.png" png48=":/FileMenu/light/png/48/send/mail_link.png" png64=":/FileMenu/light/png/64/send/mail_link.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/send/mail_link.svg" png16=":/FileMenu/dark/png/16/send/mail_link.png" png32=":/FileMenu/dark/png/32/send/mail_link.png" png48=":/FileMenu/dark/png/48/send/mail_link.png" png64=":/FileMenu/dark/png/64/send/mail_link.png"/>
+       </icon>
+       <icon id="data.erase_current">
+	       <theme name="light" svg=":/FileMenu/light/svg/data/erase_current.svg" png16=":/FileMenu/light/png/16/data/erase_current.png" png32=":/FileMenu/light/png/32/data/erase_current.png" png48=":/FileMenu/light/png/48/data/erase_current.png" png64=":/FileMenu/light/png/64/data/erase_current.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/erase_current.svg" png16=":/FileMenu/dark/png/16/data/erase_current.png" png32=":/FileMenu/dark/png/32/data/erase_current.png" png48=":/FileMenu/dark/png/48/data/erase_current.png" png64=":/FileMenu/dark/png/64/data/erase_current.png"/>
+       </icon>
+       <icon id="data.erase_not_displayed">
+           <theme name="light" svg=":/FileMenu/light/svg/data/erase_not_displayed.svg" png16=":/FileMenu/light/png/16/data/erase_not_displayed.png" png32=":/FileMenu/light/png/32/data/erase_not_displayed.png" png48=":/FileMenu/light/png/48/data/erase_not_displayed.png" png64=":/FileMenu/light/png/64/data/erase_not_displayed.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/erase_not_displayed.svg" png16=":/FileMenu/dark/png/16/data/erase_not_displayed.png" png32=":/FileMenu/dark/png/32/data/erase_not_displayed.png" png48=":/FileMenu/dark/png/48/data/erase_not_displayed.png" png64=":/FileMenu/dark/png/64/data/erase_not_displayed.png"/>
+       </icon>
+       <icon id="data.erase_unused_model_reps">
+           <theme name="light" svg=":/FileMenu/light/svg/data/erase_unused_model_reps.svg" png16=":/FileMenu/light/png/16/data/erase_unused_model_reps.png" png32=":/FileMenu/light/png/32/data/erase_unused_model_reps.png" png48=":/FileMenu/light/png/48/data/erase_unused_model_reps.png" png64=":/FileMenu/light/png/64/data/erase_unused_model_reps.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/erase_unused_model_reps.svg" png16=":/FileMenu/dark/png/16/data/erase_unused_model_reps.png" png32=":/FileMenu/dark/png/32/data/erase_unused_model_reps.png" png48=":/FileMenu/dark/png/48/data/erase_unused_model_reps.png" png64=":/FileMenu/dark/png/64/data/erase_unused_model_reps.png"/>
+       </icon>
+       <icon id="data.design_exploration">
+           <theme name="light" svg=":/FileMenu/light/svg/data/design_exploration.svg" png16=":/FileMenu/light/png/16/data/design_exploration.png" png32=":/FileMenu/light/png/32/data/design_exploration.png" png48=":/FileMenu/light/png/48/data/design_exploration.png" png64=":/FileMenu/light/png/64/data/design_exploration.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/design_exploration.svg" png16=":/FileMenu/dark/png/16/data/design_exploration.png" png32=":/FileMenu/dark/png/32/data/design_exploration.png" png48=":/FileMenu/dark/png/48/data/design_exploration.png" png64=":/FileMenu/dark/png/64/data/design_exploration.png"/>
+       </icon>
+       <icon id="data.update_index">
+           <theme name="light" svg=":/FileMenu/light/svg/data/update_index.svg" png16=":/FileMenu/light/png/16/data/update_index.png" png32=":/FileMenu/light/png/32/data/update_index.png" png48=":/FileMenu/light/png/48/data/update_index.png" png64=":/FileMenu/light/png/64/data/update_index.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/update_index.svg" png16=":/FileMenu/dark/png/16/data/update_index.png" png32=":/FileMenu/dark/png/32/data/update_index.png" png48=":/FileMenu/dark/png/48/data/update_index.png" png64=":/FileMenu/dark/png/64/data/update_index.png"/>
+       </icon>
+       <icon id="data.play_trail_file">
+           <theme name="light" svg=":/FileMenu/light/svg/data/play_trail_file.svg" png16=":/FileMenu/light/png/16/data/play_trail_file.png" png32=":/FileMenu/light/png/32/data/play_trail_file.png" png48=":/FileMenu/light/png/48/data/play_trail_file.png" png64=":/FileMenu/light/png/64/data/play_trail_file.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/play_trail_file.svg" png16=":/FileMenu/dark/png/16/data/play_trail_file.png" png32=":/FileMenu/dark/png/32/data/play_trail_file.png" png48=":/FileMenu/dark/png/48/data/play_trail_file.png" png64=":/FileMenu/dark/png/64/data/play_trail_file.png"/>
+       </icon>
+       <icon id="data.server_management">
+           <theme name="light" svg=":/FileMenu/light/svg/data/server_management.svg" png16=":/FileMenu/light/png/16/data/server_management.png" png32=":/FileMenu/light/png/32/data/server_management.png" png48=":/FileMenu/light/png/48/data/server_management.png" png64=":/FileMenu/light/png/64/data/server_management.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/server_management.svg" png16=":/FileMenu/dark/png/16/data/server_management.png" png32=":/FileMenu/dark/png/32/data/server_management.png" png48=":/FileMenu/dark/png/48/data/server_management.png" png64=":/FileMenu/dark/png/64/data/server_management.png"/>
+       </icon>
+       <icon id="data.select_working_directory">
+           <theme name="light" svg=":/FileMenu/light/svg/data/select_working_directory.svg" png16=":/FileMenu/light/png/16/data/select_working_directory.png" png32=":/FileMenu/light/png/32/data/select_working_directory.png" png48=":/FileMenu/light/png/48/data/select_working_directory.png" png64=":/FileMenu/light/png/64/data/select_working_directory.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/select_working_directory.svg" png16=":/FileMenu/dark/png/16/data/select_working_directory.png" png32=":/FileMenu/dark/png/32/data/select_working_directory.png" png48=":/FileMenu/dark/png/48/data/select_working_directory.png" png64=":/FileMenu/dark/png/64/data/select_working_directory.png"/>
+       </icon>
+       <icon id="data.object_list">
+           <theme name="light" svg=":/FileMenu/light/svg/data/object_list.svg" png16=":/FileMenu/light/png/16/data/object_list.png" png32=":/FileMenu/light/png/32/data/object_list.png" png48=":/FileMenu/light/png/48/data/object_list.png" png64=":/FileMenu/light/png/64/data/object_list.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/object_list.svg" png16=":/FileMenu/dark/png/16/data/object_list.png" png32=":/FileMenu/dark/png/32/data/object_list.png" png48=":/FileMenu/dark/png/48/data/object_list.png" png64=":/FileMenu/dark/png/64/data/object_list.png"/>
+       </icon>
+       <icon id="data.open_linked_browser">
+           <theme name="light" svg=":/FileMenu/light/svg/data/open_linked_browser.svg" png16=":/FileMenu/light/png/16/data/open_linked_browser.png" png32=":/FileMenu/light/png/32/data/open_linked_browser.png" png48=":/FileMenu/light/png/48/data/open_linked_browser.png" png64=":/FileMenu/light/png/64/data/open_linked_browser.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/open_linked_browser.svg" png16=":/FileMenu/dark/png/16/data/open_linked_browser.png" png32=":/FileMenu/dark/png/32/data/open_linked_browser.png" png48=":/FileMenu/dark/png/48/data/open_linked_browser.png" png64=":/FileMenu/dark/png/64/data/open_linked_browser.png"/>
+       </icon>
+       <icon id="help.product_help">
+           <theme name="light" svg=":/FileMenu/light/svg/help/product_help.svg" png16=":/FileMenu/light/png/16/help/product_help.png" png32=":/FileMenu/light/png/32/help/product_help.png" png48=":/FileMenu/light/png/48/help/product_help.png" png64=":/FileMenu/light/png/64/help/product_help.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/help/product_help.svg" png16=":/FileMenu/dark/png/16/help/product_help.png" png32=":/FileMenu/dark/png/32/help/product_help.png" png48=":/FileMenu/dark/png/48/help/product_help.png" png64=":/FileMenu/dark/png/64/help/product_help.png"/>
+       </icon>
+       <icon id="help.command_search">
+          <theme name="light" svg=":/FileMenu/light/svg/help/command_search.svg" png16=":/FileMenu/light/png/16/help/command_search.png" png32=":/FileMenu/light/png/32/help/command_search.png" png48=":/FileMenu/light/png/48/help/command_search.png" png64=":/FileMenu/light/png/64/help/command_search.png"/>
+          <theme name="dark" svg=":/FileMenu/dark/svg/help/command_search.svg" png16=":/FileMenu/dark/png/16/help/command_search.png" png32=":/FileMenu/dark/png/32/help/command_search.png" png48=":/FileMenu/dark/png/48/help/command_search.png" png64=":/FileMenu/dark/png/64/help/command_search.png"/>
+       </icon>
+       <icon id="help.search_online_kb">
+          <theme name="light" svg=":/FileMenu/light/svg/help/search_online_kb.svg" png16=":/FileMenu/light/png/16/help/search_online_kb.png" png32=":/FileMenu/light/png/32/help/search_online_kb.png" png48=":/FileMenu/light/png/48/help/search_online_kb.png" png64=":/FileMenu/light/png/64/help/search_online_kb.png"/>
+          <theme name="dark" svg=":/FileMenu/dark/svg/help/search_online_kb.svg" png16=":/FileMenu/dark/png/16/help/search_online_kb.png" png32=":/FileMenu/dark/png/32/help/search_online_kb.png" png48=":/FileMenu/dark/png/48/help/search_online_kb.png" png64=":/FileMenu/dark/png/64/help/search_online_kb.png"/>
+       </icon>
+       <icon id="help.log_support_case">
+          <theme name="light" svg=":/FileMenu/light/svg/help/log_support_case.svg" png16=":/FileMenu/light/png/16/help/log_support_case.png" png32=":/FileMenu/light/png/32/help/log_support_case.png" png48=":/FileMenu/light/png/48/help/log_support_case.png" png64=":/FileMenu/light/png/64/help/log_support_case.png"/>
+          <theme name="dark" svg=":/FileMenu/dark/svg/help/log_support_case.svg" png16=":/FileMenu/dark/png/16/help/log_support_case.png" png32=":/FileMenu/dark/png/32/help/log_support_case.png" png48=":/FileMenu/dark/png/48/help/log_support_case.png" png64=":/FileMenu/dark/png/64/help/log_support_case.png"/>
+       </icon>
+       <icon id="help.online_resources">
+          <theme name="light" svg=":/FileMenu/light/svg/help/online_resources.svg" png16=":/FileMenu/light/png/16/help/online_resources.png" png32=":/FileMenu/light/png/32/help/online_resources.png" png48=":/FileMenu/light/png/48/help/online_resources.png" png64=":/FileMenu/light/png/64/help/online_resources.png"/>
+          <theme name="dark" svg=":/FileMenu/dark/svg/help/online_resources.svg" png16=":/FileMenu/dark/png/16/help/online_resources.png" png32=":/FileMenu/dark/png/32/help/online_resources.png" png48=":/FileMenu/dark/png/48/help/online_resources.png" png64=":/FileMenu/dark/png/64/help/online_resources.png"/>
+       </icon>
+       <icon id="help.system_information">
+         <theme name="light" svg=":/FileMenu/light/svg/help/system_information.svg" png16=":/FileMenu/light/png/16/help/system_information.png" png32=":/FileMenu/light/png/32/help/system_information.png" png48=":/FileMenu/light/png/48/help/system_information.png" png64=":/FileMenu/light/png/64/help/system_information.png"/>
+         <theme name="dark" svg=":/FileMenu/dark/svg/help/system_information.svg" png16=":/FileMenu/dark/png/16/help/system_information.png" png32=":/FileMenu/dark/png/32/help/system_information.png" png48=":/FileMenu/dark/png/48/help/system_information.png" png64=":/FileMenu/dark/png/64/help/system_information.png"/>
+       </icon>
+       <icon id="reference.reference">
+         <theme name="light" svg=":/FileMenu/light/svg/reference/reference.svg" png16=":/FileMenu/light/png/16/reference/reference.png" png32=":/FileMenu/light/png/32/reference/reference.png" png48=":/FileMenu/light/png/48/reference/reference.png" png64=":/FileMenu/light/png/64/reference/reference.png"/>
+         <theme name="dark" svg=":/FileMenu/dark/svg/reference/reference.svg" png16=":/FileMenu/dark/png/16/reference/reference.png" png32=":/FileMenu/dark/png/32/reference/reference.png" png48=":/FileMenu/dark/png/48/reference/reference.png" png64=":/FileMenu/dark/png/64/reference/reference.png"/>
+       </icon>
+       <icon id="settings.model_display">
+         <theme name="light" svg=":/FileMenu/light/svg/settings/model_display.svg" png16=":/FileMenu/light/png/16/settings/model_display.png" png32=":/FileMenu/light/png/32/settings/model_display.png" png48=":/FileMenu/light/png/48/settings/model_display.png" png64=":/FileMenu/light/png/64/settings/model_display.png"/>
+         <theme name="dark" svg=":/FileMenu/dark/svg/settings/model_display.svg" png16=":/FileMenu/dark/png/16/settings/model_display.png" png32=":/FileMenu/dark/png/32/settings/model_display.png" png48=":/FileMenu/dark/png/48/settings/model_display.png" png64=":/FileMenu/dark/png/64/settings/model_display.png"/>
+       </icon>
+       <icon id="settings.system_appearance">
+         <theme name="light" svg=":/FileMenu/light/svg/settings/system_appearance.svg" png16=":/FileMenu/light/png/16/settings/system_appearance.png" png32=":/FileMenu/light/png/32/settings/system_appearance.png" png48=":/FileMenu/light/png/48/settings/system_appearance.png" png64=":/FileMenu/light/png/64/settings/system_appearance.png"/>
+         <theme name="dark" svg=":/FileMenu/dark/svg/settings/system_appearance.svg" png16=":/FileMenu/dark/png/16/settings/system_appearance.png" png32=":/FileMenu/dark/png/32/settings/system_appearance.png" png48=":/FileMenu/dark/png/48/settings/system_appearance.png" png64=":/FileMenu/dark/png/64/settings/system_appearance.png"/>
+       </icon>
+  </icon-library>
 </IconLibraryConfig>

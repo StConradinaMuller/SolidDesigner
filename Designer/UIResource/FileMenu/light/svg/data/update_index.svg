@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<defs>
+  <filter id="ds" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="1.2" stdDeviation="1.2" flood-color="#000000" flood-opacity="0.22"/>
+  </filter>
+  <linearGradient id="gPaper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="1" stop-color="#E6EBF2"/>
+  </linearGradient>
+  <linearGradient id="gMetal" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F2F4F7"/>
+    <stop offset="1" stop-color="#B9C0C8"/>
+  </linearGradient>
+  <linearGradient id="gMetal2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#D6DCE3"/>
+    <stop offset="1" stop-color="#8E969F"/>
+  </linearGradient>
+  <linearGradient id="gFolder" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFE88A"/>
+    <stop offset="1" stop-color="#E2B153"/>
+  </linearGradient>
+</defs>
+<rect width="64" height="64" fill="none"/>
+<g transform="translate(32 32) scale(1.25) translate(-32 -32)"><g filter="url(#ds)">
+  <circle cx="32" cy="32" r="18" fill="url(#gPaper)" stroke="#000000" stroke-width="2.2"/>
+  <path d="M40 26c-2-5-7-7-12-6-4 1-7 4-8 8" fill="none" stroke="#1B6DDA" stroke-width="2.0" stroke-linecap="round"/>
+  <path d="M20 26l0 6 6 0" fill="none" stroke="#1B6DDA" stroke-width="2.0" stroke-linejoin="round"/>
+  <path d="M24 38c2 5 7 7 12 6 4-1 7-4 8-8" fill="none" stroke="#1B6DDA" stroke-width="2.0" stroke-linecap="round"/>
+  <path d="M44 38l0-6-6 0" fill="none" stroke="#1B6DDA" stroke-width="2.0" stroke-linejoin="round"/>
+</g></g>
+
+</svg>
