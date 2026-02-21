@@ -29,28 +29,6 @@ using namespace sdr;
 
 namespace
 {
-    static void RemoveDialogIconNative(QWidget& w)
-    {
-        w.setWindowIcon(QIcon());
-
-#ifdef Q_OS_WIN
-        const HWND hwnd = reinterpret_cast<HWND>(w.winId());
-        if (!hwnd)
-            return;
-
-        // Remove the icon from the title bar (Windows native). Keep the close button.
-        LONG exStyle = GetWindowLong(hwnd, GWL_EXSTYLE);
-        exStyle |= WS_EX_DLGMODALFRAME;
-        SetWindowLong(hwnd, GWL_EXSTYLE, exStyle);
-
-        SendMessage(hwnd, WM_SETICON, ICON_SMALL, 0);
-        SendMessage(hwnd, WM_SETICON, ICON_BIG, 0);
-
-        SetWindowPos(hwnd, nullptr, 0, 0, 0, 0,
-            SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED);
-#endif
-    }
-
     static SolidNewFileDialog::TypeId ReadType(const QButtonGroup* pBtnGroup) noexcept
     {
         if (!pBtnGroup)
@@ -104,8 +82,6 @@ SolidNewFileDialog::SolidNewFileDialog(QWidget* parent)
     // Windows UX: remove the '?' context-help button and avoid showing an app icon.
     setWindowFlag(Qt::WindowContextHelpButtonHint, false);
     setAttribute(Qt::WA_NativeWindow, true);
-    (void)winId();
-    RemoveDialogIconNative(*this);
 
     BuildUi_();
     BuildTypes_();
@@ -203,7 +179,6 @@ bool SolidNewFileDialog::GetNewFileRequest(QWidget* parent, NewFileRequest& outR
 void SolidNewFileDialog::showEvent(QShowEvent* event)
 {
     QDialog::showEvent(event);
-    RemoveDialogIconNative(*this);
     FocusFileNameEdit_();
 }
 
