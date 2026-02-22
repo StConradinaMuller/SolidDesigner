@@ -3,6 +3,13 @@
 #include "GeneralCommands/SolidFileNewCommand.h"
 #include "GeneralCommands/SolidFileOpenCommand.h"
 #include "GeneralCommands/SolidFileSaveCommand.h"
+#include "GeneralCommands/SolidFileSaveAsCommand.h"
+#include "GeneralCommands/SolidFileCloseCommand.h"
+#include "GeneralCommands/SolidFileExitCommand.h"
+#include "GeneralCommands/SolidSettingsOptionsCommand.h"
+#include "GeneralCommands/SolidManageFileRenameCommand.h"
+#include "GeneralCommands/SolidSelectWorkingDirectoryCommand.h"
+#include "GeneralCommands/SolidSessionObjectListCommand.h"
 #include "HelpCommands/SolidHelpAboutCommand.h"
 #include "HelpCommands/SolidHelpContentsCommand.h"
 #include "ModelCommands/SolidModelBlendCommand.h"
@@ -43,6 +50,13 @@ std::vector<std::shared_ptr<alice::ICommand>> SolidDesignerCommandFactory::Creat
 	vecCommands.emplace_back(std::make_shared<SolidFileNewCommand>());
 	vecCommands.emplace_back(std::make_shared<SolidFileOpenCommand>());
 	vecCommands.emplace_back(std::make_shared<SolidFileSaveCommand>());
+	vecCommands.emplace_back(std::make_shared<SolidFileSaveAsCommand>());
+	vecCommands.emplace_back(std::make_shared<SolidFileCloseCommand>());
+	vecCommands.emplace_back(std::make_shared<SolidFileExitCommand>());
+	vecCommands.emplace_back(std::make_shared<SolidSettingsOptionsCommand>());
+	vecCommands.emplace_back(std::make_shared<SolidManageFileRenameCommand>());
+	vecCommands.emplace_back(std::make_shared<SolidSelectWorkingDirectoryCommand>());
+	vecCommands.emplace_back(std::make_shared<SolidSessionObjectListCommand>());
 
 	vecCommands.emplace_back(std::make_shared<SolidHelpAboutCommand>());
 	vecCommands.emplace_back(std::make_shared<SolidHelpContentsCommand>());
