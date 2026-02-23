@@ -1,8 +1,23 @@
-# SolidDesigner 
+<p align="center">
+  <img src="Designer/UIResource/TitleBar/brand/light/png/200x56/app_wordmark.png" width="360" alt="SolidDesigner" />
+</p>
+
+
+<p align="center">
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-GPLv3-blue.svg" /></a>
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-17%2F20-00599C.svg" />
+  <img alt="Kernel" src="https://img.shields.io/badge/Kernel-OpenCascade%20(OCCT)-orange" />
+  <img alt="UI" src="https://img.shields.io/badge/UI-Qt%20Widgets-41CD52" />
+  <img alt="Platform" src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey" />
+</p>
+
+<p align="center">
+  <b>Open-source, engineering-grade platform for parametric CAD and simulation-driven design</b><br/>
+  Feature-based modeling • CAE-ready data model • Optimization-first architecture
+</p>
+
 
 ## [English](README.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Русский](README.ru.md)
-
-**An open‑source platform for parametric CAD, high‑fidelity CAE, and topology optimization — with simulation‑driven design and AI assistance.**
 
 > Goal: a professional‑grade system comparable to Creo Parametric that supports solid/surface modeling, assembly, drafting, structural mechanics, CFD, multiphysics, and optimization — where simulations can drive the design itself.
 
