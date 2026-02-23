@@ -19,7 +19,7 @@
 
 ## [English](README.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Русский](README.ru.md)
 
-> Goal: a professional‑grade system comparable to Creo Parametric that supports solid/surface modeling, assembly, drafting, structural mechanics, CFD, multiphysics, and optimization — where simulations can drive the design itself.
+> Goal: a professional‑grade system  that supports solid/surface modeling, assembly, drafting, structural mechanics, CFD, multiphysics, and optimization — where simulations can drive the design itself.
 
 ---
 
@@ -277,11 +277,11 @@ The project is modular: some libraries are **vendored in-tree**, while others ar
 |---|---|---|---|
 | **OpenCascade (OCCT)** | B‑Rep kernel + OCCT viewer backend | `Alice/Core/Runtime/AliceRenderBackendOCCViewer` | LGPL‑2.1 with OCCT exception (upstream) |
 | **Qt 5 (Widgets/Quick/Qml)** | Desktop UI (ribbon, panels, dialogs) | `Designer/UI/*`, `Alice/UI/QFrameWork/*` | GPL/LGPL/commercial (Qt) |
-| **Nedrysoft Ribbon** | Ribbon UI library (vendored & adapted) | `Alice/UI/QFrameWork/AliceRibbon` | GPLv3 (see in-tree LICENSE) |
-| **Qt Advanced Docking System (ADS)** | Docking layout / panels | `Alice/UI/QFrameWork/AliceAdvancedDockingSystem` | LGPLv2.1 (see in-tree license folder) |
-| **spdlog** | Logging backend | `Alice/Core/Foundation/AliceBasicTool/*SpdLog*` | MIT |
-| **fmt** | String formatting | `Alice/Core/Foundation/AliceBasicTool/*Fmt*` | MIT |
-| **Open Sans** | UI font assets for ribbon | `Alice/UI/QFrameWork/AliceRibbon/OpenSans` | Apache‑2.0 |
+| **spdlog**                   | Logging backend                      | `Alice/Core/Foundation/AliceBasicTool/*SpdLog*`  | MIT                                     |
+| **fmt**                      | String formatting                    | `Alice/Core/Foundation/AliceBasicTool/*Fmt*`     | MIT                                     |
+| **Open Sans**                | UI font assets for ribbon            | `Alice/UI/QFrameWork/AliceRibbon/OpenSans`       | Apache‑2.0                              |
+|                              |                                      |                                                  |                                         |
+|                              |                                      |                                                  |                                         |
 
 > **License note**: SolidDesigner is **GPLv3**, but some embedded/required dependencies are LGPL/MIT/Apache. When distributing binaries, you must comply with each upstream license (dynamic linking obligations, notices, source availability, etc.).
 
@@ -382,9 +382,6 @@ Special thanks to contributors and researchers in CAD/CAE/CFD/optimization.
 ---
 
 ## FAQ
-
-**How close is this to production tools like Creo?**  
-The aspiration is parity for core workflows with a modern, open architecture. Today the project is pre‑alpha; many capabilities are WIP.
 
 **Is there a scripting API?**  
 A Python API is planned. Early internal scaffolding exists; public API is forthcoming.
