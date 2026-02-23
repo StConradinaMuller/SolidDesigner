@@ -8,6 +8,11 @@
             <theme name="light" svg=":/TitleBar/brand/light/app.svg" png16=":/TitleBar/brand/light/png/16/app.png" png32=":/TitleBar/brand/light/png/32/app.png" png48=":/TitleBar/brand/light/png/48/app.png" png64=":/TitleBar/brand/light/png/64/app.png"/>
             <theme name="dark" svg=":/TitleBar/brand/dark/app.svg" png16=":/TitleBar/brand/dark/png/16/app.png" png32=":/TitleBar/brand/dark/png/32/app.png" png48=":/TitleBar/brand/dark/png/48/app.png" png64=":/TitleBar/brand/dark/png/64/app.png"/>
         </icon>
+        <icon id="app_wordmark">
+            <theme name="light" png100x28=":/TitleBar/brand/light/png/100x28/app_wordmark.png" png200x56=":/TitleBar/brand/light/png/200x56/app_wordmark.png"/>
+            <theme name="dark"  png100x28=":/TitleBar/brand/dark/png/100x28/app_wordmark.png"  png200x56=":/TitleBar/brand/dark/png/200x56/app_wordmark.png"/>
+        </icon>
+
         <icon id="file.new">
             <theme name="light" svg=":/TitleBar/quick/light/new.svg" png16=":/TitleBar/quick/light/png/16/new.png" png32=":/TitleBar/quick/light/png/32/new.png" png48=":/TitleBar/quick/light/png/48/new.png" png64=":/TitleBar/quick/light/png/64/new.png"/>
             <theme name="dark" svg=":/TitleBar/quick/dark/new.svg" png16=":/TitleBar/quick/dark/png/16/new.png" png32=":/TitleBar/quick/dark/png/32/new.png" png48=":/TitleBar/quick/dark/png/48/new.png" png64=":/TitleBar/quick/dark/png/64/new.png"/>
@@ -98,28 +103,28 @@
             <theme name="dark" svg="icons/analysis/body_check.svg"/>
         </icon>
         <icon id="analysis.interference">
-            <theme name="light" svg="icons/analysis/interference.svg"/>
-            <theme name="dark" svg="icons/analysis/interference.svg"/>
+            <theme name="light" svg="icons/analysis/interference.svg" png16=":/Ribbon/common/analysis/light/png/16/analysis_interference.png" png32=":/Ribbon/common/analysis/light/png/32/analysis_interference.png" png48=":/Ribbon/common/analysis/light/png/48/analysis_interference.png" png64=":/Ribbon/common/analysis/light/png/64/analysis_interference.png"/>
+            <theme name="dark" svg="icons/analysis/interference.svg" png16=":/Ribbon/common/analysis/dark/png/16/analysis_interference.png" png32=":/Ribbon/common/analysis/dark/png/32/analysis_interference.png" png48=":/Ribbon/common/analysis/dark/png/48/analysis_interference.png" png64=":/Ribbon/common/analysis/dark/png/64/analysis_interference.png"/>
         </icon>
         <icon id="analysis.mass">
-            <theme name="light" svg="icons/analysis/mass.svg"/>
-            <theme name="dark" svg="icons/analysis/mass.svg"/>
+            <theme name="light" svg="icons/analysis/mass.svg" png16=":/Ribbon/common/analysis/light/png/16/analysis_mass.png" png32=":/Ribbon/common/analysis/light/png/32/analysis_mass.png" png48=":/Ribbon/common/analysis/light/png/48/analysis_mass.png" png64=":/Ribbon/common/analysis/light/png/64/analysis_mass.png"/>
+            <theme name="dark" svg="icons/analysis/mass.svg" png16=":/Ribbon/common/analysis/dark/png/16/analysis_mass.png" png32=":/Ribbon/common/analysis/dark/png/32/analysis_mass.png" png48=":/Ribbon/common/analysis/dark/png/48/analysis_mass.png" png64=":/Ribbon/common/analysis/dark/png/64/analysis_mass.png"/>
         </icon>
         <icon id="app.assembly">
-            <theme name="light" svg="icons/app/assembly.svg"/>
-            <theme name="dark" svg="icons/app/assembly.svg"/>
+            <theme name="light" svg="icons/app/assembly.svg" png16=":/Ribbon/common/app/light/png/16/app_assembly.png" png32=":/Ribbon/common/app/light/png/32/app_assembly.png" png48=":/Ribbon/common/app/light/png/48/app_assembly.png" png64=":/Ribbon/common/app/light/png/64/app_assembly.png"/>
+            <theme name="dark" svg="icons/app/assembly.svg" png16=":/Ribbon/common/app/dark/png/16/app_assembly.png" png32=":/Ribbon/common/app/dark/png/32/app_assembly.png" png48=":/Ribbon/common/app/dark/png/48/app_assembly.png" png64=":/Ribbon/common/app/dark/png/64/app_assembly.png"/>
         </icon>
         <icon id="app.bim">
             <theme name="light" svg="icons/app/bim.svg"/>
             <theme name="dark" svg="icons/app/bim.svg"/>
         </icon>
         <icon id="app.part_modeling">
-            <theme name="light" svg="icons/app/part_modeling.svg"/>
-            <theme name="dark" svg="icons/app/part_modeling.svg"/>
+            <theme name="light" svg="icons/app/part_modeling.svg" png16=":/Ribbon/common/app/light/png/16/app_part_modeling.png" png32=":/Ribbon/common/app/light/png/32/app_part_modeling.png" png48=":/Ribbon/common/app/light/png/48/app_part_modeling.png" png64=":/Ribbon/common/app/light/png/64/app_part_modeling.png"/>
+            <theme name="dark" svg="icons/app/part_modeling.svg" png16=":/Ribbon/common/app/dark/png/16/app_part_modeling.png" png32=":/Ribbon/common/app/dark/png/32/app_part_modeling.png" png48=":/Ribbon/common/app/dark/png/48/app_part_modeling.png" png64=":/Ribbon/common/app/dark/png/64/app_part_modeling.png"/>
         </icon>
         <icon id="app.sheet_metal">
-            <theme name="light" svg="icons/app/sheet_metal.svg"/>
-            <theme name="dark" svg="icons/app/sheet_metal.svg"/>
+            <theme name="light" svg="icons/app/sheet_metal.svg" png16=":/Ribbon/common/app/light/png/16/app_sheet_metal.png" png32=":/Ribbon/common/app/light/png/32/app_sheet_metal.png" png48=":/Ribbon/common/app/light/png/48/app_sheet_metal.png" png64=":/Ribbon/common/app/light/png/64/app_sheet_metal.png"/>
+            <theme name="dark" svg="icons/app/sheet_metal.svg" png16=":/Ribbon/common/app/dark/png/16/app_sheet_metal.png" png32=":/Ribbon/common/app/dark/png/32/app_sheet_metal.png" png48=":/Ribbon/common/app/dark/png/48/app_sheet_metal.png" png64=":/Ribbon/common/app/dark/png/64/app_sheet_metal.png"/>
         </icon>
         <icon id="app.ship">
             <theme name="light" svg="icons/app/ship.svg"/>
@@ -129,46 +134,48 @@
             <theme name="light" svg="icons/app/sketch.svg"/>
             <theme name="dark" svg="icons/app/sketch.svg"/>
         </icon>
+
         <icon id="asm.add_component">
-            <theme name="light" svg="icons/asm/add_component.svg"/>
-            <theme name="dark" svg="icons/asm/add_component.svg"/>
+            <theme name="light" svg="icons/asm/add_component.svg" png16=":/Ribbon/assembly/grp_asm_components/light/png/16/asm_add_component.png" png32=":/Ribbon/assembly/grp_asm_components/light/png/32/asm_add_component.png" png48=":/Ribbon/assembly/grp_asm_components/light/png/48/asm_add_component.png" png64=":/Ribbon/assembly/grp_asm_components/light/png/64/asm_add_component.png"/>
+            <theme name="dark" svg="icons/asm/add_component.svg" png16=":/Ribbon/assembly/grp_asm_components/dark/png/16/asm_add_component.png" png32=":/Ribbon/assembly/grp_asm_components/dark/png/32/asm_add_component.png" png48=":/Ribbon/assembly/grp_asm_components/dark/png/48/asm_add_component.png" png64=":/Ribbon/assembly/grp_asm_components/dark/png/64/asm_add_component.png"/>
         </icon>
         <icon id="asm.align">
-            <theme name="light" svg="icons/asm/align.svg"/>
-            <theme name="dark" svg="icons/asm/align.svg"/>
+            <theme name="light" svg="icons/asm/align.svg" png16=":/Ribbon/assembly/grp_asm_constraints/light/png/16/asm_align.png" png32=":/Ribbon/assembly/grp_asm_constraints/light/png/32/asm_align.png" png48=":/Ribbon/assembly/grp_asm_constraints/light/png/48/asm_align.png" png64=":/Ribbon/assembly/grp_asm_constraints/light/png/64/asm_align.png"/>
+            <theme name="dark" svg="icons/asm/align.svg" png16=":/Ribbon/assembly/grp_asm_constraints/dark/png/16/asm_align.png" png32=":/Ribbon/assembly/grp_asm_constraints/dark/png/32/asm_align.png" png48=":/Ribbon/assembly/grp_asm_constraints/dark/png/48/asm_align.png" png64=":/Ribbon/assembly/grp_asm_constraints/dark/png/64/asm_align.png"/>
         </icon>
         <icon id="asm.arrange">
-            <theme name="light" svg="icons/asm/arrange.svg"/>
-            <theme name="dark" svg="icons/asm/arrange.svg"/>
+            <theme name="light" svg="icons/asm/arrange.svg" png16=":/Ribbon/assembly/grp_asm_components/light/png/16/asm_arrange.png" png32=":/Ribbon/assembly/grp_asm_components/light/png/32/asm_arrange.png" png48=":/Ribbon/assembly/grp_asm_components/light/png/48/asm_arrange.png" png64=":/Ribbon/assembly/grp_asm_components/light/png/64/asm_arrange.png"/>
+            <theme name="dark" svg="icons/asm/arrange.svg" png16=":/Ribbon/assembly/grp_asm_components/dark/png/16/asm_arrange.png" png32=":/Ribbon/assembly/grp_asm_components/dark/png/32/asm_arrange.png" png48=":/Ribbon/assembly/grp_asm_components/dark/png/48/asm_arrange.png" png64=":/Ribbon/assembly/grp_asm_components/dark/png/64/asm_arrange.png"/>
         </icon>
         <icon id="asm.constraint">
-            <theme name="light" svg="icons/asm/constraint.svg"/>
-            <theme name="dark" svg="icons/asm/constraint.svg"/>
+            <theme name="light" svg="icons/asm/constraint.svg" png16=":/Ribbon/assembly/grp_asm_constraints/light/png/16/asm_constraint.png" png32=":/Ribbon/assembly/grp_asm_constraints/light/png/32/asm_constraint.png" png48=":/Ribbon/assembly/grp_asm_constraints/light/png/48/asm_constraint.png" png64=":/Ribbon/assembly/grp_asm_constraints/light/png/64/asm_constraint.png"/>
+            <theme name="dark" svg="icons/asm/constraint.svg" png16=":/Ribbon/assembly/grp_asm_constraints/dark/png/16/asm_constraint.png" png32=":/Ribbon/assembly/grp_asm_constraints/dark/png/32/asm_constraint.png" png48=":/Ribbon/assembly/grp_asm_constraints/dark/png/48/asm_constraint.png" png64=":/Ribbon/assembly/grp_asm_constraints/dark/png/64/asm_constraint.png"/>
         </icon>
         <icon id="asm.distance">
-            <theme name="light" svg="icons/asm/distance.svg"/>
-            <theme name="dark" svg="icons/asm/distance.svg"/>
+            <theme name="light" svg="icons/asm/distance.svg" png16=":/Ribbon/assembly/grp_asm_constraints/light/png/16/asm_distance.png" png32=":/Ribbon/assembly/grp_asm_constraints/light/png/32/asm_distance.png" png48=":/Ribbon/assembly/grp_asm_constraints/light/png/48/asm_distance.png" png64=":/Ribbon/assembly/grp_asm_constraints/light/png/64/asm_distance.png"/>
+            <theme name="dark" svg="icons/asm/distance.svg" png16=":/Ribbon/assembly/grp_asm_constraints/dark/png/16/asm_distance.png" png32=":/Ribbon/assembly/grp_asm_constraints/dark/png/32/asm_distance.png" png48=":/Ribbon/assembly/grp_asm_constraints/dark/png/48/asm_distance.png" png64=":/Ribbon/assembly/grp_asm_constraints/dark/png/64/asm_distance.png"/>
         </icon>
         <icon id="asm.explode">
-            <theme name="light" svg="icons/asm/explode.svg"/>
-            <theme name="dark" svg="icons/asm/explode.svg"/>
+            <theme name="light" svg="icons/asm/explode.svg" png16=":/Ribbon/assembly/grp_asm_explode/light/png/16/asm_explode.png" png32=":/Ribbon/assembly/grp_asm_explode/light/png/32/asm_explode.png" png48=":/Ribbon/assembly/grp_asm_explode/light/png/48/asm_explode.png" png64=":/Ribbon/assembly/grp_asm_explode/light/png/64/asm_explode.png"/>
+            <theme name="dark" svg="icons/asm/explode.svg" png16=":/Ribbon/assembly/grp_asm_explode/dark/png/16/asm_explode.png" png32=":/Ribbon/assembly/grp_asm_explode/dark/png/32/asm_explode.png" png48=":/Ribbon/assembly/grp_asm_explode/dark/png/48/asm_explode.png" png64=":/Ribbon/assembly/grp_asm_explode/dark/png/64/asm_explode.png"/>
         </icon>
         <icon id="asm.mate">
-            <theme name="light" svg="icons/asm/mate.svg"/>
-            <theme name="dark" svg="icons/asm/mate.svg"/>
+            <theme name="light" svg="icons/asm/mate.svg" png16=":/Ribbon/assembly/grp_asm_constraints/light/png/16/asm_mate.png" png32=":/Ribbon/assembly/grp_asm_constraints/light/png/32/asm_mate.png" png48=":/Ribbon/assembly/grp_asm_constraints/light/png/48/asm_mate.png" png64=":/Ribbon/assembly/grp_asm_constraints/light/png/64/asm_mate.png"/>
+            <theme name="dark" svg="icons/asm/mate.svg" png16=":/Ribbon/assembly/grp_asm_constraints/dark/png/16/asm_mate.png" png32=":/Ribbon/assembly/grp_asm_constraints/dark/png/32/asm_mate.png" png48=":/Ribbon/assembly/grp_asm_constraints/dark/png/48/asm_mate.png" png64=":/Ribbon/assembly/grp_asm_constraints/dark/png/64/asm_mate.png"/>
         </icon>
         <icon id="asm.new_component">
-            <theme name="light" svg="icons/asm/new_component.svg"/>
-            <theme name="dark" svg="icons/asm/new_component.svg"/>
+            <theme name="light" svg="icons/asm/new_component.svg" png16=":/Ribbon/assembly/grp_asm_components/light/png/16/asm_new_component.png" png32=":/Ribbon/assembly/grp_asm_components/light/png/32/asm_new_component.png" png48=":/Ribbon/assembly/grp_asm_components/light/png/48/asm_new_component.png" png64=":/Ribbon/assembly/grp_asm_components/light/png/64/asm_new_component.png"/>
+            <theme name="dark" svg="icons/asm/new_component.svg" png16=":/Ribbon/assembly/grp_asm_components/dark/png/16/asm_new_component.png" png32=":/Ribbon/assembly/grp_asm_components/dark/png/32/asm_new_component.png" png48=":/Ribbon/assembly/grp_asm_components/dark/png/48/asm_new_component.png" png64=":/Ribbon/assembly/grp_asm_components/dark/png/64/asm_new_component.png"/>
         </icon>
         <icon id="asm.replace_component">
-            <theme name="light" svg="icons/asm/replace_component.svg"/>
-            <theme name="dark" svg="icons/asm/replace_component.svg"/>
+            <theme name="light" svg="icons/asm/replace_component.svg" png16=":/Ribbon/assembly/grp_asm_components/light/png/16/asm_replace_component.png" png32=":/Ribbon/assembly/grp_asm_components/light/png/32/asm_replace_component.png" png48=":/Ribbon/assembly/grp_asm_components/light/png/48/asm_replace_component.png" png64=":/Ribbon/assembly/grp_asm_components/light/png/64/asm_replace_component.png"/>
+            <theme name="dark" svg="icons/asm/replace_component.svg" png16=":/Ribbon/assembly/grp_asm_components/dark/png/16/asm_replace_component.png" png32=":/Ribbon/assembly/grp_asm_components/dark/png/32/asm_replace_component.png" png48=":/Ribbon/assembly/grp_asm_components/dark/png/48/asm_replace_component.png" png64=":/Ribbon/assembly/grp_asm_components/dark/png/64/asm_replace_component.png"/>
         </icon>
         <icon id="asm.unexplode">
-            <theme name="light" svg="icons/asm/unexplode.svg"/>
-            <theme name="dark" svg="icons/asm/unexplode.svg"/>
+            <theme name="light" svg="icons/asm/unexplode.svg" png16=":/Ribbon/assembly/grp_asm_explode/light/png/16/asm_unexplode.png" png32=":/Ribbon/assembly/grp_asm_explode/light/png/32/asm_unexplode.png" png48=":/Ribbon/assembly/grp_asm_explode/light/png/48/asm_unexplode.png" png64=":/Ribbon/assembly/grp_asm_explode/light/png/64/asm_unexplode.png"/>
+            <theme name="dark" svg="icons/asm/unexplode.svg" png16=":/Ribbon/assembly/grp_asm_explode/dark/png/16/asm_unexplode.png" png32=":/Ribbon/assembly/grp_asm_explode/dark/png/32/asm_unexplode.png" png48=":/Ribbon/assembly/grp_asm_explode/dark/png/48/asm_unexplode.png" png64=":/Ribbon/assembly/grp_asm_explode/dark/png/64/asm_unexplode.png"/>
         </icon>
+        
         <icon id="curve.arc">
             <theme name="light" svg="icons/curve/arc.svg"/>
             <theme name="dark" svg="icons/curve/arc.svg"/>
@@ -330,32 +337,32 @@
             <theme name="dark" svg="icons/datum/ribbon.svg" png16=":/Ribbon/part/model/grp_model_datum/dark/png/16/datum_ribbon.png" png32=":/Ribbon/part/model/grp_model_datum/dark/png/32/datum_ribbon.png" png48=":/Ribbon/part/model/grp_model_datum/dark/png/48/datum_ribbon.png" png64=":/Ribbon/part/model/grp_model_datum/dark/png/64/datum_ribbon.png"/>
         </icon>
         <icon id="display.hidden_line">
-            <theme name="light" svg="icons/display/hidden_line.svg"/>
-            <theme name="dark" svg="icons/display/hidden_line.svg"/>
+            <theme name="light" svg="icons/display/hidden_line.svg" png16=":/Ribbon/common/display/light/png/16/display_hidden_line.png" png32=":/Ribbon/common/display/light/png/32/display_hidden_line.png" png48=":/Ribbon/common/display/light/png/48/display_hidden_line.png" png64=":/Ribbon/common/display/light/png/64/display_hidden_line.png"/>
+            <theme name="dark" svg="icons/display/hidden_line.svg" png16=":/Ribbon/common/display/dark/png/16/display_hidden_line.png" png32=":/Ribbon/common/display/dark/png/32/display_hidden_line.png" png48=":/Ribbon/common/display/dark/png/48/display_hidden_line.png" png64=":/Ribbon/common/display/dark/png/64/display_hidden_line.png"/>
         </icon>
         <icon id="display.hide">
-            <theme name="light" svg="icons/display/hide.svg"/>
-            <theme name="dark" svg="icons/display/hide.svg"/>
+            <theme name="light" svg="icons/display/hide.svg" png16=":/Ribbon/common/display/light/png/16/display_hide.png" png32=":/Ribbon/common/display/light/png/32/display_hide.png" png48=":/Ribbon/common/display/light/png/48/display_hide.png" png64=":/Ribbon/common/display/light/png/64/display_hide.png"/>
+            <theme name="dark" svg="icons/display/hide.svg" png16=":/Ribbon/common/display/dark/png/16/display_hide.png" png32=":/Ribbon/common/display/dark/png/32/display_hide.png" png48=":/Ribbon/common/display/dark/png/48/display_hide.png" png64=":/Ribbon/common/display/dark/png/64/display_hide.png"/>
         </icon>
         <icon id="display.isolate">
-            <theme name="light" svg="icons/display/isolate.svg"/>
-            <theme name="dark" svg="icons/display/isolate.svg"/>
+            <theme name="light" svg="icons/display/isolate.svg" png16=":/Ribbon/common/display/light/png/16/display_isolate.png" png32=":/Ribbon/common/display/light/png/32/display_isolate.png" png48=":/Ribbon/common/display/light/png/48/display_isolate.png" png64=":/Ribbon/common/display/light/png/64/display_isolate.png"/>
+            <theme name="dark" svg="icons/display/isolate.svg" png16=":/Ribbon/common/display/dark/png/16/display_isolate.png" png32=":/Ribbon/common/display/dark/png/32/display_isolate.png" png48=":/Ribbon/common/display/dark/png/48/display_isolate.png" png64=":/Ribbon/common/display/dark/png/64/display_isolate.png"/>
         </icon>
         <icon id="display.shaded">
-            <theme name="light" svg="icons/display/shaded.svg"/>
-            <theme name="dark" svg="icons/display/shaded.svg"/>
+            <theme name="light" svg="icons/display/shaded.svg" png16=":/Ribbon/common/display/light/png/16/display_shaded.png" png32=":/Ribbon/common/display/light/png/32/display_shaded.png" png48=":/Ribbon/common/display/light/png/48/display_shaded.png" png64=":/Ribbon/common/display/light/png/64/display_shaded.png"/>
+            <theme name="dark" svg="icons/display/shaded.svg" png16=":/Ribbon/common/display/dark/png/16/display_shaded.png" png32=":/Ribbon/common/display/dark/png/32/display_shaded.png" png48=":/Ribbon/common/display/dark/png/48/display_shaded.png" png64=":/Ribbon/common/display/dark/png/64/display_shaded.png"/>
         </icon>
         <icon id="display.shaded_edges">
-            <theme name="light" svg="icons/display/shaded_edges.svg"/>
-            <theme name="dark" svg="icons/display/shaded_edges.svg"/>
+            <theme name="light" svg="icons/display/shaded_edges.svg" png16=":/Ribbon/common/display/light/png/16/display_shaded_edges.png" png32=":/Ribbon/common/display/light/png/32/display_shaded_edges.png" png48=":/Ribbon/common/display/light/png/48/display_shaded_edges.png" png64=":/Ribbon/common/display/light/png/64/display_shaded_edges.png"/>
+            <theme name="dark" svg="icons/display/shaded_edges.svg" png16=":/Ribbon/common/display/dark/png/16/display_shaded_edges.png" png32=":/Ribbon/common/display/dark/png/32/display_shaded_edges.png" png48=":/Ribbon/common/display/dark/png/48/display_shaded_edges.png" png64=":/Ribbon/common/display/dark/png/64/display_shaded_edges.png"/>
         </icon>
         <icon id="display.show">
-            <theme name="light" svg="icons/display/show.svg"/>
-            <theme name="dark" svg="icons/display/show.svg"/>
+            <theme name="light" svg="icons/display/show.svg" png16=":/Ribbon/common/display/light/png/16/display_show.png" png32=":/Ribbon/common/display/light/png/32/display_show.png" png48=":/Ribbon/common/display/light/png/48/display_show.png" png64=":/Ribbon/common/display/light/png/64/display_show.png"/>
+            <theme name="dark" svg="icons/display/show.svg" png16=":/Ribbon/common/display/dark/png/16/display_show.png" png32=":/Ribbon/common/display/dark/png/32/display_show.png" png48=":/Ribbon/common/display/dark/png/48/display_show.png" png64=":/Ribbon/common/display/dark/png/64/display_show.png"/>
         </icon>
         <icon id="display.wireframe">
-            <theme name="light" svg="icons/display/wireframe.svg"/>
-            <theme name="dark" svg="icons/display/wireframe.svg"/>
+            <theme name="light" svg="icons/display/wireframe.svg" png16=":/Ribbon/common/display/light/png/16/display_wireframe.png" png32=":/Ribbon/common/display/light/png/32/display_wireframe.png" png48=":/Ribbon/common/display/light/png/48/display_wireframe.png" png64=":/Ribbon/common/display/light/png/64/display_wireframe.png"/>
+            <theme name="dark" svg="icons/display/wireframe.svg" png16=":/Ribbon/common/display/dark/png/16/display_wireframe.png" png32=":/Ribbon/common/display/dark/png/32/display_wireframe.png" png48=":/Ribbon/common/display/dark/png/48/display_wireframe.png" png64=":/Ribbon/common/display/dark/png/64/display_wireframe.png"/>
         </icon>
         <icon id="edit.copy">
             <theme name="light" svg="icons/edit/copy.svg" png16=":/Ribbon/part/model/grp_model_operations/light/png/16/edit_copy.png" png32=":/Ribbon/part/model/grp_model_operations/light/png/32/edit_copy.png" png48=":/Ribbon/part/model/grp_model_operations/light/png/48/edit_copy.png" png64=":/Ribbon/part/model/grp_model_operations/light/png/64/edit_copy.png"/>
@@ -386,60 +393,60 @@
             <theme name="dark" svg="icons/edit/undo.svg"/>
         </icon>
         <icon id="file.close">
-            <theme name="light" svg="icons/file/close.svg"/>
-            <theme name="dark" svg="icons/file/close.svg"/>
+            <theme name="light" svg=":/FileMenu/light/svg/file/close.svg" png16=":/FileMenu/light/png/16/file/close.png" png32=":/FileMenu/light/png/32/file/close.png" png48=":/FileMenu/light/png/48/file/close.png" png64=":/FileMenu/light/png/64/file/close.png"/>
+            <theme name="dark" svg=":/FileMenu/dark/svg/file/close.svg" png16=":/FileMenu/dark/png/16/file/close.png" png32=":/FileMenu/dark/png/32/file/close.png" png48=":/FileMenu/dark/png/48/file/close.png" png64=":/FileMenu/dark/png/64/file/close.png"/>
         </icon>
         <icon id="file.exit">
-            <theme name="light" svg="icons/file/exit.svg"/>
-            <theme name="dark" svg="icons/file/exit.svg"/>
+            <theme name="light" svg=":/FileMenu/light/svg/file/exit.svg" png16=":/FileMenu/light/png/16/file/exit.png" png32=":/FileMenu/light/png/32/file/exit.png" png48=":/FileMenu/light/png/48/file/exit.png" png64=":/FileMenu/light/png/64/file/exit.png"/>
+        <theme name="dark" svg=":/FileMenu/dark/svg/file/exit.svg" png16=":/FileMenu/dark/png/16/file/exit.png" png32=":/FileMenu/dark/png/32/file/exit.png" png48=":/FileMenu/dark/png/48/file/exit.png" png64=":/FileMenu/dark/png/64/file/exit.png"/>
         </icon>
         <icon id="file.save">
             <theme name="light" svg="icons/file/save.svg"/>
             <theme name="dark" svg="icons/file/save.svg"/>
         </icon>
         <icon id="file.save_as">
-            <theme name="light" svg="icons/file/save_as.svg"/>
-            <theme name="dark" svg="icons/file/save_as.svg"/>
+            <theme name="light" svg=":/FileMenu/light/svg/file/save_as.svg" png16=":/FileMenu/light/png/16/file/save_as.png" png32=":/FileMenu/light/png/32/file/save_as.png" png48=":/FileMenu/light/png/48/file/save_as.png" png64=":/FileMenu/light/png/64/file/save_as.png"/>
+            <theme name="dark" svg=":/FileMenu/dark/svg/file/save_as.svg" png16=":/FileMenu/dark/png/16/file/save_as.png" png32=":/FileMenu/dark/png/32/file/save_as.png" png48=":/FileMenu/dark/png/48/file/save_as.png" png64=":/FileMenu/dark/png/64/file/save_as.png"/>
         </icon>
         <icon id="gc.check_update">
-            <theme name="light" svg="icons/gc/check_update.svg"/>
-            <theme name="dark" svg="icons/gc/check_update.svg"/>
+            <theme name="light" svg="icons/gc/check_update.svg" png16=":/Ribbon/common/gc/light/png/16/gc_check_update.png" png32=":/Ribbon/common/gc/light/png/32/gc_check_update.png" png48=":/Ribbon/common/gc/light/png/48/gc_check_update.png" png64=":/Ribbon/common/gc/light/png/64/gc_check_update.png"/>
+            <theme name="dark" svg="icons/gc/check_update.svg" png16=":/Ribbon/common/gc/dark/png/16/gc_check_update.png" png32=":/Ribbon/common/gc/dark/png/32/gc_check_update.png" png48=":/Ribbon/common/gc/dark/png/48/gc_check_update.png" png64=":/Ribbon/common/gc/dark/png/64/gc_check_update.png"/>
         </icon>
         <icon id="gc.settings">
-            <theme name="light" svg="icons/gc/settings.svg"/>
-            <theme name="dark" svg="icons/gc/settings.svg"/>
+            <theme name="light" svg="icons/gc/settings.svg" png16=":/Ribbon/common/gc/light/png/16/gc_settings.png" png32=":/Ribbon/common/gc/light/png/32/gc_settings.png" png48=":/Ribbon/common/gc/light/png/48/gc_settings.png" png64=":/Ribbon/common/gc/light/png/64/gc_settings.png"/>
+            <theme name="dark" svg="icons/gc/settings.svg" png16=":/Ribbon/common/gc/dark/png/16/gc_settings.png" png32=":/Ribbon/common/gc/dark/png/32/gc_settings.png" png48=":/Ribbon/common/gc/dark/png/48/gc_settings.png" png64=":/Ribbon/common/gc/dark/png/64/gc_settings.png"/>
         </icon>
         <icon id="gc.std_part_library">
-            <theme name="light" svg="icons/gc/std_part_library.svg"/>
-            <theme name="dark" svg="icons/gc/std_part_library.svg"/>
+            <theme name="light" svg="icons/gc/std_part_library.svg" png16=":/Ribbon/common/gc/light/png/16/gc_std_part_library.png" png32=":/Ribbon/common/gc/light/png/32/gc_std_part_library.png" png48=":/Ribbon/common/gc/light/png/48/gc_std_part_library.png" png64=":/Ribbon/common/gc/light/png/64/gc_std_part_library.png"/>
+            <theme name="dark" svg="icons/gc/std_part_library.svg" png16=":/Ribbon/common/gc/dark/png/16/gc_std_part_library.png" png32=":/Ribbon/common/gc/dark/png/32/gc_std_part_library.png" png48=":/Ribbon/common/gc/dark/png/48/gc_std_part_library.png" png64=":/Ribbon/common/gc/dark/png/64/gc_std_part_library.png"/>
         </icon>
         <icon id="help.about">
-            <theme name="light" svg="icons/help/about.svg"/>
-            <theme name="dark" svg="icons/help/about.svg"/>
+            <theme name="light" svg=":/FileMenu/light/svg/help/about.svg" png16=":/FileMenu/light/png/16/help/about.png" png32=":/FileMenu/light/png/32/help/about.png" png48=":/FileMenu/light/png/48/help/about.png" png64=":/FileMenu/light/png/64/help/about.png"/>
+            <theme name="dark" svg=":/FileMenu/dark/svg/help/about.svg" png16=":/FileMenu/dark/png/16/help/about.png" png32=":/FileMenu/dark/png/32/help/about.png" png48=":/FileMenu/dark/png/48/help/about.png" png64=":/FileMenu/dark/png/64/help/about.png"/>
         </icon>
         <icon id="help.contents">
             <theme name="light" svg="icons/help/contents.svg"/>
             <theme name="dark" svg="icons/help/contents.svg"/>
         </icon>
         <icon id="measure.angle">
-            <theme name="light" svg="icons/measure/angle.svg"/>
-            <theme name="dark" svg="icons/measure/angle.svg"/>
+            <theme name="light" svg="icons/measure/angle.svg" png16=":/Ribbon/common/measure/light/png/16/measure_angle.png" png32=":/Ribbon/common/measure/light/png/32/measure_angle.png" png48=":/Ribbon/common/measure/light/png/48/measure_angle.png" png64=":/Ribbon/common/measure/light/png/64/measure_angle.png"/>
+            <theme name="dark" svg="icons/measure/angle.svg" png16=":/Ribbon/common/measure/dark/png/16/measure_angle.png" png32=":/Ribbon/common/measure/dark/png/32/measure_angle.png" png48=":/Ribbon/common/measure/dark/png/48/measure_angle.png" png64=":/Ribbon/common/measure/dark/png/64/measure_angle.png"/>
         </icon>
         <icon id="measure.dialog">
-            <theme name="light" svg="icons/measure/dialog.svg"/>
-            <theme name="dark" svg="icons/measure/dialog.svg"/>
+            <theme name="light" svg="icons/measure/dialog.svg" png16=":/Ribbon/common/measure/light/png/16/measure_dialog.png" png32=":/Ribbon/common/measure/light/png/32/measure_dialog.png" png48=":/Ribbon/common/measure/light/png/48/measure_dialog.png" png64=":/Ribbon/common/measure/light/png/64/measure_dialog.png"/>
+            <theme name="dark" svg="icons/measure/dialog.svg" png16=":/Ribbon/common/measure/dark/png/16/measure_dialog.png" png32=":/Ribbon/common/measure/dark/png/32/measure_dialog.png" png48=":/Ribbon/common/measure/dark/png/48/measure_dialog.png" png64=":/Ribbon/common/measure/dark/png/64/measure_dialog.png"/>
         </icon>
         <icon id="measure.distance">
-            <theme name="light" svg="icons/measure/distance.svg"/>
-            <theme name="dark" svg="icons/measure/distance.svg"/>
+            <theme name="light" svg="icons/measure/distance.svg" png16=":/Ribbon/common/measure/light/png/16/measure_distance.png" png32=":/Ribbon/common/measure/light/png/32/measure_distance.png" png48=":/Ribbon/common/measure/light/png/48/measure_distance.png" png64=":/Ribbon/common/measure/light/png/64/measure_distance.png"/>
+            <theme name="dark" svg="icons/measure/distance.svg" png16=":/Ribbon/common/measure/dark/png/16/measure_distance.png" png32=":/Ribbon/common/measure/dark/png/32/measure_distance.png" png48=":/Ribbon/common/measure/dark/png/48/measure_distance.png" png64=":/Ribbon/common/measure/dark/png/64/measure_distance.png"/>
         </icon>
         <icon id="measure.draft">
             <theme name="light" svg="icons/measure/draft.svg"/>
             <theme name="dark" svg="icons/measure/draft.svg"/>
         </icon>
         <icon id="measure.mass_props">
-            <theme name="light" svg="icons/measure/mass_props.svg"/>
-            <theme name="dark" svg="icons/measure/mass_props.svg"/>
+            <theme name="light" svg="icons/measure/mass_props.svg" png16=":/Ribbon/common/measure/light/png/16/measure_mass_props.png" png32=":/Ribbon/common/measure/light/png/32/measure_mass_props.png" png48=":/Ribbon/common/measure/light/png/48/measure_mass_props.png" png64=":/Ribbon/common/measure/light/png/64/measure_mass_props.png"/>
+            <theme name="dark" svg="icons/measure/mass_props.svg" png16=":/Ribbon/common/measure/dark/png/16/measure_mass_props.png" png32=":/Ribbon/common/measure/dark/png/32/measure_mass_props.png" png48=":/Ribbon/common/measure/dark/png/48/measure_mass_props.png" png64=":/Ribbon/common/measure/dark/png/64/measure_mass_props.png"/>
         </icon>
         <icon id="measure.radius">
             <theme name="light" svg="icons/measure/radius.svg"/>
@@ -702,24 +709,24 @@
             <theme name="dark" svg="icons/model_intent/switch_dimensions.svg" png16=":/Ribbon/part/model/grp_model_modelIntent/dark/png/16/modelIntent_switchDimensions.png" png32=":/Ribbon/part/model/grp_model_modelIntent/dark/png/32/modelIntent_switchDimensions.png" png48=":/Ribbon/part/model/grp_model_modelIntent/dark/png/48/modelIntent_switchDimensions.png" png64=":/Ribbon/part/model/grp_model_modelIntent/dark/png/64/modelIntent_switchDimensions.png"/>
         </icon>
         <icon id="select.filter">
-            <theme name="light" svg="icons/select/filter.svg"/>
-            <theme name="dark" svg="icons/select/filter.svg"/>
+            <theme name="light" svg="icons/select/filter.svg" png16=":/Ribbon/common/select/light/png/16/select_filter.png" png32=":/Ribbon/common/select/light/png/32/select_filter.png" png48=":/Ribbon/common/select/light/png/48/select_filter.png" png64=":/Ribbon/common/select/light/png/64/select_filter.png"/>
+            <theme name="dark" svg="icons/select/filter.svg" png16=":/Ribbon/common/select/dark/png/16/select_filter.png" png32=":/Ribbon/common/select/dark/png/32/select_filter.png" png48=":/Ribbon/common/select/dark/png/48/select_filter.png" png64=":/Ribbon/common/select/dark/png/64/select_filter.png"/>
         </icon>
         <icon id="select.lasso">
-            <theme name="light" svg="icons/select/lasso.svg"/>
-            <theme name="dark" svg="icons/select/lasso.svg"/>
+            <theme name="light" svg="icons/select/lasso.svg" png16=":/Ribbon/common/select/light/png/16/select_lasso.png" png32=":/Ribbon/common/select/light/png/32/select_lasso.png" png48=":/Ribbon/common/select/light/png/48/select_lasso.png" png64=":/Ribbon/common/select/light/png/64/select_lasso.png"/>
+            <theme name="dark" svg="icons/select/lasso.svg" png16=":/Ribbon/common/select/dark/png/16/select_lasso.png" png32=":/Ribbon/common/select/dark/png/32/select_lasso.png" png48=":/Ribbon/common/select/dark/png/48/select_lasso.png" png64=":/Ribbon/common/select/dark/png/64/select_lasso.png"/>
         </icon>
         <icon id="select.rectangle">
-            <theme name="light" svg="icons/select/rectangle.svg"/>
-            <theme name="dark" svg="icons/select/rectangle.svg"/>
+            <theme name="light" svg="icons/select/rectangle.svg" png16=":/Ribbon/common/select/light/png/16/select_rectangle.png" png32=":/Ribbon/common/select/light/png/32/select_rectangle.png" png48=":/Ribbon/common/select/light/png/48/select_rectangle.png" png64=":/Ribbon/common/select/light/png/64/select_rectangle.png"/>
+            <theme name="dark" svg="icons/select/rectangle.svg" png16=":/Ribbon/common/select/dark/png/16/select_rectangle.png" png32=":/Ribbon/common/select/dark/png/32/select_rectangle.png" png48=":/Ribbon/common/select/dark/png/48/select_rectangle.png" png64=":/Ribbon/common/select/dark/png/64/select_rectangle.png"/>
         </icon>
         <icon id="select.select">
             <theme name="light" png16=":/Ribbon/sketch/operations/light/png/16/select_select.png" png32=":/Ribbon/sketch/operations/light/png/32/select_select.png" png48=":/Ribbon/sketch/operations/light/png/48/select_select.png" png64=":/Ribbon/sketch/operations/light/png/64/select_select.png" />
             <theme name="dark" png16=":/Ribbon/sketch/operations/dark/png/16/select_select.png" png32=":/Ribbon/sketch/operations/dark/png/32/select_select.png" png48=":/Ribbon/sketch/operations/dark/png/48/select_select.png" png64=":/Ribbon/sketch/operations/dark/png/64/select_select.png" />
         </icon>
         <icon id="select.single">
-            <theme name="light" svg="icons/select/single.svg"/>
-            <theme name="dark" svg="icons/select/single.svg"/>
+            <theme name="light" svg="icons/select/single.svg" png16=":/Ribbon/common/select/light/png/16/select_single.png" png32=":/Ribbon/common/select/light/png/32/select_single.png" png48=":/Ribbon/common/select/light/png/48/select_single.png" png64=":/Ribbon/common/select/light/png/64/select_single.png"/>
+            <theme name="dark" svg="icons/select/single.svg" png16=":/Ribbon/common/select/dark/png/16/select_single.png" png32=":/Ribbon/common/select/dark/png/32/select_single.png" png48=":/Ribbon/common/select/dark/png/48/select_single.png" png64=":/Ribbon/common/select/dark/png/64/select_single.png"/>
         </icon>
         <icon id="sheet.base_flange">
             <theme name="light" svg="icons/sheet/base_flange.svg"/>
@@ -1229,8 +1236,8 @@
             <theme name="dark" svg="icons/tools/command_line.svg"/>
         </icon>
         <icon id="tools.expressions">
-            <theme name="light" svg="icons/tools/expressions.svg"/>
-            <theme name="dark" svg="icons/tools/expressions.svg"/>
+            <theme name="light" svg="icons/tools/expressions.svg" png16=":/Ribbon/common/tools/light/png/16/tools_expressions.png" png32=":/Ribbon/common/tools/light/png/32/tools_expressions.png" png48=":/Ribbon/common/tools/light/png/48/tools_expressions.png" png64=":/Ribbon/common/tools/light/png/64/tools_expressions.png"/>
+            <theme name="dark" svg="icons/tools/expressions.svg" png16=":/Ribbon/common/tools/dark/png/16/tools_expressions.png" png32=":/Ribbon/common/tools/dark/png/32/tools_expressions.png" png48=":/Ribbon/common/tools/dark/png/48/tools_expressions.png" png64=":/Ribbon/common/tools/dark/png/64/tools_expressions.png"/>
         </icon>
         <icon id="tools.journal_pause">
             <theme name="light" svg="icons/tools/journal_pause.svg"/>
@@ -1245,10 +1252,10 @@
             <theme name="dark" svg="icons/tools/journal_record.svg"/>
         </icon>
         <icon id="tools.python_console">
-            <theme name="light" svg="icons/tools/python_console.svg"/>
-            <theme name="dark" svg="icons/tools/python_console.svg"/>
+            <theme name="light" svg="icons/tools/python_console.svg" png16=":/Ribbon/common/tools/light/png/16/tools_python_console.png" png32=":/Ribbon/common/tools/light/png/32/tools_python_console.png" png48=":/Ribbon/common/tools/light/png/48/tools_python_console.png" png64=":/Ribbon/common/tools/light/png/64/tools_python_console.png"/>
+            <theme name="dark" svg="icons/tools/python_console.svg" png16=":/Ribbon/common/tools/dark/png/16/tools_python_console.png" png32=":/Ribbon/common/tools/dark/png/32/tools_python_console.png" png48=":/Ribbon/common/tools/dark/png/48/tools_python_console.png" png64=":/Ribbon/common/tools/dark/png/64/tools_python_console.png"/>
         </icon>
-                <icon id="ui.cancel">
+        <icon id="ui.cancel">
             <theme name="light" png16=":/Ribbon/sketch/close/light/png/16/sketch_cancel.png" png32=":/Ribbon/sketch/close/light/png/32/sketch_cancel.png" png48=":/Ribbon/sketch/close/light/png/48/sketch_cancel.png" png64=":/Ribbon/sketch/close/light/png/64/sketch_cancel.png"/>
             <theme name="dark"  png16=":/Ribbon/sketch/close/dark/png/16/sketch_cancel.png" png32=":/Ribbon/sketch/close/dark/png/32/sketch_cancel.png" png48=":/Ribbon/sketch/close/dark/png/48/sketch_cancel.png" png64=":/Ribbon/sketch/close/dark/png/64/sketch_cancel.png"/>
         </icon>
@@ -1273,28 +1280,28 @@
             <theme name="dark" svg="icons/ui/toggle_mode.svg"/>
         </icon>
         <icon id="view.clipping_plane">
-            <theme name="light" svg="icons/view/clipping_plane.svg"/>
-            <theme name="dark" svg="icons/view/clipping_plane.svg"/>
+            <theme name="light" svg="icons/view/clipping_plane.svg" png16=":/Ribbon/common/view/light/png/16/view_clipping_plane.png" png32=":/Ribbon/common/view/light/png/32/view_clipping_plane.png" png48=":/Ribbon/common/view/light/png/48/view_clipping_plane.png" png64=":/Ribbon/common/view/light/png/64/view_clipping_plane.png"/>
+            <theme name="dark" svg="icons/view/clipping_plane.svg" png16=":/Ribbon/common/view/dark/png/16/view_clipping_plane.png" png32=":/Ribbon/common/view/dark/png/32/view_clipping_plane.png" png48=":/Ribbon/common/view/dark/png/48/view_clipping_plane.png" png64=":/Ribbon/common/view/dark/png/64/view_clipping_plane.png"/>
         </icon>
         <icon id="view.dynamic_section">
-            <theme name="light" svg="icons/view/dynamic_section.svg"/>
-            <theme name="dark" svg="icons/view/dynamic_section.svg"/>
+            <theme name="light" svg="icons/view/dynamic_section.svg" png16=":/Ribbon/common/view/light/png/16/view_dynamic_section.png" png32=":/Ribbon/common/view/light/png/32/view_dynamic_section.png" png48=":/Ribbon/common/view/light/png/48/view_dynamic_section.png" png64=":/Ribbon/common/view/light/png/64/view_dynamic_section.png"/>
+            <theme name="dark" svg="icons/view/dynamic_section.svg" png16=":/Ribbon/common/view/dark/png/16/view_dynamic_section.png" png32=":/Ribbon/common/view/dark/png/32/view_dynamic_section.png" png48=":/Ribbon/common/view/dark/png/48/view_dynamic_section.png" png64=":/Ribbon/common/view/dark/png/64/view_dynamic_section.png"/>
         </icon>
         <icon id="view.front">
-            <theme name="light" svg="icons/view/front.svg"/>
-            <theme name="dark" svg="icons/view/front.svg"/>
+            <theme name="light" svg="icons/view/front.svg" png16=":/Ribbon/common/view/light/png/16/view_front.png" png32=":/Ribbon/common/view/light/png/32/view_front.png" png48=":/Ribbon/common/view/light/png/48/view_front.png" png64=":/Ribbon/common/view/light/png/64/view_front.png"/>
+            <theme name="dark" svg="icons/view/front.svg" png16=":/Ribbon/common/view/dark/png/16/view_front.png" png32=":/Ribbon/common/view/dark/png/32/view_front.png" png48=":/Ribbon/common/view/dark/png/48/view_front.png" png64=":/Ribbon/common/view/dark/png/64/view_front.png"/>
         </icon>
         <icon id="view.right">
-            <theme name="light" svg="icons/view/right.svg"/>
-            <theme name="dark" svg="icons/view/right.svg"/>
+            <theme name="light" svg="icons/view/right.svg" png16=":/Ribbon/common/view/light/png/16/view_right.png" png32=":/Ribbon/common/view/light/png/32/view_right.png" png48=":/Ribbon/common/view/light/png/48/view_right.png" png64=":/Ribbon/common/view/light/png/64/view_right.png"/>
+            <theme name="dark" svg="icons/view/right.svg" png16=":/Ribbon/common/view/dark/png/16/view_right.png" png32=":/Ribbon/common/view/dark/png/32/view_right.png" png48=":/Ribbon/common/view/dark/png/48/view_right.png" png64=":/Ribbon/common/view/dark/png/64/view_right.png"/>
         </icon>
         <icon id="view.top">
-            <theme name="light" svg="icons/view/top.svg"/>
-            <theme name="dark" svg="icons/view/top.svg"/>
+            <theme name="light" svg="icons/view/top.svg" png16=":/Ribbon/common/view/light/png/16/view_top.png" png32=":/Ribbon/common/view/light/png/32/view_top.png" png48=":/Ribbon/common/view/light/png/48/view_top.png" png64=":/Ribbon/common/view/light/png/64/view_top.png"/>
+            <theme name="dark" svg="icons/view/top.svg" png16=":/Ribbon/common/view/dark/png/16/view_top.png" png32=":/Ribbon/common/view/dark/png/32/view_top.png" png48=":/Ribbon/common/view/dark/png/48/view_top.png" png64=":/Ribbon/common/view/dark/png/64/view_top.png"/>
         </icon>
         <icon id="view.trimetric">
-            <theme name="light" svg="icons/view/trimetric.svg"/>
-            <theme name="dark" svg="icons/view/trimetric.svg"/>
+            <theme name="light" svg="icons/view/trimetric.svg" png16=":/Ribbon/common/view/light/png/16/view_trimetic.png" png32=":/Ribbon/common/view/light/png/32/view_trimetic.png" png48=":/Ribbon/common/view/light/png/48/view_trimetic.png" png64=":/Ribbon/common/view/light/png/64/view_trimetic.png"/>
+            <theme name="dark" svg="icons/view/trimetric.svg" png16=":/Ribbon/common/view/dark/png/16/view_trimetic.png" png32=":/Ribbon/common/view/dark/png/32/view_trimetic.png" png48=":/Ribbon/common/view/dark/png/48/view_trimetic.png" png64=":/Ribbon/common/view/dark/png/64/view_trimetic.png"/>
         </icon>
         <icon id="window.arrange">
             <theme name="light" svg="icons/window/arrange.svg"/>
@@ -1414,8 +1421,8 @@
             <theme name="light" png16=":/Ribbon/sketch/inspect/light/png/16/sketch_inspect_shadeClosedLoops.png" png32=":/Ribbon/sketch/inspect/light/png/32/sketch_inspect_shadeClosedLoops.png" png48=":/Ribbon/sketch/inspect/light/png/48/sketch_inspect_shadeClosedLoops.png" png64=":/Ribbon/sketch/inspect/light/png/64/sketch_inspect_shadeClosedLoops.png"/>
             <theme name="dark"  png16=":/Ribbon/sketch/inspect/dark/png/16/sketch_inspect_shadeClosedLoops.png" png32=":/Ribbon/sketch/inspect/dark/png/32/sketch_inspect_shadeClosedLoops.png" png48=":/Ribbon/sketch/inspect/dark/png/48/sketch_inspect_shadeClosedLoops.png" png64=":/Ribbon/sketch/inspect/dark/png/64/sketch_inspect_shadeClosedLoops.png"/>
         </icon>
-		
-		
+        
+        
         <!-- ============================================================= -->
         <!-- Navigation / Left Nav Bar                                      -->
         <!-- ============================================================= -->
@@ -1445,5 +1452,165 @@
                    png64=":/Navigator/nav/dark/png/64/nav_reuseLibrary.png"/>
         </icon>
 
-</icon-library>
+       <icon id="manage_file">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/manage_file.svg" png16=":/FileMenu/light/png/16/manage_file/manage_file.png" png32=":/FileMenu/light/png/32/manage_file/manage_file.png" png48=":/FileMenu/light/png/48/manage_file/manage_file.png" png64=":/FileMenu/light/png/64/manage_file/manage_file.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/manage_file.svg" png16=":/FileMenu/dark/png/16/manage_file/manage_file.png" png32=":/FileMenu/dark/png/32/manage_file/manage_file.png" png48=":/FileMenu/dark/png/48/manage_file/manage_file.png" png64=":/FileMenu/dark/png/64/manage_file/manage_file.png"/>
+       </icon>
+       <icon id="prepare">
+           <theme name="light" svg=":/FileMenu/light/svg/prepare/prepare.svg" png16=":/FileMenu/light/png/16/prepare/prepare.png" png32=":/FileMenu/light/png/32/prepare/prepare.png" png48=":/FileMenu/light/png/48/prepare/prepare.png" png64=":/FileMenu/light/png/64/prepare/prepare.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/prepare/prepare.svg" png16=":/FileMenu/dark/png/16/prepare/prepare.png" png32=":/FileMenu/dark/png/32/prepare/prepare.png" png48=":/FileMenu/dark/png/48/prepare/prepare.png" png64=":/FileMenu/dark/png/64/prepare/prepare.png"/>
+       </icon>
+       <icon id="send">
+           <theme name="light" svg=":/FileMenu/light/svg/send/send.svg" png16=":/FileMenu/light/png/16/send/send.png" png32=":/FileMenu/light/png/32/send/send.png" png48=":/FileMenu/light/png/48/send/send.png" png64=":/FileMenu/light/png/64/send/send.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/send/send.svg" png16=":/FileMenu/dark/png/16/send/send.png" png32=":/FileMenu/dark/png/32/send/send.png" png48=":/FileMenu/dark/png/48/send/send.png" png64=":/FileMenu/dark/png/64/send/send.png"/>
+       </icon>
+       <icon id="help">
+           <theme name="light" svg=":/FileMenu/light/svg/help/help.svg" png16=":/FileMenu/light/png/16/help/help.png" png32=":/FileMenu/light/png/32/help/help.png" png48=":/FileMenu/light/png/48/help/help.png" png64=":/FileMenu/light/png/64/help/help.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/help/help.svg" png16=":/FileMenu/dark/png/16/help/help.png" png32=":/FileMenu/dark/png/32/help/help.png" png48=":/FileMenu/dark/png/48/help/help.png" png64=":/FileMenu/dark/png/64/help/help.png"/>
+       </icon>
+       <icon id="data.manage_session">
+           <theme name="light" svg=":/FileMenu/light/svg/data/manage_session.svg" png16=":/FileMenu/light/png/16/data/manage_session.png" png32=":/FileMenu/light/png/32/data/manage_session.png" png48=":/FileMenu/light/png/48/data/manage_session.png" png64=":/FileMenu/light/png/64/data/manage_session.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/manage_session.svg" png16=":/FileMenu/dark/png/16/data/manage_session.png" png32=":/FileMenu/dark/png/32/data/manage_session.png" png48=":/FileMenu/dark/png/48/data/manage_session.png" png64=":/FileMenu/dark/png/64/data/manage_session.png"/>
+       </icon>
+       <icon id="settings.options">
+           <theme name="light" svg=":/FileMenu/light/svg/settings/options.svg" png16=":/FileMenu/light/png/16/settings/options.png" png32=":/FileMenu/light/png/32/settings/options.png" png48=":/FileMenu/light/png/48/settings/options.png" png64=":/FileMenu/light/png/64/settings/options.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/settings/options.svg" png16=":/FileMenu/dark/png/16/settings/options.png" png32=":/FileMenu/dark/png/32/settings/options.png" png48=":/FileMenu/dark/png/48/settings/options.png" png64=":/FileMenu/dark/png/64/settings/options.png"/>
+       </icon>
+       <icon id="save_as.save_copy">
+           <theme name="light" svg=":/FileMenu/light/svg/save_as/save_copy.svg" png16=":/FileMenu/light/png/16/save_as/save_copy.png" png32=":/FileMenu/light/png/32/save_as/save_copy.png" png48=":/FileMenu/light/png/48/save_as/save_copy.png" png64=":/FileMenu/light/png/64/save_as/save_copy.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/save_as/save_copy.svg" png16=":/FileMenu/dark/png/16/save_as/save_copy.png" png32=":/FileMenu/dark/png/32/save_as/save_copy.png" png48=":/FileMenu/dark/png/48/save_as/save_copy.png" png64=":/FileMenu/dark/png/64/save_as/save_copy.png"/>
+       </icon>
+       <icon id="save_as.save_backup">
+           <theme name="light" svg=":/FileMenu/light/svg/save_as/save_backup.svg" png16=":/FileMenu/light/png/16/save_as/save_backup.png" png32=":/FileMenu/light/png/32/save_as/save_backup.png" png48=":/FileMenu/light/png/48/save_as/save_backup.png" png64=":/FileMenu/light/png/64/save_as/save_backup.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/save_as/save_backup.svg" png16=":/FileMenu/dark/png/16/save_as/save_backup.png" png32=":/FileMenu/dark/png/32/save_as/save_backup.png" png48=":/FileMenu/dark/png/48/save_as/save_backup.png" png64=":/FileMenu/dark/png/64/save_as/save_backup.png"/>
+       </icon>
+       <icon id="save_as.mirror_part">
+           <theme name="light" svg=":/FileMenu/light/svg/save_as/mirror_part.svg" png16=":/FileMenu/light/png/16/save_as/mirror_part.png" png32=":/FileMenu/light/png/32/save_as/mirror_part.png" png48=":/FileMenu/light/png/48/save_as/mirror_part.png" png64=":/FileMenu/light/png/64/save_as/mirror_part.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/save_as/mirror_part.svg" png16=":/FileMenu/dark/png/16/save_as/mirror_part.png" png32=":/FileMenu/dark/png/32/save_as/mirror_part.png" png48=":/FileMenu/dark/png/48/save_as/mirror_part.png" png64=":/FileMenu/dark/png/64/save_as/mirror_part.png"/>
+       </icon>
+       <icon id="print.quick_print">
+           <theme name="light" svg=":/FileMenu/light/svg/print/quick_print.svg" png16=":/FileMenu/light/png/16/print/quick_print.png" png32=":/FileMenu/light/png/32/print/quick_print.png" png48=":/FileMenu/light/png/48/print/quick_print.png" png64=":/FileMenu/light/png/64/print/quick_print.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/print/quick_print.svg" png16=":/FileMenu/dark/png/16/print/quick_print.png" png32=":/FileMenu/dark/png/32/print/quick_print.png" png48=":/FileMenu/dark/png/48/print/quick_print.png" png64=":/FileMenu/dark/png/64/print/quick_print.png"/>
+       </icon>
+       <icon id="print.quick_drawing">
+           <theme name="light" svg=":/FileMenu/light/svg/print/quick_drawing.svg" png16=":/FileMenu/light/png/16/print/quick_drawing.png" png32=":/FileMenu/light/png/32/print/quick_drawing.png" png48=":/FileMenu/light/png/48/print/quick_drawing.png" png64=":/FileMenu/light/png/64/print/quick_drawing.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/print/quick_drawing.svg" png16=":/FileMenu/dark/png/16/print/quick_drawing.png" png32=":/FileMenu/dark/png/32/print/quick_drawing.png" png48=":/FileMenu/dark/png/48/print/quick_drawing.png" png64=":/FileMenu/dark/png/64/print/quick_drawing.png"/>
+       </icon>
+       <icon id="print.prep_3d">
+           <theme name="light" svg=":/FileMenu/light/svg/print/prep_3d.svg" png16=":/FileMenu/light/png/16/print/prep_3d.png" png32=":/FileMenu/light/png/32/print/prep_3d.png" png48=":/FileMenu/light/png/48/print/prep_3d.png" png64=":/FileMenu/light/png/64/print/prep_3d.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/print/prep_3d.svg" png16=":/FileMenu/dark/png/16/print/prep_3d.png" png32=":/FileMenu/dark/png/32/print/prep_3d.png" png48=":/FileMenu/dark/png/48/print/prep_3d.png" png64=":/FileMenu/dark/png/64/print/prep_3d.png"/>
+       </icon>
+       <icon id="print.order_3d">
+           <theme name="light" svg=":/FileMenu/light/svg/print/order_3d.svg" png16=":/FileMenu/light/png/16/print/order_3d.png" png32=":/FileMenu/light/png/32/print/order_3d.png" png48=":/FileMenu/light/png/48/print/order_3d.png" png64=":/FileMenu/light/png/64/print/order_3d.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/print/order_3d.svg" png16=":/FileMenu/dark/png/16/print/order_3d.png" png32=":/FileMenu/dark/png/32/print/order_3d.png" png48=":/FileMenu/dark/png/48/print/order_3d.png" png64=":/FileMenu/dark/png/64/print/order_3d.png"/>
+       </icon>
+       <icon id="manage_file.rename">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/rename.svg" png16=":/FileMenu/light/png/16/manage_file/rename.png" png32=":/FileMenu/light/png/32/manage_file/rename.png" png48=":/FileMenu/light/png/48/manage_file/rename.png" png64=":/FileMenu/light/png/64/manage_file/rename.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/rename.svg" png16=":/FileMenu/dark/png/16/manage_file/rename.png" png32=":/FileMenu/dark/png/32/manage_file/rename.png" png48=":/FileMenu/dark/png/48/manage_file/rename.png" png64=":/FileMenu/dark/png/64/manage_file/rename.png"/>
+       </icon>
+       <icon id="manage_file.delete_old_versions">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/delete_old_versions.svg" png16=":/FileMenu/light/png/16/manage_file/delete_old_versions.png" png32=":/FileMenu/light/png/32/manage_file/delete_old_versions.png" png48=":/FileMenu/light/png/48/manage_file/delete_old_versions.png" png64=":/FileMenu/light/png/64/manage_file/delete_old_versions.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/delete_old_versions.svg" png16=":/FileMenu/dark/png/16/manage_file/delete_old_versions.png" png32=":/FileMenu/dark/png/32/manage_file/delete_old_versions.png" png48=":/FileMenu/dark/png/48/manage_file/delete_old_versions.png" png64=":/FileMenu/dark/png/64/manage_file/delete_old_versions.png"/>
+       </icon>
+       <icon id="manage_file.delete_all_versions">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/delete_all_versions.svg" png16=":/FileMenu/light/png/16/manage_file/delete_all_versions.png" png32=":/FileMenu/light/png/32/manage_file/delete_all_versions.png" png48=":/FileMenu/light/png/48/manage_file/delete_all_versions.png" png64=":/FileMenu/light/png/64/manage_file/delete_all_versions.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/delete_all_versions.svg" png16=":/FileMenu/dark/png/16/manage_file/delete_all_versions.png" png32=":/FileMenu/dark/png/32/manage_file/delete_all_versions.png" png48=":/FileMenu/dark/png/48/manage_file/delete_all_versions.png" png64=":/FileMenu/dark/png/64/manage_file/delete_all_versions.png"/>
+       </icon>
+       <icon id="manage_file.declare">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/declare.svg" png16=":/FileMenu/light/png/16/manage_file/declare.png" png32=":/FileMenu/light/png/32/manage_file/declare.png" png48=":/FileMenu/light/png/48/manage_file/declare.png" png64=":/FileMenu/light/png/64/manage_file/declare.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/declare.svg" png16=":/FileMenu/dark/png/16/manage_file/declare.png" png32=":/FileMenu/dark/png/32/manage_file/declare.png" png48=":/FileMenu/dark/png/48/manage_file/declare.png" png64=":/FileMenu/dark/png/64/manage_file/declare.png"/>
+       </icon>
+       <icon id="manage_file.instance_accelerator">
+           <theme name="light" svg=":/FileMenu/light/svg/manage_file/instance_accelerator.svg" png16=":/FileMenu/light/png/16/manage_file/instance_accelerator.png" png32=":/FileMenu/light/png/32/manage_file/instance_accelerator.png" png48=":/FileMenu/light/png/48/manage_file/instance_accelerator.png" png64=":/FileMenu/light/png/64/manage_file/instance_accelerator.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/manage_file/instance_accelerator.svg" png16=":/FileMenu/dark/png/16/manage_file/instance_accelerator.png" png32=":/FileMenu/dark/png/32/manage_file/instance_accelerator.png" png48=":/FileMenu/dark/png/48/manage_file/instance_accelerator.png" png64=":/FileMenu/dark/png/64/manage_file/instance_accelerator.png"/>
+       </icon>
+       <icon id="prepare.prepare">
+           <theme name="light" svg=":/FileMenu/light/svg/prepare/prepare.svg" png16=":/FileMenu/light/png/16/prepare/prepare.png" png32=":/FileMenu/light/png/32/prepare/prepare.png" png48=":/FileMenu/light/png/48/prepare/prepare.png" png64=":/FileMenu/light/png/64/prepare/prepare.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/prepare/prepare.svg" png16=":/FileMenu/dark/png/16/prepare/prepare.png" png32=":/FileMenu/dark/png/32/prepare/prepare.png" png48=":/FileMenu/dark/png/48/prepare/prepare.png" png64=":/FileMenu/dark/png/64/prepare/prepare.png"/>
+       </icon>
+       <icon id="send.mail_attachment">
+           <theme name="light" svg=":/FileMenu/light/svg/send/mail_attachment.svg" png16=":/FileMenu/light/png/16/send/mail_attachment.png" png32=":/FileMenu/light/png/32/send/mail_attachment.png" png48=":/FileMenu/light/png/48/send/mail_attachment.png" png64=":/FileMenu/light/png/64/send/mail_attachment.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/send/mail_attachment.svg" png16=":/FileMenu/dark/png/16/send/mail_attachment.png" png32=":/FileMenu/dark/png/32/send/mail_attachment.png" png48=":/FileMenu/dark/png/48/send/mail_attachment.png" png64=":/FileMenu/dark/png/64/send/mail_attachment.png"/>
+       </icon>
+       <icon id="send.mail_link">
+           <theme name="light" svg=":/FileMenu/light/svg/send/mail_link.svg" png16=":/FileMenu/light/png/16/send/mail_link.png" png32=":/FileMenu/light/png/32/send/mail_link.png" png48=":/FileMenu/light/png/48/send/mail_link.png" png64=":/FileMenu/light/png/64/send/mail_link.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/send/mail_link.svg" png16=":/FileMenu/dark/png/16/send/mail_link.png" png32=":/FileMenu/dark/png/32/send/mail_link.png" png48=":/FileMenu/dark/png/48/send/mail_link.png" png64=":/FileMenu/dark/png/64/send/mail_link.png"/>
+       </icon>
+       <icon id="data.erase_current">
+	       <theme name="light" svg=":/FileMenu/light/svg/data/erase_current.svg" png16=":/FileMenu/light/png/16/data/erase_current.png" png32=":/FileMenu/light/png/32/data/erase_current.png" png48=":/FileMenu/light/png/48/data/erase_current.png" png64=":/FileMenu/light/png/64/data/erase_current.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/erase_current.svg" png16=":/FileMenu/dark/png/16/data/erase_current.png" png32=":/FileMenu/dark/png/32/data/erase_current.png" png48=":/FileMenu/dark/png/48/data/erase_current.png" png64=":/FileMenu/dark/png/64/data/erase_current.png"/>
+       </icon>
+       <icon id="data.erase_not_displayed">
+           <theme name="light" svg=":/FileMenu/light/svg/data/erase_not_displayed.svg" png16=":/FileMenu/light/png/16/data/erase_not_displayed.png" png32=":/FileMenu/light/png/32/data/erase_not_displayed.png" png48=":/FileMenu/light/png/48/data/erase_not_displayed.png" png64=":/FileMenu/light/png/64/data/erase_not_displayed.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/erase_not_displayed.svg" png16=":/FileMenu/dark/png/16/data/erase_not_displayed.png" png32=":/FileMenu/dark/png/32/data/erase_not_displayed.png" png48=":/FileMenu/dark/png/48/data/erase_not_displayed.png" png64=":/FileMenu/dark/png/64/data/erase_not_displayed.png"/>
+       </icon>
+       <icon id="data.erase_unused_model_reps">
+           <theme name="light" svg=":/FileMenu/light/svg/data/erase_unused_model_reps.svg" png16=":/FileMenu/light/png/16/data/erase_unused_model_reps.png" png32=":/FileMenu/light/png/32/data/erase_unused_model_reps.png" png48=":/FileMenu/light/png/48/data/erase_unused_model_reps.png" png64=":/FileMenu/light/png/64/data/erase_unused_model_reps.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/erase_unused_model_reps.svg" png16=":/FileMenu/dark/png/16/data/erase_unused_model_reps.png" png32=":/FileMenu/dark/png/32/data/erase_unused_model_reps.png" png48=":/FileMenu/dark/png/48/data/erase_unused_model_reps.png" png64=":/FileMenu/dark/png/64/data/erase_unused_model_reps.png"/>
+       </icon>
+       <icon id="data.design_exploration">
+           <theme name="light" svg=":/FileMenu/light/svg/data/design_exploration.svg" png16=":/FileMenu/light/png/16/data/design_exploration.png" png32=":/FileMenu/light/png/32/data/design_exploration.png" png48=":/FileMenu/light/png/48/data/design_exploration.png" png64=":/FileMenu/light/png/64/data/design_exploration.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/design_exploration.svg" png16=":/FileMenu/dark/png/16/data/design_exploration.png" png32=":/FileMenu/dark/png/32/data/design_exploration.png" png48=":/FileMenu/dark/png/48/data/design_exploration.png" png64=":/FileMenu/dark/png/64/data/design_exploration.png"/>
+       </icon>
+       <icon id="data.update_index">
+           <theme name="light" svg=":/FileMenu/light/svg/data/update_index.svg" png16=":/FileMenu/light/png/16/data/update_index.png" png32=":/FileMenu/light/png/32/data/update_index.png" png48=":/FileMenu/light/png/48/data/update_index.png" png64=":/FileMenu/light/png/64/data/update_index.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/update_index.svg" png16=":/FileMenu/dark/png/16/data/update_index.png" png32=":/FileMenu/dark/png/32/data/update_index.png" png48=":/FileMenu/dark/png/48/data/update_index.png" png64=":/FileMenu/dark/png/64/data/update_index.png"/>
+       </icon>
+       <icon id="data.play_trail_file">
+           <theme name="light" svg=":/FileMenu/light/svg/data/play_trail_file.svg" png16=":/FileMenu/light/png/16/data/play_trail_file.png" png32=":/FileMenu/light/png/32/data/play_trail_file.png" png48=":/FileMenu/light/png/48/data/play_trail_file.png" png64=":/FileMenu/light/png/64/data/play_trail_file.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/play_trail_file.svg" png16=":/FileMenu/dark/png/16/data/play_trail_file.png" png32=":/FileMenu/dark/png/32/data/play_trail_file.png" png48=":/FileMenu/dark/png/48/data/play_trail_file.png" png64=":/FileMenu/dark/png/64/data/play_trail_file.png"/>
+       </icon>
+       <icon id="data.server_management">
+           <theme name="light" svg=":/FileMenu/light/svg/data/server_management.svg" png16=":/FileMenu/light/png/16/data/server_management.png" png32=":/FileMenu/light/png/32/data/server_management.png" png48=":/FileMenu/light/png/48/data/server_management.png" png64=":/FileMenu/light/png/64/data/server_management.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/server_management.svg" png16=":/FileMenu/dark/png/16/data/server_management.png" png32=":/FileMenu/dark/png/32/data/server_management.png" png48=":/FileMenu/dark/png/48/data/server_management.png" png64=":/FileMenu/dark/png/64/data/server_management.png"/>
+       </icon>
+       <icon id="data.select_working_directory">
+           <theme name="light" svg=":/FileMenu/light/svg/data/select_working_directory.svg" png16=":/FileMenu/light/png/16/data/select_working_directory.png" png32=":/FileMenu/light/png/32/data/select_working_directory.png" png48=":/FileMenu/light/png/48/data/select_working_directory.png" png64=":/FileMenu/light/png/64/data/select_working_directory.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/select_working_directory.svg" png16=":/FileMenu/dark/png/16/data/select_working_directory.png" png32=":/FileMenu/dark/png/32/data/select_working_directory.png" png48=":/FileMenu/dark/png/48/data/select_working_directory.png" png64=":/FileMenu/dark/png/64/data/select_working_directory.png"/>
+       </icon>
+       <icon id="data.object_list">
+           <theme name="light" svg=":/FileMenu/light/svg/data/object_list.svg" png16=":/FileMenu/light/png/16/data/object_list.png" png32=":/FileMenu/light/png/32/data/object_list.png" png48=":/FileMenu/light/png/48/data/object_list.png" png64=":/FileMenu/light/png/64/data/object_list.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/object_list.svg" png16=":/FileMenu/dark/png/16/data/object_list.png" png32=":/FileMenu/dark/png/32/data/object_list.png" png48=":/FileMenu/dark/png/48/data/object_list.png" png64=":/FileMenu/dark/png/64/data/object_list.png"/>
+       </icon>
+       <icon id="data.open_linked_browser">
+           <theme name="light" svg=":/FileMenu/light/svg/data/open_linked_browser.svg" png16=":/FileMenu/light/png/16/data/open_linked_browser.png" png32=":/FileMenu/light/png/32/data/open_linked_browser.png" png48=":/FileMenu/light/png/48/data/open_linked_browser.png" png64=":/FileMenu/light/png/64/data/open_linked_browser.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/data/open_linked_browser.svg" png16=":/FileMenu/dark/png/16/data/open_linked_browser.png" png32=":/FileMenu/dark/png/32/data/open_linked_browser.png" png48=":/FileMenu/dark/png/48/data/open_linked_browser.png" png64=":/FileMenu/dark/png/64/data/open_linked_browser.png"/>
+       </icon>
+       <icon id="help.product_help">
+           <theme name="light" svg=":/FileMenu/light/svg/help/product_help.svg" png16=":/FileMenu/light/png/16/help/product_help.png" png32=":/FileMenu/light/png/32/help/product_help.png" png48=":/FileMenu/light/png/48/help/product_help.png" png64=":/FileMenu/light/png/64/help/product_help.png"/>
+           <theme name="dark" svg=":/FileMenu/dark/svg/help/product_help.svg" png16=":/FileMenu/dark/png/16/help/product_help.png" png32=":/FileMenu/dark/png/32/help/product_help.png" png48=":/FileMenu/dark/png/48/help/product_help.png" png64=":/FileMenu/dark/png/64/help/product_help.png"/>
+       </icon>
+       <icon id="help.command_search">
+          <theme name="light" svg=":/FileMenu/light/svg/help/command_search.svg" png16=":/FileMenu/light/png/16/help/command_search.png" png32=":/FileMenu/light/png/32/help/command_search.png" png48=":/FileMenu/light/png/48/help/command_search.png" png64=":/FileMenu/light/png/64/help/command_search.png"/>
+          <theme name="dark" svg=":/FileMenu/dark/svg/help/command_search.svg" png16=":/FileMenu/dark/png/16/help/command_search.png" png32=":/FileMenu/dark/png/32/help/command_search.png" png48=":/FileMenu/dark/png/48/help/command_search.png" png64=":/FileMenu/dark/png/64/help/command_search.png"/>
+       </icon>
+       <icon id="help.search_online_kb">
+          <theme name="light" svg=":/FileMenu/light/svg/help/search_online_kb.svg" png16=":/FileMenu/light/png/16/help/search_online_kb.png" png32=":/FileMenu/light/png/32/help/search_online_kb.png" png48=":/FileMenu/light/png/48/help/search_online_kb.png" png64=":/FileMenu/light/png/64/help/search_online_kb.png"/>
+          <theme name="dark" svg=":/FileMenu/dark/svg/help/search_online_kb.svg" png16=":/FileMenu/dark/png/16/help/search_online_kb.png" png32=":/FileMenu/dark/png/32/help/search_online_kb.png" png48=":/FileMenu/dark/png/48/help/search_online_kb.png" png64=":/FileMenu/dark/png/64/help/search_online_kb.png"/>
+       </icon>
+       <icon id="help.log_support_case">
+          <theme name="light" svg=":/FileMenu/light/svg/help/log_support_case.svg" png16=":/FileMenu/light/png/16/help/log_support_case.png" png32=":/FileMenu/light/png/32/help/log_support_case.png" png48=":/FileMenu/light/png/48/help/log_support_case.png" png64=":/FileMenu/light/png/64/help/log_support_case.png"/>
+          <theme name="dark" svg=":/FileMenu/dark/svg/help/log_support_case.svg" png16=":/FileMenu/dark/png/16/help/log_support_case.png" png32=":/FileMenu/dark/png/32/help/log_support_case.png" png48=":/FileMenu/dark/png/48/help/log_support_case.png" png64=":/FileMenu/dark/png/64/help/log_support_case.png"/>
+       </icon>
+       <icon id="help.online_resources">
+          <theme name="light" svg=":/FileMenu/light/svg/help/online_resources.svg" png16=":/FileMenu/light/png/16/help/online_resources.png" png32=":/FileMenu/light/png/32/help/online_resources.png" png48=":/FileMenu/light/png/48/help/online_resources.png" png64=":/FileMenu/light/png/64/help/online_resources.png"/>
+          <theme name="dark" svg=":/FileMenu/dark/svg/help/online_resources.svg" png16=":/FileMenu/dark/png/16/help/online_resources.png" png32=":/FileMenu/dark/png/32/help/online_resources.png" png48=":/FileMenu/dark/png/48/help/online_resources.png" png64=":/FileMenu/dark/png/64/help/online_resources.png"/>
+       </icon>
+       <icon id="help.system_information">
+         <theme name="light" svg=":/FileMenu/light/svg/help/system_information.svg" png16=":/FileMenu/light/png/16/help/system_information.png" png32=":/FileMenu/light/png/32/help/system_information.png" png48=":/FileMenu/light/png/48/help/system_information.png" png64=":/FileMenu/light/png/64/help/system_information.png"/>
+         <theme name="dark" svg=":/FileMenu/dark/svg/help/system_information.svg" png16=":/FileMenu/dark/png/16/help/system_information.png" png32=":/FileMenu/dark/png/32/help/system_information.png" png48=":/FileMenu/dark/png/48/help/system_information.png" png64=":/FileMenu/dark/png/64/help/system_information.png"/>
+       </icon>
+       <icon id="reference.reference">
+         <theme name="light" svg=":/FileMenu/light/svg/reference/reference.svg" png16=":/FileMenu/light/png/16/reference/reference.png" png32=":/FileMenu/light/png/32/reference/reference.png" png48=":/FileMenu/light/png/48/reference/reference.png" png64=":/FileMenu/light/png/64/reference/reference.png"/>
+         <theme name="dark" svg=":/FileMenu/dark/svg/reference/reference.svg" png16=":/FileMenu/dark/png/16/reference/reference.png" png32=":/FileMenu/dark/png/32/reference/reference.png" png48=":/FileMenu/dark/png/48/reference/reference.png" png64=":/FileMenu/dark/png/64/reference/reference.png"/>
+       </icon>
+       <icon id="settings.model_display">
+         <theme name="light" svg=":/FileMenu/light/svg/settings/model_display.svg" png16=":/FileMenu/light/png/16/settings/model_display.png" png32=":/FileMenu/light/png/32/settings/model_display.png" png48=":/FileMenu/light/png/48/settings/model_display.png" png64=":/FileMenu/light/png/64/settings/model_display.png"/>
+         <theme name="dark" svg=":/FileMenu/dark/svg/settings/model_display.svg" png16=":/FileMenu/dark/png/16/settings/model_display.png" png32=":/FileMenu/dark/png/32/settings/model_display.png" png48=":/FileMenu/dark/png/48/settings/model_display.png" png64=":/FileMenu/dark/png/64/settings/model_display.png"/>
+       </icon>
+       <icon id="settings.system_appearance">
+         <theme name="light" svg=":/FileMenu/light/svg/settings/system_appearance.svg" png16=":/FileMenu/light/png/16/settings/system_appearance.png" png32=":/FileMenu/light/png/32/settings/system_appearance.png" png48=":/FileMenu/light/png/48/settings/system_appearance.png" png64=":/FileMenu/light/png/64/settings/system_appearance.png"/>
+         <theme name="dark" svg=":/FileMenu/dark/svg/settings/system_appearance.svg" png16=":/FileMenu/dark/png/16/settings/system_appearance.png" png32=":/FileMenu/dark/png/32/settings/system_appearance.png" png48=":/FileMenu/dark/png/48/settings/system_appearance.png" png64=":/FileMenu/dark/png/64/settings/system_appearance.png"/>
+       </icon>
+  </icon-library>
 </IconLibraryConfig>

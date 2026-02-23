@@ -53,6 +53,26 @@
       </LayoutProfiles>
     </Workbench>
 
+    <Workbench id="workbench.sketch" displayName="Sketch" uiContext="ctx.sketch">
+      <AppliesTo>
+        <DocumentType id="doc.sketch"/>
+      </AppliesTo>
+
+      <DockPanels>
+        <Panel id="panel.modeltree"/>
+        <Panel id="panel.properties"/>
+        <Panel id="panel.codeEditor"/>
+      </DockPanels>
+
+      <InitialViews>
+        <ViewKind id="view.sketch2d"/>
+      </InitialViews>
+
+      <LayoutProfiles>
+        <Layout id="default" isDefault="true"/>
+      </LayoutProfiles>
+    </Workbench>
+
     <Workbench id="workbench.assembly" displayName="Assembly" uiContext="ctx.assembly">
       <AppliesTo>
         <DocumentType id="doc.assembly"/>
@@ -71,7 +91,7 @@
         <Panel id="panel.properties"/>
       </DockPanels>
       <InitialViews>
-        <ViewKind id="view.asm3d"/>
+        <ViewKind id="view.model3d"/>
       </InitialViews>
       <LayoutProfiles>
         <Layout id="default" isDefault="true"/>
@@ -88,7 +108,7 @@
         <Panel id="panel.codeEditor"/>
       </DockPanels>
       <InitialViews>
-        <ViewKind id="view.drawing"/>
+        <ViewKind id="view.drawing.sheet"/>
       </InitialViews>
       <LayoutProfiles>
         <Layout id="default" isDefault="true"/>
@@ -104,7 +124,7 @@
         <Panel id="panel.properties"/>
       </DockPanels>
       <InitialViews>
-        <ViewKind id="view.bim"/>
+        <ViewKind id="view.bim.plan"/>
       </InitialViews>
       <LayoutProfiles>
         <Layout id="default" isDefault="true"/>

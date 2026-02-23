@@ -1,82 +1,170 @@
 ﻿//Owner: hananiah
 #include "SolidNewFileDialog.h"
-#include <QPushButton>
+
 #include <QAbstractButton>
-#include <QDialogButtonBox>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QFormLayout>
-#include <QListWidget>
-#include <QLineEdit>
+#include <QButtonGroup>
 #include <QCheckBox>
-#include <QLabel>
-#include <QSplitter>
+#include <QDialogButtonBox>
+#include <QFormLayout>
 #include <QGroupBox>
+#include <QHBoxLayout>
+#include <QIcon>
+#include <QLabel>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QRadioButton>
+#include <QShowEvent>
+#include <QTimer>
+#include <QVBoxLayout>
+
+#ifdef Q_OS_WIN
+    #ifndef WIN32_LEAN_AND_MEAN
+    #define WIN32_LEAN_AND_MEAN
+    #endif
+    #include <windows.h>
+#endif
 #include "AliceQxPtrUtils.h"
 
 using namespace sdr;
 
 namespace
 {
-    static SolidNewFileDialog::TypeId ReadType(const QListWidget* list)
+    static SolidNewFileDialog::TypeId ReadType(const QButtonGroup* pBtnGroup) noexcept
     {
-        if (auto* it = list ? list->currentItem() : nullptr)
-            return static_cast<SolidNewFileDialog::TypeId>(it->data(Qt::UserRole).toInt());
-        return SolidNewFileDialog::TypeId::Part;
+        if (!pBtnGroup)
+            return SolidNewFileDialog::TypeId::Part;
+
+        const int id = pBtnGroup->checkedId();
+        if (id < 0)
+            return SolidNewFileDialog::TypeId::Part;
+        return static_cast<SolidNewFileDialog::TypeId>(id);
     }
 
-    static SolidNewFileDialog::SubTypeId ReadSubType(const QListWidget* list)
+    static SolidNewFileDialog::SubTypeId ReadSubType(const QButtonGroup* pBtnGroup) noexcept
     {
-        if (auto* it = list ? list->currentItem() : nullptr)
-            return static_cast<SolidNewFileDialog::SubTypeId>(it->data(Qt::UserRole).toInt());
-        return SolidNewFileDialog::SubTypeId::Default;
+        if (!pBtnGroup)
+            return SolidNewFileDialog::SubTypeId::Default;
+
+        const int id = pBtnGroup->checkedId();
+        if (id < 0)
+            return SolidNewFileDialog::SubTypeId::Default;
+        return static_cast<SolidNewFileDialog::SubTypeId>(id);
+    }
+
+    static void EnsureCheckedVisible(QButtonGroup& oGroup)
+    {
+        if (auto* pCheckedBtn = oGroup.checkedButton())
+        {
+            if (pCheckedBtn->isVisible() && pCheckedBtn->isEnabled())
+                return;
+        }
+
+        // Pick the first visible+enabled button.
+        for (auto* pButton : oGroup.buttons())
+        {
+            if (pButton && pButton->isVisible() && pButton->isEnabled())
+            {
+                pButton->setChecked(true);
+                return;
+            }
+        }
     }
 }
 
 SolidNewFileDialog::SolidNewFileDialog(QWidget* parent)
     : QDialog(parent)
 {
+    setObjectName("SolidNewFileDialog");
     setWindowTitle(tr("New"));
     setModal(true);
-    setMinimumSize(700, 420);
+    setMinimumSize(520, 360);
+
+    // Windows UX: remove the '?' context-help button and avoid showing an app icon.
+    setWindowFlag(Qt::WindowContextHelpButtonHint, false);
+    setAttribute(Qt::WA_NativeWindow, true);
 
     BuildUi_();
-    PopulateTypes_();
-    PopulateSubtypes_(TypeId::Part);
+    BuildTypes_();
+    BuildSubTypes_();
 
     // Default selections
-    m_typeList->setCurrentRow(0);
-    m_subTypeList->setCurrentRow(0);
-    m_useTemplate->setChecked(true);
+    if (m_pPartTypeRadioButton)
+        m_pPartTypeRadioButton->setChecked(true);
+    UpdateSubTypeVisibility_(TypeId::Part);
+    EnsureSuggestedName_(TypeId::Part);
+    if (m_pUseTemplateChkBox)
+        m_pUseTemplateChkBox->setChecked(true);
 
-    // Wire events 
-    QObject::connect(m_typeList, &QListWidget::currentRowChanged, this, [this](int /*row*/) {
-        const TypeId type = ReadType(m_typeList);
-        PopulateSubtypes_(type);
+    // Wire events (no per-dialog stylesheet; follow ThemeSupport global palette/qss)
+    auto onTypeChanged = [this](TypeId type, bool checked) {
+        if (!checked)
+            return;
+        UpdateSubTypeVisibility_(type);
+        EnsureSuggestedName_(type);
         SyncFromUi_();
         UpdateOkEnabled_();
-    });
-    QObject::connect(m_subTypeList, &QListWidget::currentRowChanged, this, [this](int /*row*/) {
+        FocusFileNameEdit_();
+    };
+
+    if (m_pPartTypeRadioButton)     
+        QObject::connect(m_pPartTypeRadioButton,     &QRadioButton::toggled, this, [=](bool c) { onTypeChanged(TypeId::Part, c); });
+    if (m_pAsmTypeRadioButton) 
+        QObject::connect(m_pAsmTypeRadioButton, &QRadioButton::toggled, this, [=](bool c) { onTypeChanged(TypeId::Assembly, c); });
+    if (m_pDrawingTypeRadioButton)  
+        QObject::connect(m_pDrawingTypeRadioButton,  &QRadioButton::toggled, this, [=](bool c) { onTypeChanged(TypeId::Drawing, c); });
+    if (m_pSketchTypeButton)  
+        QObject::connect(m_pSketchTypeButton,   &QRadioButton::toggled, this, [=](bool c) { onTypeChanged(TypeId::Sketch, c); });
+
+    auto onSubTypeChanged = [this](bool checked) {
+        if (!checked)
+            return;
         SyncFromUi_();
         UpdateOkEnabled_();
-    });
-    QObject::connect(m_nameEdit, &QLineEdit::textChanged, this, [this](const QString&) {
-        SyncFromUi_();
-        UpdateOkEnabled_();
-    });
-    QObject::connect(m_useTemplate, &QCheckBox::toggled, this, [this](bool) {
-        SyncFromUi_();
-        UpdateOkEnabled_();
-    });
+        FocusFileNameEdit_();
+    };
+    if (m_pSubDefaultRadioButton)   
+        QObject::connect(m_pSubDefaultRadioButton,    &QRadioButton::toggled, this, onSubTypeChanged);
+    if (m_pSubDesignRadioButton)
+        QObject::connect(m_pSubDesignRadioButton, &QRadioButton::toggled, this, onSubTypeChanged);
+    if (m_pSubBimRadioButton)
+        QObject::connect(m_pSubBimRadioButton, &QRadioButton::toggled, this, onSubTypeChanged);
+    if (m_pSubSolidRadioButton)     
+        QObject::connect(m_pSubSolidRadioButton,      &QRadioButton::toggled, this, onSubTypeChanged);
+    if (m_pSubSheetmetalRadioButton) 
+        QObject::connect(m_pSubSheetmetalRadioButton, &QRadioButton::toggled, this, onSubTypeChanged);
+    if (m_pSubLayoutRadioButton)     
+        QObject::connect(m_pSubLayoutRadioButton,     &QRadioButton::toggled, this, onSubTypeChanged);
+
+    if (m_pFileNameEdit)
+    {
+        QObject::connect(m_pFileNameEdit, &QLineEdit::textChanged, this, [this](const QString&) {
+            SyncFromUi_();
+            UpdateOkEnabled_();
+        });
+
+        QObject::connect(m_pFileNameEdit, &QLineEdit::textEdited, this, [this](const QString&) {
+            m_bUserEditedName = true;
+        });
+    }
+
+    if (m_pUseTemplateChkBox)
+    {
+        QObject::connect(m_pUseTemplateChkBox, &QCheckBox::toggled, this, [this](bool) {
+            SyncFromUi_();
+            UpdateOkEnabled_();
+        });
+    }
 
     SyncFromUi_();
     UpdateOkEnabled_();
+
+    // Ensure the line edit has focus when the dialog becomes visible.
+    QTimer::singleShot(0, this, [this]() {
+        FocusFileNameEdit_();
+    });
 }
 
-SolidNewFileDialog::~SolidNewFileDialog()
-{
-
-}
+SolidNewFileDialog::~SolidNewFileDialog() = default;
 
 bool SolidNewFileDialog::GetNewFileRequest(QWidget* parent, NewFileRequest& outRequest)
 {
@@ -85,130 +173,247 @@ bool SolidNewFileDialog::GetNewFileRequest(QWidget* parent, NewFileRequest& outR
         return false;
 
     outRequest = dlg.Request();
-    if (outRequest.name.trimmed().isEmpty())
-        return false;
+    return !outRequest.fileName.trimmed().isEmpty();
+}
 
-    return true;
+void SolidNewFileDialog::showEvent(QShowEvent* event)
+{
+    QDialog::showEvent(event);
+    FocusFileNameEdit_();
+}
+
+void SolidNewFileDialog::FocusFileNameEdit_()
+{
+    if (!m_pFileNameEdit)
+        return;
+
+    m_pFileNameEdit->setFocus(Qt::TabFocusReason);
+    if (!m_pFileNameEdit->text().isEmpty())
+        m_pFileNameEdit->selectAll();
+}
+
+QString SolidNewFileDialog::SuggestedName_(TypeId type)
+{
+    switch (type)
+    {
+    case TypeId::Part:
+        return QStringLiteral("Part1");
+    case TypeId::Assembly:
+        return QStringLiteral("Assembly1");
+    case TypeId::Drawing:
+        return QStringLiteral("Drawing1");
+    case TypeId::Sketch:
+        return QStringLiteral("Sketch1");
+    default:
+        return QStringLiteral("Part1");
+    }
+}
+
+void SolidNewFileDialog::EnsureSuggestedName_(TypeId type)
+{
+    if (!m_pFileNameEdit)
+        return;
+
+    const QString cur = m_pFileNameEdit->text().trimmed();
+    const QString next = SuggestedName_(type);
+
+    // Only override the edit when user didn't type anything meaningful.
+    const bool canOverride = (!m_bUserEditedName) || cur.isEmpty() || (!m_strLastSuggestedName.isEmpty() && cur == m_strLastSuggestedName);
+    if (!canOverride)
+        return;
+
+    m_strLastSuggestedName = next;
+    m_bUserEditedName = false; // still in auto mode
+
+    m_pFileNameEdit->setText(next);
+    m_pFileNameEdit->setCursorPosition(0);
+    m_pFileNameEdit->selectAll();
 }
 
 void SolidNewFileDialog::BuildUi_()
 {
-    QVBoxLayout* pRootLayout = QX_NEW_QOBJECT(QVBoxLayout, this);
+    auto* pRootLayout = QX_NEW_QOBJECT(QVBoxLayout, this);
     DIAG_RETURN_VOID_IF_FALSE(pRootLayout, "pRootLayout is null", "hananiah", "2025.12.25");
     pRootLayout->setContentsMargins(12, 12, 12, 12);
     pRootLayout->setSpacing(10);
 
-    // Two-column: type/subtype lists
-    QSplitter* pSplit = QX_NEW_QWIDGET(QSplitter, this);
-    DIAG_RETURN_VOID_IF_FALSE(pSplit, "pSplit is null", "hananiah", "2025.12.25");
-    pSplit->setOrientation(Qt::Horizontal);
-    pRootLayout->addWidget(pSplit, /*stretch*/ 1);
+    // Top row: Type / Sub-type
+    auto* pTopRowLayout = QX_NEW_QOBJECT(QHBoxLayout);
+    DIAG_RETURN_VOID_IF_FALSE(pTopRowLayout, "pTopRowLayout is null", "hananiah", "2025.12.25");
+    pTopRowLayout->setSpacing(12);
+    pRootLayout->addLayout(pTopRowLayout, 1);
 
-    QGroupBox* pLeftBox = QX_NEW_QWIDGET(QGroupBox, tr("Type"), this);
-    QGroupBox* pRightBox = QX_NEW_QWIDGET(QGroupBox, tr("Subtype"), this);
+    auto* pTypeGroupBox = QX_NEW_QWIDGET(QGroupBox, tr("Type"), this);
+    DIAG_RETURN_VOID_IF_FALSE(pTypeGroupBox, "pTypeGroupBox is null", "hananiah", "2025.12.25");
+    auto* pSubTypeGroupBox = QX_NEW_QWIDGET(QGroupBox, tr("Sub-type"), this);
+    DIAG_RETURN_VOID_IF_FALSE(pSubTypeGroupBox, "pSubTypeGroupBox is null", "hananiah", "2025.12.25");
+    pTopRowLayout->addWidget(pTypeGroupBox, 1);
+    pTopRowLayout->addWidget(pSubTypeGroupBox, 1);
 
-    QVBoxLayout* pLeftLayout = QX_NEW_QOBJECT(QVBoxLayout, pLeftBox);
-    DIAG_RETURN_VOID_IF_FALSE(pLeftLayout, "pLeftLayout is null", "hananiah", "2025.12.25");
-    QVBoxLayout* pRightLayout = QX_NEW_QOBJECT(QVBoxLayout, pRightBox);
-    DIAG_RETURN_VOID_IF_FALSE(pRightLayout, "pRightLayout is null", "hananiah", "2025.12.25");
-    m_typeList = QX_NEW_QWIDGET(QListWidget, pLeftBox);
-    m_subTypeList = QX_NEW_QWIDGET(QListWidget, pRightBox);
+    auto* pTypeVLayout = QX_NEW_QOBJECT(QVBoxLayout, pTypeGroupBox);
+    DIAG_RETURN_VOID_IF_FALSE(pTypeVLayout, "pTypeVLayout is null", "hananiah", "2025.12.25");
+    pTypeVLayout->setContentsMargins(12, 16, 12, 12);
+    pTypeVLayout->setSpacing(6);
 
-    pLeftLayout->addWidget(m_typeList);
-    pRightLayout->addWidget(m_subTypeList);
+    auto* pSubTypeVLayout = QX_NEW_QOBJECT(QVBoxLayout, pSubTypeGroupBox);
+    DIAG_RETURN_VOID_IF_FALSE(pSubTypeVLayout, "pSubTypeVLayout is null", "hananiah", "2025.12.25");
+    pSubTypeVLayout->setContentsMargins(12, 16, 12, 12);
+    pSubTypeVLayout->setSpacing(6);
 
-    pSplit->addWidget(pLeftBox);
-    pSplit->addWidget(pRightBox);
-    pSplit->setStretchFactor(0, 1);
-    pSplit->setStretchFactor(1, 1);
+    // Create button groups
+    m_pTypeGroup = QX_NEW_QOBJECT(QButtonGroup, this);
+    DIAG_RETURN_VOID_IF_FALSE(m_pTypeGroup, "m_pTypeGroup is null", "hananiah", "2025.12.25");
+    m_pSubTypeGroup = QX_NEW_QOBJECT(QButtonGroup, this);
+    DIAG_RETURN_VOID_IF_FALSE(m_pSubTypeGroup, "m_pSubTypeGroup is null", "hananiah", "2025.12.25");
+    m_pTypeGroup->setExclusive(true);
+    m_pSubTypeGroup->setExclusive(true);
 
-    // Form area
-    QGroupBox* pFormBox = QX_NEW_QWIDGET(QGroupBox, tr("Settings"), this);
-    QFormLayout* pForm = new QFormLayout(pFormBox);
-    DIAG_RETURN_VOID_IF_FALSE(pForm, "pForm is null", "hananiah", "2025.12.25");
-    pFormBox->setLayout(pForm);
-    pRootLayout->addWidget(pFormBox);
+    // Type radios
+    m_pPartTypeRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("Part"), pTypeGroupBox);
+    DIAG_RETURN_VOID_IF_FALSE(m_pPartTypeRadioButton, "m_pPartTypeRadioButton is null", "hananiah", "2025.12.25");
+    m_pAsmTypeRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("Assembly"), pTypeGroupBox);
+    DIAG_RETURN_VOID_IF_FALSE(m_pAsmTypeRadioButton, "m_pAsmTypeRadioButton is null", "hananiah", "2025.12.25");
+    m_pDrawingTypeRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("Drawing"), pTypeGroupBox);
+    DIAG_RETURN_VOID_IF_FALSE(m_pDrawingTypeRadioButton, "m_pDrawingTypeRadioButton is null", "hananiah", "2025.12.25");
+    m_pSketchTypeButton = QX_NEW_QWIDGET(QRadioButton, tr("Sketch"), pTypeGroupBox);
+    DIAG_RETURN_VOID_IF_FALSE(m_pSketchTypeButton, "m_pSketchTypeButton is null", "hananiah", "2025.12.25");
 
-    m_nameEdit = QX_NEW_QWIDGET(QLineEdit, this);
-    DIAG_RETURN_VOID_IF_FALSE(m_nameEdit, "m_nameEdit is null", "hananiah", "2025.12.25");
-    m_nameEdit->setPlaceholderText(tr("Name (e.g. Part1)"));
-    pForm->addRow(tr("Name"), m_nameEdit);
+    pTypeVLayout->addWidget(m_pPartTypeRadioButton);
+    pTypeVLayout->addWidget(m_pAsmTypeRadioButton);
+    pTypeVLayout->addWidget(m_pDrawingTypeRadioButton);
+    pTypeVLayout->addWidget(m_pSketchTypeButton);
+    pTypeVLayout->addStretch(1);
 
-    m_useTemplate = QX_NEW_QWIDGET(QCheckBox, tr("Use default template"), this);
-    DIAG_RETURN_VOID_IF_FALSE(m_useTemplate, "m_useTemplate is null", "hananiah", "2025.12.25");
-    pForm->addRow(QString(), m_useTemplate);
+    m_pTypeGroup->addButton(m_pPartTypeRadioButton, static_cast<int>(TypeId::Part));
+    m_pTypeGroup->addButton(m_pAsmTypeRadioButton, static_cast<int>(TypeId::Assembly));
+    m_pTypeGroup->addButton(m_pDrawingTypeRadioButton, static_cast<int>(TypeId::Drawing));
+    m_pTypeGroup->addButton(m_pSketchTypeButton, static_cast<int>(TypeId::Sketch));
 
-    m_kindLabel = QX_NEW_QWIDGET(QLabel, this);
-    DIAG_RETURN_VOID_IF_FALSE(m_kindLabel, "m_kindLabel is null", "hananiah", "2025.12.25");
-    m_kindLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
-    pForm->addRow(tr("DocumentKind"), m_kindLabel);
+    // Sub-type radios (all created once; visibility controlled by type)
+    m_pSubDefaultRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("Default"), pSubTypeGroupBox);
+    m_pSubDesignRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("Design"), pSubTypeGroupBox);
+    m_pSubECADRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("ECAD"), pSubTypeGroupBox);
+    m_pSubBimRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("BIM"), pSubTypeGroupBox);
+    m_pSubSolidRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("Solid"), pSubTypeGroupBox);
+    m_pSubSheetmetalRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("Sheetmetal"), pSubTypeGroupBox);
+    m_pSubLayoutRadioButton = QX_NEW_QWIDGET(QRadioButton, tr("Layout"), pSubTypeGroupBox);
+
+    pSubTypeVLayout->addWidget(m_pSubDefaultRadioButton);
+    pSubTypeVLayout->addWidget(m_pSubDesignRadioButton);
+    pSubTypeVLayout->addWidget(m_pSubECADRadioButton);
+    pSubTypeVLayout->addWidget(m_pSubBimRadioButton);
+    pSubTypeVLayout->addWidget(m_pSubSolidRadioButton);
+    pSubTypeVLayout->addWidget(m_pSubSheetmetalRadioButton);
+    pSubTypeVLayout->addWidget(m_pSubLayoutRadioButton);
+    pSubTypeVLayout->addStretch(1);
+
+    m_pSubTypeGroup->addButton(m_pSubDefaultRadioButton, static_cast<int>(SubTypeId::Default));
+    m_pSubTypeGroup->addButton(m_pSubDesignRadioButton, static_cast<int>(SubTypeId::Design));
+    m_pSubTypeGroup->addButton(m_pSubECADRadioButton, static_cast<int>(SubTypeId::ECAD));
+    m_pSubTypeGroup->addButton(m_pSubBimRadioButton, static_cast<int>(SubTypeId::Bim));
+    m_pSubTypeGroup->addButton(m_pSubSolidRadioButton, static_cast<int>(SubTypeId::Solid));
+    m_pSubTypeGroup->addButton(m_pSubSheetmetalRadioButton, static_cast<int>(SubTypeId::Sheetmetal));
+    m_pSubTypeGroup->addButton(m_pSubLayoutRadioButton, static_cast<int>(SubTypeId::Layout));
+
+    // Bottom: Settings
+    auto* pSettingsGrpBox = QX_NEW_QWIDGET(QGroupBox, tr("Settings"), this);
+    DIAG_RETURN_VOID_IF_FALSE(pSettingsGrpBox, "pSettingsGrpBox is null", "hananiah", "2025.12.25");
+    pRootLayout->addWidget(pSettingsGrpBox);
+    auto* pFormLayout = QX_NEW_QOBJECT(QFormLayout, pSettingsGrpBox);
+    DIAG_RETURN_VOID_IF_FALSE(pFormLayout, "pFormLayout is null", "hananiah", "2025.12.25");
+    pFormLayout->setContentsMargins(12, 16, 12, 12);
+    pFormLayout->setHorizontalSpacing(12);
+    pFormLayout->setVerticalSpacing(8);
+
+    m_pFileNameEdit = QX_NEW_QWIDGET(QLineEdit, pSettingsGrpBox);
+    DIAG_RETURN_VOID_IF_FALSE(m_pFileNameEdit, "m_pFileNameEdit is null", "hananiah", "2025.12.25");
+    m_pFileNameEdit->setPlaceholderText(tr("Name (e.g. Part1)"));
+    pFormLayout->addRow(tr("File name"), m_pFileNameEdit);
+
+    m_pUseTemplateChkBox = QX_NEW_QWIDGET(QCheckBox, tr("Use default template"), pSettingsGrpBox);
+    DIAG_RETURN_VOID_IF_FALSE(m_pUseTemplateChkBox, "m_pUseTemplateChkBox is null", "hananiah", "2025.12.25");
+    pFormLayout->addRow(QString(), m_pUseTemplateChkBox);
+
+    m_pFileKindLabel = QX_NEW_QWIDGET(QLabel, pSettingsGrpBox);
+    DIAG_RETURN_VOID_IF_FALSE(m_pFileKindLabel, "m_pFileKindLabel is null", "hananiah", "2025.12.25");
+    m_pFileKindLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
+    pFormLayout->addRow(tr("DocumentKind"), m_pFileKindLabel);
 
     // Buttons
-    m_buttons = QX_NEW_QWIDGET(QDialogButtonBox, QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    DIAG_RETURN_VOID_IF_FALSE(m_buttons, "m_buttons is null", "hananiah", "2025.12.25");
-    pRootLayout->addWidget(m_buttons);
-    QObject::connect(m_buttons, &QDialogButtonBox::accepted, this, &QDialog::accept);
-    QObject::connect(m_buttons, &QDialogButtonBox::rejected, this, &QDialog::reject);
+    m_pButtonBox = QX_NEW_QWIDGET(QDialogButtonBox, QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    DIAG_RETURN_VOID_IF_FALSE(m_pButtonBox, "m_pButtonBox is null", "hananiah", "2025.12.25");
+    pRootLayout->addWidget(m_pButtonBox);
+    QObject::connect(m_pButtonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
+    QObject::connect(m_pButtonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
+    if (QPushButton* pOkBtn = qobject_cast<QPushButton*>(m_pButtonBox->button(QDialogButtonBox::Ok)))
+        pOkBtn->setDefault(true);
 }
 
-void SolidNewFileDialog::PopulateTypes_()
+void SolidNewFileDialog::BuildTypes_()
 {
-    m_typeList->clear();
-    auto addType = [this](TypeId t) {
-        auto* pItem = QX_EMPLACE_ITEM(nullptr, QListWidgetItem, TypeText_(t), m_typeList);
-        DIAG_RETURN_VOID_IF_FALSE(pItem, "pItem is null", "hananiah", "2025.12.25");
-        pItem->setData(Qt::UserRole, static_cast<int>(t));
-    };
-    addType(TypeId::Part);
-    addType(TypeId::Assembly);
-    addType(TypeId::Drawing);
-    addType(TypeId::Sketch);
+    // Types are built once in BuildUi_. This function exists to keep API stable and explicit.
 }
 
-void SolidNewFileDialog::PopulateSubtypes_(TypeId type)
+void SolidNewFileDialog::BuildSubTypes_()
 {
-    m_subTypeList->clear();
-    auto addSubType = [this](SubTypeId st) {
-        auto* pItem = QX_EMPLACE_ITEM(nullptr, QListWidgetItem, SubTypeText_(st), m_subTypeList);
-        DIAG_RETURN_VOID_IF_FALSE(pItem, "pItem is null", "hananiah", "2025.12.25");
-        pItem->setData(Qt::UserRole, static_cast<int>(st));
+    // Sub-types are built once in BuildUi_. This function exists to keep API stable and explicit.
+}
+
+void SolidNewFileDialog::UpdateSubTypeVisibility_(TypeId type)
+{
+    auto vis = [](QRadioButton* pRadioButton, bool bValue) {
+        if (!pRadioButton)
+            return;
+        pRadioButton->setVisible(bValue);
+        pRadioButton->setEnabled(bValue);
     };
 
-    // Keep it minimal yet expandable.
+    // Reset all.
+    vis(m_pSubDefaultRadioButton, false);
+    vis(m_pSubDesignRadioButton, false);
+    vis(m_pSubECADRadioButton, false);
+    vis(m_pSubBimRadioButton, false);
+    vis(m_pSubSolidRadioButton, false);
+    vis(m_pSubSheetmetalRadioButton, false);
+    vis(m_pSubLayoutRadioButton, false);
+
     switch (type)
     {
     case TypeId::Part:
-        addSubType(SubTypeId::Solid);
-        addSubType(SubTypeId::Sheetmetal);
-        break;
-    case TypeId::Assembly:
-        addSubType(SubTypeId::Default);
+        vis(m_pSubSolidRadioButton, true);
+        vis(m_pSubSheetmetalRadioButton, true);
         break;
     case TypeId::Drawing:
-        addSubType(SubTypeId::Default);
-        addSubType(SubTypeId::Layout);
+        vis(m_pSubDefaultRadioButton, true);
+        vis(m_pSubLayoutRadioButton, true);
+        break;
+    case TypeId::Assembly:
+        vis(m_pSubDesignRadioButton, true);
+        vis(m_pSubBimRadioButton, true);
         break;
     case TypeId::Sketch:
-        addSubType(SubTypeId::Default);
-        break;
     default:
-        addSubType(SubTypeId::Default);
+        vis(m_pSubDefaultRadioButton, true);
         break;
     }
 
-    m_subTypeList->setCurrentRow(0);
+    if (m_pSubTypeGroup)
+        EnsureCheckedVisible(*m_pSubTypeGroup);
 }
 
 void SolidNewFileDialog::SyncFromUi_()
 {
-    m_request.type = ReadType(m_typeList);
-    m_request.subtype = ReadSubType(m_subTypeList);
-    m_request.kind = MapToDocumentKind_(m_request.type, m_request.subtype);
-    m_request.name = m_nameEdit->text().trimmed();
-    m_request.useDefaultTemplate = m_useTemplate->isChecked();
+    const TypeId type = ReadType(m_pTypeGroup);
+    const SubTypeId sub = ReadSubType(m_pSubTypeGroup);
+
+    m_request.type = type;
+    m_request.subtype = sub;
+    m_request.fileKind = MapToDocumentKind_(type, sub);
+    m_request.fileName = m_pFileNameEdit ? m_pFileNameEdit->text().trimmed() : QString();
+    m_request.useDefaultTemplate = m_pUseTemplateChkBox ? m_pUseTemplateChkBox->isChecked() : true;
 
     QString kindText;
-    switch (m_request.kind)
+    switch (m_request.fileKind)
     {
     case alice::DocumentKind::Part:
         kindText = tr("Part");
@@ -216,24 +421,29 @@ void SolidNewFileDialog::SyncFromUi_()
     case alice::DocumentKind::Assembly:
         kindText = tr("Assembly");
         break;
-    case alice::DocumentKind::Drawing: 
-        kindText = tr("Drawing"); 
+    case alice::DocumentKind::Drawing:
+        kindText = tr("Drawing");
         break;
-    case alice::DocumentKind::Sketch: 
+    case alice::DocumentKind::Sketch:
         kindText = tr("Sketch");
         break;
     default:
-        kindText = tr("Unknown"); 
+        kindText = tr("Unknown");
         break;
     }
-    m_kindLabel->setText(kindText);
+
+    if (m_pFileKindLabel)
+        m_pFileKindLabel->setText(kindText);
 }
 
 void SolidNewFileDialog::UpdateOkEnabled_()
 {
-    const bool ok = !m_nameEdit->text().trimmed().isEmpty();
-    if (QAbstractButton* btn = m_buttons->button(QDialogButtonBox::Ok))
-        btn->setEnabled(ok);
+    if (!m_pButtonBox || !m_pFileNameEdit)
+        return;
+
+    const bool ok = !m_pFileNameEdit->text().trimmed().isEmpty();
+    if (QAbstractButton* pBtn = m_pButtonBox->button(QDialogButtonBox::Ok))
+        pBtn->setEnabled(ok);
 }
 
 alice::DocumentKind SolidNewFileDialog::MapToDocumentKind_(TypeId type, SubTypeId /*subtype*/) noexcept

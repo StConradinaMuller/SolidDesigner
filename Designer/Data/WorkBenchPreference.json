@@ -4,15 +4,16 @@
   "preferredWorkbenchByDocType": 
   {
     "doc.part": "workbench.part",
+    "doc.sketch": "workbench.sketch",
     "doc.assembly": "workbench.assembly",
     "doc.drawing": "workbench.drawing",
     "doc.none": "workbench.home"
   },
  "workbenchSwitcher": 
   {
-    "orderedIds": ["workbench.home","workbench.part","workbench.assembly","workbench.drawing"],
+    "orderedIds": ["workbench.home","workbench.part","workbench.sketch","workbench.assembly","workbench.drawing"],
     "hiddenIds": [],
-    "pinnedIds": ["workbench.part","workbench.assembly"],
+    "pinnedIds": ["workbench.part","workbench.sketch","workbench.assembly"],
     "showIcons": true,
     "showText": true
   },
@@ -51,6 +52,7 @@
   "recentWorkbenches": 
   [
     "workbench.part",
+    "workbench.sketch",
     "workbench.assembly"
   ]
 }

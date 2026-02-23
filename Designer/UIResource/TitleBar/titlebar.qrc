@@ -8,6 +8,11 @@
     <file>brand/dark/png/32/app.png</file>
     <file>brand/dark/png/48/app.png</file>
     <file>brand/dark/png/64/app.png</file>
+    <file>brand/light/png/100x28/app_wordmark.png</file>
+    <file>brand/light/png/200x56/app_wordmark.png</file>
+    <file>brand/dark/png/100x28/app_wordmark.png</file>
+    <file>brand/dark/png/200x56/app_wordmark.png</file>
+
 
     <file>quick/light/png/16/new.png</file>
     <file>quick/light/png/32/new.png</file>

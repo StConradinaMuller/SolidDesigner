@@ -5,6 +5,12 @@
 #include "AliceIDocumentManager.h"
 #include "AliceIMainWindow.h"
 
+#include "AliceIUiApplicationFactory.h"
+#include "AliceIUiApplication.h"
+
+#include <QDesktopServices>
+#include <QUrl>
+
 using namespace alice;
 using namespace sdr;
 
@@ -21,17 +27,17 @@ SolidHelpContentsCommand::~SolidHelpContentsCommand()
 
 bool SolidHelpContentsCommand::IsSupported() const
 {
-	return false;
+	return true;
 }
 
 bool SolidHelpContentsCommand::IsEnabled() const
 {
-	return false;
+	return true;
 }
 
 bool SolidHelpContentsCommand::IsVisible() const
 {
-	return false;
+	return true;
 }
 
 std::string SolidHelpContentsCommand::DisabledReason() const
@@ -41,5 +47,6 @@ std::string SolidHelpContentsCommand::DisabledReason() const
 
 std::unique_ptr<alice::IOperation> SolidHelpContentsCommand::Execute(const alice::CommandParameter& param)
 {
+	QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/Ludwigstrasse/SolidDesigner")));
 	return nullptr;
 }

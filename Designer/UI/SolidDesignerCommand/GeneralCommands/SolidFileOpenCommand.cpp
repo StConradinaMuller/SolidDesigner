@@ -7,6 +7,19 @@
 #include "AliceIOperation.h"
 #include "SolidDesignerCommands.h"
 
+#include "AliceCoreAppUtil.h"
+#include "AliceISession.h"
+#include "AliceIWorkBenchManager.h"
+
+#include "AliceIUiApplicationFactory.h"
+#include "AliceIUiApplication.h"
+
+#include <QFileDialog>
+#include <QMainWindow>
+#include <QMessageBox>
+#include <QSettings>
+#include <QDir>
+
 using namespace alice;
 using namespace sdr;
 
@@ -22,8 +35,18 @@ SolidFileOpenCommand::~SolidFileOpenCommand()
 
 bool SolidFileOpenCommand::IsSupported() const
 {
-	//return (m_mainWindow != nullptr) && (m_docManager != nullptr);
-	return false;
+	ISession* session = CoreAppUtil::GetCurrentSession();
+	if (!session)
+		return false;
+	if (!session->GetDocumentManagerFw())
+		return false;
+	IUiApplicationFactory* pAppFactory = IUiApplicationFactory::Get();
+	if (!pAppFactory)
+		return false;
+	IUiApplication* pApp = pAppFactory->GetUiApplication();
+	if (!pApp)
+		return false;
+	return pApp->GetMainWindow() != nullptr;
 }
 
 bool SolidFileOpenCommand::IsVisible() const
@@ -52,49 +75,80 @@ std::unique_ptr<IOperation> SolidFileOpenCommand::Execute(const CommandParameter
 	if (!IsEnabled())
 		return nullptr;
 
-	std::wstring filePath = showOpenFileDialog_();
+	ISession* session = CoreAppUtil::GetCurrentSession();
+	if (!session)
+		return nullptr;
+
+	IMainWindow* mainWindow = nullptr;
+	if (IUiApplicationFactory* pAppFactory = IUiApplicationFactory::Get())
+	{
+		if (IUiApplication* pApp = pAppFactory->GetUiApplication())
+			mainWindow = const_cast<IMainWindow*>(pApp->GetMainWindow());
+	}
+
+	std::wstring filePath;
+	const std::string paramPath = param.GetString("filePath");
+	if (!paramPath.empty())
+		filePath = QString::fromUtf8(paramPath.c_str()).toStdWString();
+	else
+		filePath = showOpenFileDialog_();
 	if (filePath.empty())
 		return nullptr; // 用户取消
 
-	IDocument* doc = openDocument_(filePath);
+	IDocument* doc = session->OpenDocument(filePath);
 	if (!doc) 
 	{
-		//if (QWidget* parent = m_mainWindow ? m_mainWindow->AsQMainWindow() : nullptr) {
-		//	QMessageBox::critical(parent,
-		//		QObject::tr("Open File"),
-		//		QObject::tr("Failed to open file."));
-		//}
+		if (QWidget* parent = mainWindow ? mainWindow->AsQMainWindow() : nullptr)
+			QMessageBox::critical(parent, QObject::tr("Open"), QObject::tr("Failed to open file."));
 		return nullptr;
 	}
 
-	//openViewForDocument_(doc, filePath);
+	// Workbench switching + view opening
+	if (mainWindow)
+	{
+		if (IWorkBenchManager* pWbMgr = mainWindow->GetWorkbenchManager())
+		{
+			std::string wbId = pWbMgr->ResolveWorkbenchByDocument(doc);
+			if (!wbId.empty())
+				pWbMgr->ActivateWorkBench(wbId, doc);
+			else
+				pWbMgr->ActiveStartupWorkbench(doc);
+		}
+	}
+
+	// Update recent list (Backstage uses the same key).
+	{
+		const QString path = QDir::fromNativeSeparators(QString::fromStdWString(filePath));
+		QSettings s("AliceSoft", "AliceCAD");
+		s.beginGroup(QStringLiteral("Backstage"));
+		QStringList list = s.value(QStringLiteral("RecentFiles")).toStringList();
+		list.removeAll(path);
+		list.prepend(path);
+		while (list.size() > 20)
+			list.removeLast();
+		s.setValue(QStringLiteral("RecentFiles"), list);
+		s.endGroup();
+	}
 
 	return nullptr;
 }
 
 std::wstring SolidFileOpenCommand::showOpenFileDialog_() const
 {
-	//QWidget* parent = m_mainWindow ? m_mainWindow->AsQMainWindow() : nullptr;
-
-	//// 过滤可以从 UiApplicationConfig / CommandsConfig 的 profile 中拿，此处给一个
-	//// 针对 .alice + 常规 CAD 格式的示例。
-	//const QString filter =
-	//	QObject::tr("Alice Documents (*.alice);;"
-	//		"STEP Files (*.step *.stp);;"
-	//		"IGES Files (*.iges *.igs);;"
-	//		"All Files (*.*)");
-
-	//const QString file =
-	//	QFileDialog::getOpenFileName(parent,
-	//		QObject::tr("Open File"),
-	//		QString(),  
-	//		filter);
-
-	//if (file.isEmpty())
-	//	return {};
-
-	//return file.toStdWString();
-	return {};
+	QWidget* parent = nullptr;
+	if (IUiApplicationFactory* pAppFactory = IUiApplicationFactory::Get())
+	{
+		if (IUiApplication* pApp = pAppFactory->GetUiApplication())
+		{
+			if (const IMainWindow* mw = pApp->GetMainWindow())
+				parent = const_cast<IMainWindow*>(mw)->AsQMainWindow();
+		}
+	}
+	const QString filter = QObject::tr("Alice Documents (*.alice);;All Files (*.*)");
+	const QString file = QFileDialog::getOpenFileName(parent, QObject::tr("Open"), QString(), filter);
+	if (file.isEmpty())
+		return {};
+	return file.toStdWString();
 }
 
 IDocument* SolidFileOpenCommand::openDocument_(const std::wstring& filePath) const
