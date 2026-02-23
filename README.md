@@ -73,7 +73,7 @@ SolidDesigner aims to be a **full‑stack, engineering‑grade** CAD/CAE platfor
 SolidDesigner (brand: **Breptera**) is a **desktop, workbench‑oriented** CAD application built on the reusable **Alice** platform.
 
 <p align="center">
-  <img src="docs/screenshots/home_workbench.png" width="900" alt="SolidDesigner Home Workbench" />
+  <img src="Docs/screenshots/home_workbench.png" width="900" alt="SolidDesigner Home Workbench" />
 </p>
 
 **User-facing goals**
