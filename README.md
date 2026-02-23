@@ -34,6 +34,7 @@
 ## Table of Contents
 
 - [Vision & Scope](#vision--scope)
+- [Product Overview](#product-overview)
 - [What’s in the Box](#whats-in-the-box)
 - [Project Layout & Architecture](#project-layout--architecture)
 - [Core Concepts](#core-concepts)
@@ -41,6 +42,7 @@
 - [Roadmap](#roadmap)
 - [Build & Run](#build--run)
 - [Dependencies](#dependencies)
+  - [Open-source Stack & Licenses](#open-source-stack--licenses)
 - [Getting Started](#getting-started)
 - [Plugin & Scripting](#plugin--scripting)
 - [Data & File Formats](#data--file-formats)
@@ -63,6 +65,25 @@ SolidDesigner aims to be a **full‑stack, engineering‑grade** CAD/CAE platfor
 - **Extensibility**: modular architecture with a stable plugin and scripting API.
 
 > **Status**: Active development (pre‑alpha). APIs and file formats may change.
+
+---
+
+## Product Overview
+
+SolidDesigner (brand: **Breptera**) is a **desktop, workbench‑oriented** CAD application built on the reusable **Alice** platform.
+
+<p align="center">
+  <img src="docs/screenshots/home_workbench.png" width="900" alt="SolidDesigner Home Workbench" />
+</p>
+
+**User-facing goals**
+
+- **Workflow**: workbenches, ribbon commands, dockable panels, and MDI viewports.
+- **Parametric foundation**: feature history tree, sketches/constraints, rebuild & regeneration pipeline (WIP).
+- **Engineering-first**: CAD data model designed to carry **materials, loads/BCs, mesh controls, and analysis results** (planned).
+- **Kernel-backed geometry**: default B‑Rep and visualization via **OpenCascade (OCCT)**; multi‑backend rendering is supported at the platform level.
+
+> The screenshot above reflects the current UI direction (Home Workbench + discovery/learning panel). The exact layout evolves quickly during pre‑alpha.
 
 ---
 
@@ -175,78 +196,99 @@ Detailed design docs live in **Confluence** (access required). A public subset l
 
 ## Build & Run
 
-### Prerequisites (indicative)
+This repo ships **one-click build scripts** that generate a build tree under `../SolidDesigner_Build/`.
 
-- **CMake ≥ 3.22**
-- **C++17/20** toolchain (MSVC v143, Clang 15+, or GCC 11+)
-- **Qt 5 (for UI; planned/optional if building headless tools)
-- **Eigen** (math), **fmt**, **spdlog**
-- **OpenCascade (OCC)** for B‑Rep (primary geometry backend; alternatives pluggable in future)
-- **(Optional)** VTK/OCCT visualization, CGAL/Gmsh/TetGen for meshing, OpenMP/TBB for parallelism, CUDA for GPU paths
+### Prerequisites (current)
 
-> Exact versions and options may evolve; consult JIRA/Wiki for up‑to‑date build notes.
+- **CMake ≥ 3.31**  
+  - Windows: repo bundles CMake under `ToolChain/cmake` (used by `AutoGenerateVsProject.bat`)  
+  - Linux: install a recent system CMake (or use your own toolchain)
+- **C++17 toolchain**: MSVC v143 / GCC 11+ / Clang 15+
+- **Qt 5.15.x** with modules: Core, Gui, Widgets, Network, Quick, Qml
+- **OpenCascade (OCCT) SDK** for the OCCT viewer backend (see SDK layout below)
 
-### Get the source
+### Windows (Visual Studio 2022, x64)
+
+1. Clone with submodules:
 
 ```bash
 git clone --recurse-submodules https://github.com/hananiahhsu/SolidDesigner.git
 cd SolidDesigner
-# If you forgot --recurse-submodules
-git submodule update --init --recursive
 ```
 
-### Windows (MSVC, x64)
+2. Run:
+
+- `AutoGenerateVsProject.bat` (generates `../SolidDesigner_Build/SolidDesigner.sln` and opens Visual Studio)
+
+3. Build the `Release|x64` configuration in Visual Studio, then run `SolidDesigner`.
+
+### Linux (Makefiles)
+
+Run:
 
 ```bash
-cmake -S . -B build -G "Visual Studio 17 2022" -A x64 ^
-  -DCMAKE_INSTALL_PREFIX=%CD%/install ^
-  -DSD_WITH_QT=ON ^
-  -DSD_WITH_OCC=ON
-
-cmake --build build --config Release --parallel
-cmake --install build --config Release
+./SolidDesignerForLinux.sh
 ```
 
-### Linux (GCC/Clang + Ninja)
+This script configures and builds using `Unix Makefiles` and outputs to `../SolidDesigner_Build/`.
+
+> Note: the script currently passes `-DCMAKE_GENERATOR_PLATFORM=x64`, which is a Visual Studio option and may be ignored on Linux toolchains. If you hit issues, run CMake manually (next section).
+
+### Manual CMake (recommended when customizing toolchains)
 
 ```bash
-cmake -S . -B build -G Ninja \
-  -DCMAKE_BUILD_TYPE=Release \
-  -DCMAKE_INSTALL_PREFIX=$PWD/install \
-  -DSD_WITH_QT=ON \
-  -DSD_WITH_OCC=ON
-
-cmake --build build --parallel
-cmake --install build
-**Headless/CI builds**: If you don't have Qt available, disable the GUI target with `-DSD_BUILD_DESIGNER=OFF`.
+cmake -S . -B ../SolidDesigner_Build -G "Ninja" -DCMAKE_BUILD_TYPE=Release
+cmake --build ../SolidDesigner_Build --parallel
 ```
 
-Run the app (paths may differ):
+### Third‑party SDK layout (OCCT)
 
-```bash
-# Windows
-install/bin/SolidDesigner.exe
+The OCCT viewer backend expects OpenCascade SDK exported to:
 
-# Linux
-./install/bin/SolidDesigner
 ```
+Externals/3rdParty/sdk/<platform>/<Debug|Release>/occt
+```
+
+Default `<platform>` values (can be overridden):
+
+- Windows: `msvc2022-x64-md`
+- Linux: `linux-x64`
+
+You can override from CMake:
+
+- `-DSD_3P_PLATFORM=...`
+- `-DSD_3P_CFG=Debug|Release`
+- or directly point `-DOpenCASCADE_DIR=...` to the folder containing `OpenCASCADEConfig.cmake`.
+
+### Qt
+
+The UI targets currently use **Qt 5** (e.g. `Qt5::Core`, `Qt5::Widgets`, `Qt5::Quick/Qml` in CMake).  
+On Windows, some modules set a default `CMAKE_PREFIX_PATH` for `Qt5.15.x`; adjust it to your local Qt install if needed.
 
 ---
 
 ## Dependencies
 
-This project is **modular**: most third‑party libraries are optional or pluggable.
+The project is modular: some libraries are **vendored in-tree**, while others are expected as **external SDKs**.
 
-- **Geometry**: OpenCascade (default); abstractions allow future kernels
-- **Math**: Eigen
-- **I/O**: fmt
-- **Logging**: spdlog (backend), unified diagnostics facade in “Alice”
-- **UI**: Qt 6 (widgets/QtQuick — TBD)
-- **Meshing**: OCCT mesher, Gmsh, TetGen (adapters planned)
-- **Solvers**: in‑house FEA/CFD; adapters to external solvers (future)
-- **Visualization**: OCCT/VTK (planned)
+### Open-source Stack & Licenses
 
-Use `-DSD_WITH_<LIB>=ON/OFF` CMake options (see `CMakeLists.txt`) to toggle modules.
+| Library | Used for | Where | License (upstream) |
+|---|---|---|---|
+| **OpenCascade (OCCT)** | B‑Rep kernel + OCCT viewer backend | `Alice/Core/Runtime/AliceRenderBackendOCCViewer` | LGPL‑2.1 with OCCT exception (upstream) |
+| **Qt 5 (Widgets/Quick/Qml)** | Desktop UI (ribbon, panels, dialogs) | `Designer/UI/*`, `Alice/UI/QFrameWork/*` | GPL/LGPL/commercial (Qt) |
+| **Nedrysoft Ribbon** | Ribbon UI library (vendored & adapted) | `Alice/UI/QFrameWork/AliceRibbon` | GPLv3 (see in-tree LICENSE) |
+| **Qt Advanced Docking System (ADS)** | Docking layout / panels | `Alice/UI/QFrameWork/AliceAdvancedDockingSystem` | LGPLv2.1 (see in-tree license folder) |
+| **spdlog** | Logging backend | `Alice/Core/Foundation/AliceBasicTool/*SpdLog*` | MIT |
+| **fmt** | String formatting | `Alice/Core/Foundation/AliceBasicTool/*Fmt*` | MIT |
+| **Open Sans** | UI font assets for ribbon | `Alice/UI/QFrameWork/AliceRibbon/OpenSans` | Apache‑2.0 |
+
+> **License note**: SolidDesigner is **GPLv3**, but some embedded/required dependencies are LGPL/MIT/Apache. When distributing binaries, you must comply with each upstream license (dynamic linking obligations, notices, source availability, etc.).
+
+### Optional / planned adapters (not required for a minimal build)
+
+- **OGRE / OSG / VTK / Skylark** render backends exist as platform modules (`Alice/Core/Runtime/AliceRenderBackend*`) but may require additional SDKs and are still evolving.
+- **Meshing / solvers** (FEA/CFD/optimization) are under active design; adapters will be introduced incrementally.
 
 ---
 
