@@ -16,6 +16,13 @@
   Feature-based modeling • CAE-ready data model • Optimization-first architecture
 </p>
 
+<p align="center">
+  <img src="Docs/media/Breptera_Splash.gif" width="960" alt="SolidDesigner demo preview" />
+</p>
+
+<p align="center">
+  Product demo preview
+</p>
 
 ## [English](README.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Русский](README.ru.md)
 
