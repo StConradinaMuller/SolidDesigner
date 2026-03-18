@@ -2,7 +2,6 @@
   <img src="Designer/UIResource/TitleBar/brand/light/png/200x56/app_wordmark.png" width="360" alt="SolidDesigner" />
 </p>
 
-
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-GPLv3-blue.svg" /></a>
   <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-17%2F20-00599C.svg" />
@@ -11,11 +10,22 @@
   <img alt="Platform" src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey" />
 </p>
 
-# SolidDesigner
+<p align="center">
+  <b>パラメトリック CAD とシミュレーション駆動設計のための、オープンソースのエンジニアリンググレード・プラットフォーム</b><br/>
+  フィーチャベース・モデリング • CAE 対応データモデル • 最適化ファーストのアーキテクチャ
+</p>
 
-**パラメトリック CAD、高忠実度 CAE、トポロジー最適化のためのオープンソース・プラットフォーム — シミュレーション駆動設計と AI アシストを統合。**
+<p align="center">
+  <img src="Docs/media/Breptera_Splash.gif" width="960" alt="SolidDesigner デモプレビュー" />
+</p>
 
-> 目標：Creo Parametric に匹敵するプロフェッショナル級システムとして、ソリッド／サーフェスモデリング、アセンブリ、製図、構造力学、CFD、マルチフィジックス、最適化をサポートし、シミュレーションが設計そのものを駆動できるようにする。
+<p align="center">
+  製品デモプレビュー
+</p>
+
+## [English](README.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Русский](README.ru.md)
+
+> 目標：ソリッド／サーフェスモデリング、アセンブリ、製図、構造力学、CFD、マルチフィジックス、最適化をサポートし、シミュレーションが設計そのものを駆動できる、プロフェッショナルグレードのシステムを実現することです。
 
 ---
 
@@ -23,7 +33,7 @@
 
 - **JIRA ボード**: https://hananiah.atlassian.net/jira/software/c/projects/AL/boards/3
 - **公開 Wiki（GitHub）**: https://github.com/hananiahhsu/SolidDesignerWiki
-- **設計 Wiki（Confluence／要アクセス権）**: https://hananiah.atlassian.net/wiki/spaces/~5e2301040f45160ca25e42e3/overview?homepageId=65963
+- **設計 Wiki（Confluence、要アクセス権）**: https://hananiah.atlassian.net/wiki/spaces/~5e2301040f45160ca25e42e3/overview?homepageId=65963
 
 ---
 
@@ -38,6 +48,7 @@
 - [ロードマップ](#roadmap)
 - [ビルドと実行](#build--run)
 - [依存関係](#dependencies)
+  - [オープンソース構成とライセンス](#open-source-stack--licenses)
 - [はじめに](#getting-started)
 - [プラグインとスクリプティング](#plugin--scripting)
 - [データとファイル形式](#data--file-formats)
@@ -53,13 +64,13 @@
 
 SolidDesigner は、**フルスタックかつエンジニアリング品質**の CAD/CAE プラットフォームを目指します。
 
-- **パラメトリック CAD**：堅牢なパーツ／アセンブリモデリング、スケッチ／拘束、履歴ベースのフィーチャ、製図。
+- **Parametric CAD**：堅牢なパーツ／アセンブリモデリング、スケッチ／拘束、履歴ベースのフィーチャ、製図。
 - **CAE**：**構造力学（FEA）**、**流体力学（CFD）**、**マルチフィジックス**の内製ソルバおよび／またはアダプタ。
-- **最適化**：**トポロジー／形状／寸法**最適化、補強・軽量化、シミュレーション駆動の設計ループ。
-- **AI アシスト**：拘束の推定、フィーチャ意図の推定、設計空間探索、ソルバ設定提案のためのエンジニアリング「コパイロット」。
-- **拡張性**：安定したプラグイン／スクリプティング API を備えたモジュラー・アーキテクチャ。
+- **Optimization**：**トポロジー／形状／寸法**最適化、補強・軽量化、シミュレーション駆動の設計ループ。
+- **AI Assistance**：拘束推定、フィーチャ意図推定、設計空間探索、ソルバ設定提案のためのエンジニアリング「コパイロット」。
+- **Extensibility**：安定したプラグイン／スクリプティング API を備えたモジュラーアーキテクチャ。
 
-> **Status**：開発中（pre-alpha）。API とファイル形式は変更される可能性があります。
+> **Status**：開発中（pre‑alpha）。API とファイル形式は変更される可能性があります。
 
 ---
 
@@ -73,22 +84,22 @@ SolidDesigner（ブランド：**Breptera**）は、再利用可能な **Alice**
 
 **ユーザー向けの目標**
 
-- **Creo/NX 風ワークフロー**：ワークベンチ、リボンコマンド、ドッキングパネル、MDI ビューポート。
-- **パラメトリック基盤**：フィーチャ履歴ツリー、スケッチ／拘束、リビルド＆再生成パイプライン（WIP）。
-- **エンジニアリング優先**：材料、荷重／境界条件、メッシュ制御、解析結果を運べる **CAD データモデル**（計画）。
-- **カーネルに裏付けられたジオメトリ**：既定の B‑Rep と可視化は **OpenCascade (OCCT)**。プラットフォーム層ではマルチバックエンド描画をサポートします。
+- **Workflow**：ワークベンチ、リボンコマンド、ドッキングパネル、MDI ビューポート。
+- **Parametric foundation**：フィーチャ履歴ツリー、スケッチ／拘束、リビルド＆再生成パイプライン（WIP）。
+- **Engineering-first**：材料、荷重／境界条件、メッシュ制御、解析結果を保持できる **CAD データモデル**（計画中）。
+- **Kernel-backed geometry**：既定の B‑Rep と可視化は **OpenCascade (OCCT)**。プラットフォーム層ではマルチバックエンド描画をサポートします。
 
-> 上のスクリーンショットは現在の UI 方向性（Home Workbench + 学習／探索パネル）を示します。プレアルファ段階のためレイアウトは短いサイクルで変化します。
+> 上のスクリーンショットは現在の UI 方向性（Home Workbench + 発見／学習パネル）を示しています。プレアルファ段階のため、正確なレイアウトは短い周期で変化します。
 
 ---
 
 ## What’s in the Box
 
-- **基盤サブモジュール（“Alice”）**を含む、モダンな C++17/20 コードベース。
-- 基盤の上に構築された **デスクトップアプリケーション**（“SolidDesigner”）。
+- **基盤サブモジュール（「Alice」）** を含む、モダンな C++17/20 コードベース。
+- 基盤の上に構築された **デスクトップアプリケーション**（「SolidDesigner」）。
 - **Core / Data / Interaction / UI** レイヤの明確な分離。
-- **フィーチャグラフ**、**パラメトリック拘束**、**診断／ログ**、**プラグインホスティング**の初期実装。
-- **CAE ソルバ（FEA/CFD）**と**最適化**に向けた長期計画。
+- **フィーチャグラフ**、**パラメトリック拘束**、**診断／ロギング**、**プラグインホスティング**の初期実装。
+- **CAE ソルバ（FEA/CFD）** と **最適化** に向けた長期計画。
 
 ---
 
@@ -101,6 +112,7 @@ Physical Structure
     |
     |----- Alice  (submodule)
     |         |
+    |         |---- Bootstrap
     |         |---- Core
     |         |---- Data
     |         |---- Interaction
@@ -112,29 +124,30 @@ Physical Structure
               |-- DATA
               |-- Interaction
               |-- UI
+              |-- Plugins
 ```
 
 ### Layered Architecture (high‑level)
 
-- **Alice/Core** — プラットフォーム基盤・ユーティリティ（メモリ、スレッド、診断、数学、単位系、幾何抽象化など）。
+- **Alice/Core** — プラットフォーム基盤、基本ユーティリティ（メモリ、スレッド、診断、数学、単位系、幾何抽象など）。
 - **Alice/Data** — パラメトリックモデル、フィーチャ／オペレーショングラフ、拘束・寸法システム、ドキュメント／セッションサービス。
 - **Alice/Interaction** — 選択／ピッキング、マニピュレータ、コマンドパイプライン、Undo/Redo トランザクション、インタラクショングラフ。
-- **Alice/UI** — Qt ベース（予定）のシェル、ドッキング可能ペイン、プロパティブラウザ、リボン／メニュー／ショートカット。
-- **SolidDesigner/APP** — プロダクト層：アプリライフサイクル、永続化、プロジェクト／ワークスペース、プラグイン、スクリプト。
-- **SolidDesigner/DATA/Interaction/UI** — Alice レイヤに対するプロダクト固有拡張。
+- **Alice/UI** — Qt ベース（予定）のシェル、ドッキング可能なペイン、プロパティブラウザ、リボン／メニュー／ショートカット。
+- **SolidDesigner/APP** — 製品レイヤ：アプリケーションライフサイクル、永続化、プロジェクト／ワークスペース、プラグイン、スクリプティング。
+- **SolidDesigner/DATA/Interaction/UI** — Alice レイヤ上の製品固有拡張。
 
-> **Alice** サブモジュールは再利用可能なエンジン層として設計されており、**SolidDesigner** がそれを統合してプロダクトとして成立させます。
+> **Alice** サブモジュールは再利用可能なエンジン層として意図されており、**SolidDesigner** がそれを組み合わせて完全な製品として構成します。
 
 ---
 
 ## Core Concepts
 
-- **フィーチャグラフ**：Sketch、Extrude、Revolve、Fillet、Pattern、Boolean などの全モデリング操作を、有向非巡回グラフ（DAG）上のノードとして表現し、**履歴と依存関係**を明示します。再構築（Rebuild）は決定的に伝播します。
-- **拘束システム**：幾何拘束および寸法拘束を扱い、ソルババックエンドを差し替え可能にします（現状はスケッチ拘束中心、3D 拘束は計画中）。
-- **パラメトリック設計**：寸法、材料、境界条件などの命名パラメータで、幾何と解析の双方を駆動します。式と単位系をサポートします。
-- **シミュレーション駆動設計**：解析で候補設計を評価し、結果をパラメータにフィードバックします（例：応力目標を満たすまで軽量化を自動化）。
-- **多表現幾何**：公差を考慮したソリッド／サーフェス／B-Rep 抽象化、解析向けメッシュ生成、CAD↔CAE の整合性。
-- **トランザクション**：各コマンドはトランザクション内で実行され、完全な Undo/Redo と、診断エンジンによる意味のあるエラーメッセージを提供します。
+- **Feature Graph**：Sketch、Extrude、Revolve、Fillet、Pattern、Boolean など、すべてのモデリング操作は **履歴と依存関係** を持つ有向非巡回グラフのノードとして表現されます。再構築は決定的に伝播します。
+- **Constraint System**：幾何拘束と寸法拘束を、差し替え可能なソルババックエンドとともに扱います（現状はスケッチ拘束、3D 拘束は計画中）。
+- **Parametric Design**：名前付きパラメータ（寸法、材料、境界条件など）が幾何と解析の双方を駆動し、式と単位系をサポートします。
+- **Simulation‑Driven Design**：解析によって候補設計を評価し、結果をパラメータへフィードバックします（例：応力目標を満たすまで板厚を自動的に減らす）。
+- **Multi‑representation Geometry**：公差を考慮したソリッド／サーフェス／B‑Rep 抽象化、解析向けメッシュ生成、CAD↔CAE の整合性。
+- **Transactions**：すべてのコマンドはトランザクション内で実行され、完全な Undo/Redo と診断エンジンによる意味のあるエラーメッセージを提供します。
 
 ---
 
@@ -143,20 +156,20 @@ Physical Structure
 ### CAD (current/planned)
 
 - 拘束と寸法を備えたスケッチ
-- 履歴ベースのモデリング：押し出し／回転／スイープ／ロフト、フィレット／面取り、シェル、パターン、ブーリアン
-- アセンブリ：メイト／拘束、トップダウン・コンテキスト（WIP）
+- 履歴ベースモデリング：押し出し／回転／スイープ／ロフト、フィレット／面取り、シェル、パターン、ブーリアン演算
+- アセンブリ：メイト／拘束、トップダウンコンテキスト（WIP）
 - 製図：ビュー、断面、寸法、GD&T（計画中）
 
 ### CAE (current/planned)
 
-- **構造（FEA）**：線形静解析、モード解析、材料ライブラリ、境界条件、メッシュ制御（段階的に拡充予定）
+- **Structural (FEA)**：線形静解析、モーダル解析、材料ライブラリ、境界条件、メッシュ制御（段階的拡張を計画）
 - **CFD**：非圧縮流（定常／非定常）、乱流モデル、境界条件（計画中）
-- **マルチフィジックス**：熱—構造連成、FSI（長期）
+- **Multiphysics**：熱構造連成、FSI（長期計画）
 
 ### Optimization (planned)
 
 - トポロジー最適化（SIMP／レベルセット）
-- 形状／寸法最適化、制約（応力、変位、固有振動数、圧力損失など）
+- 形状／寸法最適化、各種制約（応力、変位、固有振動数、圧力損失など）
 - 設計空間探索、サロゲートモデル
 
 ### AI Assistance (planned)
@@ -166,66 +179,66 @@ Physical Structure
 - 設計空間の推奨、DOE の自動化
 - 文脈に基づくソルバ設定・メッシング提案
 
-> アイテム単位の進捗は **[Roadmap](#roadmap)** と **JIRA** を参照してください。
+> 項目単位の進捗は **[Roadmap](#roadmap)** と **JIRA** を参照してください。
 
 ---
 
 ## Roadmap
 
-計画とバックログは **JIRA** で管理しています：  
+計画とバックログは **JIRA** で追跡しています：  
 https://hananiah.atlassian.net/jira/software/c/projects/AL/boards/3
 
 高レベルのマイルストーン（変更される可能性があります）：
 
 1. **P0 — Modeling Foundations**：安定したフィーチャグラフ、堅牢なスケッチャ、基本モデリング操作、トランザクションシステム、永続化。
-2. **P1 — Meshing & FEA MVP**：四面体／六面体メッシュパイプライン、線形静解析／モード解析、基本ポスト処理。
-3. **P2 — CFD MVP**：非圧縮流向けメッシュ＆ソルバ統合、圧力／速度／温度場、ポスト処理。
-4. **P3 — Optimization**：SIMP トポロジー最適化、クローズドループのパラメータ更新、制約処理。
+2. **P1 — Meshing & FEA MVP**：四面体／六面体メッシュパイプライン、線形静解析／モーダル解析、基本ポスト処理。
+3. **P2 — CFD MVP**：非圧縮流向けのメッシュとソルバ統合、圧力／速度／温度場、ポスト処理。
+4. **P3 — Optimization**：SIMP トポロジー最適化、閉ループのパラメータ更新、制約処理。
 5. **P4 — AI Copilot v1**：拘束推定、コマンド提案、ソルバプリセット、プロジェクト履歴からの学習。
 
-詳細設計ドキュメントは **Confluence**（要アクセス権）にあります。公開可能な一部は **GitHub Wiki** に置きます。
+詳細設計ドキュメントは **Confluence**（要アクセス権）にあり、公開可能な一部は **GitHub Wiki** にあります。
 
 ---
 
 ## Build & Run
 
-このリポジトリには、`../SolidDesigner_Build/` にビルドツリーを生成する **ワンクリックのビルドスクリプト**が同梱されています。
+このリポジトリには、`../SolidDesigner_Build/` にビルドツリーを生成する **ワンクリックビルドスクリプト** が含まれています。
 
 ### Prerequisites (current)
 
 - **CMake ≥ 3.31**  
-  - Windows：リポジトリに `ToolChain/cmake` として同梱（`AutoGenerateVsProject.bat` が利用）  
-  - Linux：新しめの CMake をシステムにインストール（または独自ツールチェーンを使用）
-- **C++17 ツールチェーン**：MSVC v143 / GCC 11+ / Clang 15+
-- **Qt 5.15.x**（Core, Gui, Widgets, Network, Quick, Qml）
-- **OpenCascade (OCCT) SDK**：OCCT Viewer バックエンド用（下記 SDK レイアウト参照）
+  - Windows：リポジトリには `ToolChain/cmake` 配下に CMake が同梱されており、`AutoGenerateVsProject.bat` がそれを利用します。  
+  - Linux：新しめの CMake をシステムへインストールするか、独自ツールチェーンを使ってください。
+- **C++17 toolchain**：MSVC v143 / GCC 11+ / Clang 15+
+- **Qt 5.15.x**（Core, Gui, Widgets, Network, Quick, Qml モジュール）
+- **OpenCascade (OCCT) SDK**：OCCT Viewer バックエンド用（以下の SDK レイアウトを参照）
 
 ### Windows (Visual Studio 2022, x64)
 
-1. サブモジュール込みでクローン：
+1. サブモジュール付きでクローンします：
 
 ```bash
 git clone --recurse-submodules https://github.com/hananiahhsu/SolidDesigner.git
 cd SolidDesigner
 ```
 
-2. 実行：
+2. 次を実行します：
 
-- `AutoGenerateVsProject.bat`（`../SolidDesigner_Build/SolidDesigner.sln` を生成して Visual Studio を起動）
+- `AutoGenerateVsProject.bat`（`../SolidDesigner_Build/SolidDesigner.sln` を生成して Visual Studio を開きます）
 
-3. Visual Studio で `Release|x64` 構成をビルドし、`SolidDesigner` を実行します。
+3. Visual Studio で `Release|x64` 構成をビルドし、その後 `SolidDesigner` を実行します。
 
 ### Linux (Makefiles)
 
-実行：
+次を実行します：
 
 ```bash
 ./SolidDesignerForLinux.sh
 ```
 
-このスクリプトは `Unix Makefiles` で構成・ビルドし、`../SolidDesigner_Build/` に出力します。
+このスクリプトは `Unix Makefiles` を使って構成とビルドを行い、出力を `../SolidDesigner_Build/` に生成します。
 
-> 注意：現状スクリプトは `-DCMAKE_GENERATOR_PLATFORM=x64` を渡していますが、これは Visual Studio 向けのオプションであり Linux では無視される場合があります。問題が出る場合は次の「Manual CMake」で構成してください。
+> 注意：現在このスクリプトは `-DCMAKE_GENERATOR_PLATFORM=x64` を渡しています。これは Visual Studio 向けのオプションであり、Linux ツールチェーンでは無視される場合があります。問題がある場合は、次の「Manual CMake」を使って手動で構成してください。
 
 ### Manual CMake (recommended when customizing toolchains)
 
@@ -236,7 +249,7 @@ cmake --build ../SolidDesigner_Build --parallel
 
 ### Third‑party SDK layout (OCCT)
 
-OCCT Viewer バックエンドは、OpenCascade SDK が次の場所にエクスポートされていることを前提とします：
+OCCT Viewer バックエンドは、OpenCascade SDK が次の場所へエクスポートされていることを前提としています：
 
 ```
 Externals/3rdParty/sdk/<platform>/<Debug|Release>/occt
@@ -247,74 +260,66 @@ Externals/3rdParty/sdk/<platform>/<Debug|Release>/occt
 - Windows：`msvc2022-x64-md`
 - Linux：`linux-x64`
 
-CMake から上書きできます：
+CMake から次のように上書きできます：
 
 - `-DSD_3P_PLATFORM=...`
 - `-DSD_3P_CFG=Debug|Release`
-- または、`OpenCASCADEConfig.cmake` を含むフォルダへ `-DOpenCASCADE_DIR=...` を直接指定します。
+- または `OpenCASCADEConfig.cmake` を含むフォルダを `-DOpenCASCADE_DIR=...` で直接指定します。
 
 ### Qt
 
-UI ターゲットは現在 **Qt 5** を使用しています（CMake 内で `Qt5::Core`、`Qt5::Widgets`、`Qt5::Quick/Qml` 等）。  
-Windows では一部モジュールが `Qt5.15.x` 向け `CMAKE_PREFIX_PATH` を既定設定している場合があります。必要に応じてローカルの Qt インストールに合わせて調整してください。
-
-# --recurse-submodules を忘れた場合
-
-すでにクローン済みのリポジトリで、次を実行してください：
-
-```bash
-git submodule update --init --recursive
-```
+UI ターゲットは現在 **Qt 5** を使用しています（CMake では `Qt5::Core`、`Qt5::Widgets`、`Qt5::Quick/Qml` など）。  
+Windows では、一部モジュールが `Qt5.15.x` 向けの既定 `CMAKE_PREFIX_PATH` を設定しています。必要に応じて、手元の Qt インストール先に合わせて調整してください。
 
 ---
 
 ## Dependencies
 
-本プロジェクトはモジュラー構成です。いくつかのライブラリは **リポジトリ内に同梱（vendored）**され、いくつかは **外部 SDK** として導入します。
+このプロジェクトはモジュラー構成で、一部のライブラリは **リポジトリ内に同梱** され、他は **外部 SDK** として導入される想定です。
 
 ### Open-source Stack & Licenses
 
-| ライブラリ | 用途 | 位置 | ライセンス（上流） |
+| ライブラリ | 用途 | 配置場所 | ライセンス（上流） |
 |---|---|---|---|
 | **OpenCascade (OCCT)** | B‑Rep カーネル + OCCT Viewer バックエンド | `Alice/Core/Runtime/AliceRenderBackendOCCViewer` | LGPL‑2.1 with OCCT exception（上流） |
-| **Qt 5 (Widgets/Quick/Qml)** | デスクトップ UI（リボン、パネル、ダイアログ） | `Designer/UI/*`, `Alice/UI/QFrameWork/*` | GPL/LGPL/Commercial（Qt） |
-| **spdlog**                   | ロギングバックエンド                          | `Alice/Core/Foundation/AliceBasicTool/*SpdLog*`  | MIT                                  |
-| **fmt**                      | 文字列フォーマット                            | `Alice/Core/Foundation/AliceBasicTool/*Fmt*`     | MIT                                  |
-| **Open Sans**                | リボン用フォントアセット                      | `Alice/UI/QFrameWork/AliceRibbon/OpenSans`       | Apache‑2.0                           |
-|                              |                                               |                                                  |                                      |
-|                              |                                               |                                                  |                                      |
+| **Qt 5 (Widgets/Quick/Qml)** | デスクトップ UI（リボン、パネル、ダイアログ） | `Designer/UI/*`, `Alice/UI/QFrameWork/*` | GPL/LGPL/commercial（Qt） |
+| **spdlog** | ロギングバックエンド | `Alice/Core/Foundation/AliceBasicTool/*SpdLog*` | MIT |
+| **fmt** | 文字列フォーマット | `Alice/Core/Foundation/AliceBasicTool/*Fmt*` | MIT |
+| **Open Sans** | リボン用フォントアセット | `Alice/UI/QFrameWork/AliceRibbon/OpenSans` | Apache‑2.0 |
+| | | | |
+| | | | |
 
-> **ライセンス注意**：SolidDesigner は **GPLv3** ですが、組み込み／必須の依存には LGPL/MIT/Apache が含まれます。バイナリ配布時は各上流ライセンスの条件（動的リンク義務、告知、ソース提供など）に従ってください。
+> **ライセンス注記**：SolidDesigner は **GPLv3** ですが、同梱／必須依存には LGPL/MIT/Apache が含まれます。バイナリを再配布する場合は、各上流ライセンスの条件（動的リンク義務、告知、ソース提供など）を順守してください。
 
 ### Optional / planned adapters (not required for a minimal build)
 
-- **OGRE / OSG / VTK / Skylark** の描画バックエンドはプラットフォームモジュールとして存在します（`Alice/Core/Runtime/AliceRenderBackend*`）。ただし追加 SDK が必要な場合があり、まだ進化中です。
-- **メッシング／ソルバ**（FEA/CFD/最適化）は設計・実装が進行中で、アダプタは段階的に導入されます。
+- **OGRE / OSG / VTK / Skylark** の描画バックエンドは、プラットフォームモジュール（`Alice/Core/Runtime/AliceRenderBackend*`）として存在しますが、追加 SDK が必要な場合があり、現在も進化中です。
+- **メッシング／ソルバ**（FEA/CFD/最適化）は活発に設計中であり、アダプタは段階的に導入されます。
 
 ---
 
 ## Getting Started
 
-想定する典型ワークフロー（完成形）：
+典型的なワークフローの目標形は次のとおりです：
 
-1. **プロジェクトを作成**し、単位系／公差のデフォルトを設定する。
-2. 平面上に **スケッチ**し、拘束と寸法を付与する。
-3. **Extrude / Revolve / Fillet / Shell / Pattern** などのフィーチャを作成する。
-4. パーツを **アセンブリ**し、メイト／拘束を追加する。
-5. モデルを **メッシュ化**する（全体＋局所制御）。
-6. **材料**と**境界条件**を定義する。
-7. **FEA/CFD** を実行し、応力／ひずみ、モード、流れ場などを評価する。
-8. 結果から **パラメータを駆動**する（例：応力 ≤ 目標になるまで厚みを減らす）。
-9. **プロジェクトとして保存**し、**STEP/IGES** やメッシュ形式へエクスポートする。
+1. **プロジェクトを作成**し、既定の単位系と公差を設定します。
+2. 平面上に **スケッチ** し、拘束と寸法を適用します。
+3. **Extrude**、**Revolve**、**Fillet**、**Shell**、**Pattern** などのフィーチャを作成します。
+4. パーツを **アセンブリ** し、メイト／拘束を追加します。
+5. モデルを **メッシュ化** します（グローバル + ローカル制御）。
+6. **材料** と **境界条件** を定義します。
+7. **FEA/CFD** を実行し、応力／ひずみ、モード、流れ場を確認します。
+8. 結果から **パラメータを駆動** します（例：応力 ≤ 目標値になるまで厚みを減らす）。
+9. **プロジェクト** として保存し、**STEP/IGES** またはメッシュ形式へエクスポートします。
 
 ---
 
 ## Plugin & Scripting
 
-- **Plugin ABI**：ジオメトリ操作、メッシング、ソルバ、インポータ／エクスポータ、UI アドイン向けのクリーンな C++ インターフェース。
-- **分離**：安定した所有権モデルとクロス DLL 安全性（基盤は Owning/Weak/Guard ポインタユーティリティを提供）。
-- **スクリプティング（計画）**：モデリング自動化、解析設定、ポスト処理、設計ループのオーケストレーションのための Python API。
-- **AI フック（計画）**：意図推定や最適化のために、カスタム設計アドバイザ／ML モデルを登録可能にする。
+- **Plugin ABI**：幾何操作、メッシング、ソルバ、インポータ／エクスポータ、UI アドイン向けのクリーンな C++ インターフェース。
+- **Isolation**：安定した所有権モデルと DLL 境界をまたぐ安全性（基盤は Owning/Weak/Guard ポインタユーティリティを提供）。
+- **Scripting (planned)**：モデリング自動化、スタディ設定、ポスト処理、設計ループのオーケストレーションのための Python API。
+- **AI hooks (planned)**：意図予測や最適化のためのカスタム設計アドバイザや ML モデルを登録可能にするフック。
 
 ---
 
@@ -322,29 +327,29 @@ git submodule update --init --recursive
 
 ### Native project format (in progress)
 
-ネイティブ形式は次を満たすことを意図しています。
+ネイティブ形式は次の性質を備えることを意図しています：
 
-- **構造化**：メタデータ＋型付きペイロード（幾何、メッシュ、結果、サムネイルなど）
-- **バージョン管理**：明示的なアップグレードパイプラインを伴うスキーマバージョニング
-- **インクリメンタル志向**：部分ロードや将来のクラウド／ワークスペースに適した設計
-- **安定 ID 対応**：保存／読み込み、コピー／ペースト、アップグレードでオブジェクト ID を維持
+- **Structured**：メタデータ + 型付きペイロード（幾何、メッシュ、結果、サムネイルなど）
+- **Versioned**：明示的なアップグレードパイプラインを備えたスキーマバージョニング
+- **Incremental-friendly**：部分リロードや将来のクラウド／ワークスペースワークフローを見据えた設計
+- **Stable-identity aware**：保存／読込、コピー＆ペースト、アップグレードをまたいでもオブジェクト ID を維持
 
-> 仕様が安定した時点で、公開 Wiki に正式仕様を掲載します。
+> 形式が安定した段階で、公開 Wiki に正規仕様を掲載する予定です。
 
 ### Interoperability (planned / incremental)
 
-- **CAD 連携**：STEP/IGES のインポート／エクスポート（他形式はアダプタ経由）
-- **Mesh/Results**：外部ソルバ／ポスト処理向け標準形式（VTK、MED など、計画）
-- **Units**：単位系メタデータを明示した一貫した単位系。式内の次元付きパラメータ。
+- **CAD Interop**：STEP/IGES のインポート／エクスポート（他形式はアダプタ経由）
+- **Mesh/Results**：外部ソルバやポスト処理向けの標準メッシュ／結果形式（VTK、MED など、計画中）
+- **Units**：明示的なメタデータを伴う一貫した単位系、式内の次元付きパラメータ
 
 ---
 
 ## Diagnostics, Logging & QA
 
-- 重大度レベル、ソース位置、複数シンク（コンソール／ファイル／UI パネル）を備えた統一 **DiagnosticsEngine**。
-- 高速・スレッド対応ログのための任意 **spdlog** バックエンド。
-- DLL 境界を意識した **アサーション**と**防御的チェック**。
-- CTest による **テスト**：幾何、永続化、拘束解法、ソルバ正当性のフィクスチャ。再現ケースは JIRA に紐付け。
+- 重大度レベル、ソース位置、差し替え可能なシンク（コンソール、ファイル、UI パネル）を備えた統一 **DiagnosticsEngine**。
+- 高速でスレッド対応なロギングのための任意の **spdlog** バックエンド。
+- DLL 境界をまたぐ **assertion** と **防御的チェック**。
+- CTest による **テスト**：幾何、メッシング、ソルバ正当性のフィクスチャ。再現ケースは JIRA に添付可能。
 
 ---
 
@@ -352,46 +357,46 @@ git submodule update --init --recursive
 
 コントリビューションを歓迎します。
 
-- JIRA のエピック／タスクと GitHub Wiki を確認して背景を把握してください。
-- 大きな提案は、PR の前に議論してください。
-- プロジェクトのコードスタイル（clang-format は予定）に従い、ユニットテストを追加してください。
-- コミットは小さく明確にし、可能であれば JIRA チケットに紐付けてください。
+- 背景理解のために、JIRA のエピック／タスクと GitHub Wiki を確認してください。
+- 大きな提案は PR を開く前に議論してください。
+- プロジェクトのコードスタイル（clang-format は予定）に従い、ユニットテストを含めてください。
+- コミットは小さく、内容が分かるように記述し、可能であれば JIRA チケットにリンクしてください。
 
 最初のコントリビューション候補：
 
-- 特定プラットフォーム／コンパイラでのビルド問題修正
-- 集中的なテスト追加（幾何、永続化、拘束解法）
-- ドキュメント整備（設計ノート、図、最小限の “How it works”）
+- 特定プラットフォーム／コンパイラでのビルド問題を修正する
+- 集中したテストを追加する（幾何、永続化、拘束解法）
+- ドキュメントを追加する：設計ノート、図、最小限の「How it works」セクションなど
 
-> リポジトリ単位のガイド（予定）：`CONTRIBUTING.md`、`CODE_OF_CONDUCT.md`
+> リポジトリレベルの貢献ドキュメント（計画中）：`CONTRIBUTING.md`、`CODE_OF_CONDUCT.md`。
 
 ---
 
 ## License
 
-本リポジトリは **GNU GPL v3.0** の下でライセンスされています。全文は `LICENSE` を参照してください。
+このリポジトリは **GNU GPL v3.0** の下でライセンスされています。全文は `LICENSE` を参照してください。
 
-> 注意：サードパーティライブラリは独自ライセンスを持つ場合があります。バイナリ再配布の際は各ライセンスに準拠してください。
+> 注：サードパーティライブラリは独自ライセンスを持つ場合があります。バイナリ再配布時は各ライセンスへの準拠を確認してください。
 
 ---
 
 ## Acknowledgments
 
-本プロジェクトは OpenCascade、Eigen、fmt、spdlog、Qt、そして広範なオープンソース・コミュニティの成果の上に成り立っています。  
-CAD/CAE/CFD/最適化の分野に貢献している開発者・研究者の皆様に感謝します。
+本プロジェクトは、OpenCascade、Eigen、fmt、spdlog、Qt、そして広範なオープンソースコミュニティの成果の上に成り立っています。  
+CAD/CAE/CFD/最適化分野のコントリビュータと研究者の皆様に感謝します。
 
 ---
 
 ## FAQ
 
 **スクリプト API はありますか？**  
-Python API は計画中です。内部の足場はありますが、公開 API は今後整備します。
+Python API は計画中です。初期的な内部足場はありますが、公開 API は今後提供予定です。
 
 **どのソルバスタックを使っていますか？**  
-内製ソルバのプロトタイプを進めています。外部ソルバ（メッシャ／ポスト含む）へのアダプタも計画しています。
+初期の内製ソルバを試作中です。外部ソルバ（メッシャ／ポストなど）向けアダプタも計画しています。
 
-**AI 機能はインターネット接続が必須ですか？**  
-いいえ。ローカルモデルによるオフライン推論を基本とし、必要に応じてクラウド連携も可能にする方針です。
+**AI 機能にはインターネット接続が必要ですか？**  
+いいえ。ローカルモデルによるオフライン推論を基本とし、必要に応じてクラウド連携もサポートする方針です。
 
 **進捗はどこで追えますか？**  
-JIRA（ロードマップ／バックログ）と公開 GitHub Wiki です。詳細設計は Confluence（要アクセス権）にあります。
+JIRA（ロードマップ／バックログ）と公開 GitHub Wiki で追えます。詳細設計ドキュメントは Confluence（要アクセス権）にあります。
