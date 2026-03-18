@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img src="Docs/media/Breptera_Splash.gif" width="960" alt="SolidDesigner デモプレビュー" />
+  <img src="Docs/media/breptera_splash.apng" width="960" alt="SolidDesigner デモプレビュー" />
 </p>
 
 <p align="center">
