@@ -20,7 +20,7 @@ project(SolidDesigner VERSION 1.1.0  LANGUAGES CXX  DESCRIPTION "SolidRender is 
 #-----------------------------------------------------------------------------
 
 #设置C++标准
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 # 是否强制要求C++标准为${CMAKE_CXX_STANDARD},如果为OFF则可能使用旧的标准
 set(CMAKE_CXX_STANDARD_REQUIRED YES)
